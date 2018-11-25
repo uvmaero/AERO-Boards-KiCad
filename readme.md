@@ -13,7 +13,8 @@ Continuously-updated description of what these boards do.
 ## BattMon
 
 Monitors the current/voltage to/from a battery and power consumer. Includes a relay on the battery, ATMega328p, and CANBUS interface. This board has been produced and tested. Works pretty well, although YMMV.
-![BattMon](https://www.example.com/image.png "BattMon")
+![Front](https://github.com/willemcvu/AERO-Boards-KiCad/blob/master/BattMon/BattMonV1.1/front.JPG "BattMon")
+![Back](https://github.com/willemcvu/AERO-Boards-KiCad/blob/master/BattMon/BattMonV1.1/back.JPG "BattMon")
 
 
 ## CANShield
