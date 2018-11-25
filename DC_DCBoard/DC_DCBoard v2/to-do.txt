@@ -1,0 +1,5 @@
+Find/make correct inductor footprints.
+Figure out shunt resistor values/wattages for current-sense.
+Figure out resistor fooprint for DC/DC input/output resistor-inductor filters.
+Fix trimpot footprint.
+Current monitoring I2C pullups - address selection - huh?
