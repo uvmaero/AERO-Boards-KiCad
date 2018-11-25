@@ -23,7 +23,7 @@ A generic Arduino Uno CANBUS shield. Once hooked up to an Uno, it is the same ci
 ![Back](https://github.com/willemcvu/AERO-Boards-KiCad/blob/master/CANShield/back.JPG "CanShield")
 
 ## DC_DCBoard
-Converts ~300VDC to ~12VDC using a DCM CHiP module from Vicor Power. Can do 400W peak, will dissapate almost 40W at that load, so it has a 19mm Vicor heatsink, model #  Version 1 has clearance issues. Version 2 is an intermediate version with those issues mostly fixed. Version 3 is still be designed, and it will be the final version. None have been produced or tested, and all probably have issues (v1 and v2 have known issues, and v3 isn't finished).
+Converts ~300VDC to ~12VDC using a DCM CHiP module from Vicor Power. Can do 400W peak, will dissapate almost 40W at that load, so it has a 19mm Vicor heatsink, model #(?can't remember).  Version 1 has clearance issues. Version 2 is an intermediate version with those issues mostly fixed. Version 3 is still be designed, and it will be the final version. None have been produced or tested, and all probably have issues (v1 and v2 have known issues, and v3 isn't finished).
 ![DC_DCBoard](https://github.com/willemcvu/AERO-Boards-KiCad/blob/master/DC_DCBoard/v2_3DView.JPG "DC_DCBoard")
 
 ## FanBoy
