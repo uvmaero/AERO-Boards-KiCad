@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 4
+Sheet 2 5
 Title ""
 Date ""
 Rev ""
@@ -767,23 +767,23 @@ Wire Wire Line
 $Comp
 L Device:R_US R?
 U 1 1 5C53D9DB
-P 8900 1900
-F 0 "R?" H 8832 1854 50  0000 R CNN
-F 1 "10k" H 8832 1945 50  0000 R CNN
-F 2 "" V 8940 1890 50  0001 C CNN
-F 3 "~" H 8900 1900 50  0001 C CNN
-	1    8900 1900
+P 8850 2500
+F 0 "R?" H 8782 2454 50  0000 R CNN
+F 1 "10k" H 8782 2545 50  0000 R CNN
+F 2 "" V 8890 2490 50  0001 C CNN
+F 3 "~" H 8850 2500 50  0001 C CNN
+	1    8850 2500
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C540E62
-P 8900 2050
-F 0 "#PWR?" H 8900 1800 50  0001 C CNN
-F 1 "GND" H 8905 1877 50  0000 C CNN
-F 2 "" H 8900 2050 50  0001 C CNN
-F 3 "" H 8900 2050 50  0001 C CNN
-	1    8900 2050
+P 8850 2650
+F 0 "#PWR?" H 8850 2400 50  0001 C CNN
+F 1 "GND" H 8855 2477 50  0000 C CNN
+F 2 "" H 8850 2650 50  0001 C CNN
+F 3 "" H 8850 2650 50  0001 C CNN
+	1    8850 2650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -794,36 +794,36 @@ Text Label 7750 4250 2    50   ~ 0
 NTC1
 Text Label 7750 4350 2    50   ~ 0
 NTC2
-Text Label 8600 1750 0    50   ~ 0
+Text Label 8550 2350 0    50   ~ 0
 NTC1
 Wire Wire Line
-	8600 1750 8900 1750
+	8550 2350 8850 2350
 $Comp
 L Device:R_US R?
 U 1 1 5C5485A4
-P 8900 2500
-F 0 "R?" H 8832 2454 50  0000 R CNN
-F 1 "10k" H 8832 2545 50  0000 R CNN
-F 2 "" V 8940 2490 50  0001 C CNN
-F 3 "~" H 8900 2500 50  0001 C CNN
-	1    8900 2500
+P 9550 2500
+F 0 "R?" H 9482 2454 50  0000 R CNN
+F 1 "10k" H 9482 2545 50  0000 R CNN
+F 2 "" V 9590 2490 50  0001 C CNN
+F 3 "~" H 9550 2500 50  0001 C CNN
+	1    9550 2500
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C5485BA
-P 8900 2650
-F 0 "#PWR?" H 8900 2400 50  0001 C CNN
-F 1 "GND" H 8905 2477 50  0000 C CNN
-F 2 "" H 8900 2650 50  0001 C CNN
-F 3 "" H 8900 2650 50  0001 C CNN
-	1    8900 2650
+P 9550 2650
+F 0 "#PWR?" H 9550 2400 50  0001 C CNN
+F 1 "GND" H 9555 2477 50  0000 C CNN
+F 2 "" H 9550 2650 50  0001 C CNN
+F 3 "" H 9550 2650 50  0001 C CNN
+	1    9550 2650
 	1    0    0    -1  
 $EndComp
-Text Label 8600 2350 0    50   ~ 0
+Text Label 9250 2350 0    50   ~ 0
 NTC2
 Wire Wire Line
-	8600 2350 8900 2350
+	9250 2350 9550 2350
 Wire Notes Line
 	8500 1350 8500 2950
 Wire Notes Line
@@ -838,16 +838,6 @@ Wire Wire Line
 	8100 4700 8100 4750
 Wire Wire Line
 	8100 4750 8050 4750
-Text HLabel 8950 2350 2    50   Input ~ 0
-NTC2
-Text HLabel 8950 1750 2    50   Input ~ 0
-NTC1
-Wire Wire Line
-	8950 2350 8900 2350
-Connection ~ 8900 2350
-Wire Wire Line
-	8950 1750 8900 1750
-Connection ~ 8900 1750
 Text HLabel 1300 1250 0    50   BiDi ~ 0
 CAN+
 Text HLabel 1300 1550 0    50   BiDi ~ 0
@@ -878,10 +868,56 @@ Wire Notes Line
 	6000 6200 8350 6200
 Text Notes 8550 1500 0    100  ~ 0
 Thermistor Inputs
-Text Notes 8900 1700 0    50   ~ 0
+Text Notes 8600 1600 0    50   ~ 0
 Filtering circuitry???
 Text HLabel 7550 3250 2    50   Output ~ 0
 DC_DC_TRIM_EN
 Wire Wire Line
 	7500 3250 7550 3250
+$Comp
+L Device:Thermistor TH?
+U 1 1 5C4DC3CB
+P 8850 2150
+F 0 "TH?" H 8955 2196 50  0000 L CNN
+F 1 "Thermistor" H 8955 2105 50  0000 L CNN
+F 2 "" H 8850 2150 50  0001 C CNN
+F 3 "~" H 8850 2150 50  0001 C CNN
+	1    8850 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 8850 2350
+$Comp
+L Device:Thermistor TH?
+U 1 1 5C4DE0A5
+P 9550 2150
+F 0 "TH?" H 9655 2196 50  0000 L CNN
+F 1 "Thermistor" H 9655 2105 50  0000 L CNN
+F 2 "" H 9550 2150 50  0001 C CNN
+F 3 "~" H 9550 2150 50  0001 C CNN
+	1    9550 2150
+	1    0    0    -1  
+$EndComp
+Connection ~ 9550 2350
+$Comp
+L power:+5V #PWR?
+U 1 1 5C4DE1B9
+P 8850 1950
+F 0 "#PWR?" H 8850 1800 50  0001 C CNN
+F 1 "+5V" H 8865 2123 50  0000 C CNN
+F 2 "" H 8850 1950 50  0001 C CNN
+F 3 "" H 8850 1950 50  0001 C CNN
+	1    8850 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5C4DE1F9
+P 9550 1950
+F 0 "#PWR?" H 9550 1800 50  0001 C CNN
+F 1 "+5V" H 9565 2123 50  0000 C CNN
+F 2 "" H 9550 1950 50  0001 C CNN
+F 3 "" H 9550 1950 50  0001 C CNN
+	1    9550 1950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC
