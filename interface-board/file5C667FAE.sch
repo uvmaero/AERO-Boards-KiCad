@@ -235,8 +235,6 @@ F 3 "" H 5900 3550 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	5700 3850 5900 3850
-Wire Notes Line
-	3350 4000 3350 2500
 Text Notes 6000 2950 0    50   ~ 0
 Pull high to disable
 $Comp
@@ -323,9 +321,7 @@ Wire Notes Line
 	4250 2550 4250 4400
 Text Notes 4350 2750 0    100  ~ 0
 HV-Interface
-Wire Notes Line width 39 rgb(255, 0, 0)
-	5400 1050 5400 6150
-Text Notes 3500 3800 0    118  ~ 24
+Text Notes 3350 3700 0    118  ~ 24
 HV\nDanger!
 $Comp
 L Device:L_Small L?
@@ -474,13 +470,7 @@ Output Filtering
 Wire Notes Line
 	7400 4750 7400 5800
 Wire Notes Line
-	6000 5800 7300 5800
-Wire Notes Line
-	6100 4750 7400 4750
-Wire Notes Line
 	3300 6200 3300 4650
-Wire Notes Line width 39 rgb(255, 0, 0)
-	5400 1150 3400 1150
 Text Notes 3850 1550 0    50   ~ 0
 May want to change value
 $Comp
@@ -530,105 +520,99 @@ Connection ~ 4800 3850
 $Comp
 L Regulator_Switching:R-78E5.0-0.5 U?
 U 1 1 5C66BF9B
-P 9050 3400
+P 9000 3550
 AR Path="/5C66BF9B" Ref="U?"  Part="1" 
 AR Path="/5C667FAF/5C66BF9B" Ref="U?"  Part="1" 
-F 0 "U?" H 9050 3642 50  0000 C CNN
-F 1 "R-78E5.0-0.5" H 9050 3551 50  0000 C CNN
-F 2 "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT" H 9100 3150 50  0001 L CIN
-F 3 "https://www.recom-power.com/pdf/Innoline/R-78Exx-0.5.pdf" H 9050 3400 50  0001 C CNN
-	1    9050 3400
+F 0 "U?" H 9000 3792 50  0000 C CNN
+F 1 "R-78E5.0-0.5" H 9000 3701 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT" H 9050 3300 50  0001 L CIN
+F 3 "https://www.recom-power.com/pdf/Innoline/R-78Exx-0.5.pdf" H 9000 3550 50  0001 C CNN
+	1    9000 3550
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8600 3400 8750 3400
+	8550 3550 8700 3550
 Wire Wire Line
-	9500 3400 9350 3400
+	9450 3550 9300 3550
 $Comp
 L power:GND #PWR?
 U 1 1 5C66BFAA
-P 9050 3750
+P 9000 3900
 AR Path="/5C66BFAA" Ref="#PWR?"  Part="1" 
 AR Path="/5C667FAF/5C66BFAA" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9050 3500 50  0001 C CNN
-F 1 "GND" H 9055 3577 50  0000 C CNN
-F 2 "" H 9050 3750 50  0001 C CNN
-F 3 "" H 9050 3750 50  0001 C CNN
-	1    9050 3750
+F 0 "#PWR?" H 9000 3650 50  0001 C CNN
+F 1 "GND" H 9005 3727 50  0000 C CNN
+F 2 "" H 9000 3900 50  0001 C CNN
+F 3 "" H 9000 3900 50  0001 C CNN
+	1    9000 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9050 3750 9050 3700
-Wire Notes Line
-	8100 4050 8100 2750
-Text Notes 8150 2900 0    100  ~ 0
+	9000 3900 9000 3850
+Text Notes 8100 3050 0    100  ~ 0
 12V->5V
 $Comp
 L Device:C C?
 U 1 1 5C66BFB3
-P 9500 3550
+P 9450 3700
 AR Path="/5C66BFB3" Ref="C?"  Part="1" 
 AR Path="/5C667FAF/5C66BFB3" Ref="C?"  Part="1" 
-F 0 "C?" H 9615 3596 50  0000 L CNN
-F 1 "0.1uF" H 9250 3450 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9538 3400 50  0001 C CNN
-F 3 "~" H 9500 3550 50  0001 C CNN
-	1    9500 3550
+F 0 "C?" H 9565 3746 50  0000 L CNN
+F 1 "0.1uF" H 9200 3600 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9488 3550 50  0001 C CNN
+F 3 "~" H 9450 3700 50  0001 C CNN
+	1    9450 3700
 	1    0    0    -1  
 $EndComp
-Connection ~ 9500 3400
+Connection ~ 9450 3550
 $Comp
 L power:GND #PWR?
 U 1 1 5C66BFC5
-P 9650 3750
+P 9600 3900
 AR Path="/5C66BFC5" Ref="#PWR?"  Part="1" 
 AR Path="/5C667FAF/5C66BFC5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 9650 3500 50  0001 C CNN
-F 1 "GND" H 9655 3577 50  0000 C CNN
-F 2 "" H 9650 3750 50  0001 C CNN
-F 3 "" H 9650 3750 50  0001 C CNN
-	1    9650 3750
+F 0 "#PWR?" H 9600 3650 50  0001 C CNN
+F 1 "GND" H 9605 3727 50  0000 C CNN
+F 2 "" H 9600 3900 50  0001 C CNN
+F 3 "" H 9600 3900 50  0001 C CNN
+	1    9600 3900
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	9500 3700 9650 3700
+	9450 3850 9600 3850
 Wire Wire Line
-	9650 3700 9650 3750
-Connection ~ 9650 3700
+	9600 3850 9600 3900
+Connection ~ 9600 3850
 Wire Wire Line
-	9650 3700 9800 3700
+	9600 3850 9750 3850
 $Comp
 L Device:C C?
 U 1 1 5C66BFCF
-P 8600 3550
+P 8550 3700
 AR Path="/5C66BFCF" Ref="C?"  Part="1" 
 AR Path="/5C667FAF/5C66BFCF" Ref="C?"  Part="1" 
-F 0 "C?" H 8715 3596 50  0000 L CNN
-F 1 "10uF" H 8715 3505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 8638 3400 50  0001 C CNN
-F 3 "~" H 8600 3550 50  0001 C CNN
-	1    8600 3550
+F 0 "C?" H 8665 3746 50  0000 L CNN
+F 1 "10uF" H 8665 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 8588 3550 50  0001 C CNN
+F 3 "~" H 8550 3700 50  0001 C CNN
+	1    8550 3700
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C66BFD7
-P 8600 3700
+P 8550 3850
 AR Path="/5C66BFD7" Ref="#PWR?"  Part="1" 
 AR Path="/5C667FAF/5C66BFD7" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 8600 3450 50  0001 C CNN
-F 1 "GND" H 8605 3527 50  0000 C CNN
-F 2 "" H 8600 3700 50  0001 C CNN
-F 3 "" H 8600 3700 50  0001 C CNN
-	1    8600 3700
+F 0 "#PWR?" H 8550 3600 50  0001 C CNN
+F 1 "GND" H 8555 3677 50  0000 C CNN
+F 2 "" H 8550 3850 50  0001 C CNN
+F 3 "" H 8550 3850 50  0001 C CNN
+	1    8550 3850
 	1    0    0    -1  
 $EndComp
 Wire Notes Line
-	10200 2750 10200 4050
-Wire Notes Line
-	8400 4050 10150 4050
-Wire Notes Line
-	8400 2750 10150 2750
+	10150 2900 10150 4200
 Text HLabel 6200 1650 2    50   Input ~ 0
 TRIM_EN
 Wire Wire Line
@@ -652,14 +636,8 @@ HV-
 Wire Wire Line
 	3600 5700 4100 5700
 Connection ~ 4100 5700
-Wire Notes Line
-	3350 5100 4450 5100
-Wire Notes Line
-	3350 6150 4450 6150
 Connection ~ 4400 5500
 Connection ~ 4400 5700
-Wire Notes Line width 39 rgb(255, 0, 0)
-	3250 1150 3250 6250
 Wire Wire Line
 	4400 5500 4950 5500
 Wire Wire Line
@@ -693,39 +671,65 @@ Wire Wire Line
 Wire Wire Line
 	4600 5200 4950 5200
 Wire Notes Line
-	3550 6200 7350 6200
-Wire Notes Line
 	7450 4650 7450 6200
-Wire Notes Line
-	3650 4650 7450 4650
 Text HLabel 6950 5350 2    50   Input ~ 0
 12V_OUT
 Wire Wire Line
 	6900 5350 6950 5350
 Connection ~ 6900 5350
-Text HLabel 8550 3400 0    50   Input ~ 0
+Text HLabel 8500 3550 0    50   Input ~ 0
 12V_IN
 Wire Wire Line
-	8550 3400 8600 3400
-Connection ~ 8600 3400
+	8500 3550 8550 3550
+Connection ~ 8550 3550
 Wire Wire Line
-	9800 3400 9500 3400
+	9750 3550 9450 3550
 $Comp
 L Device:C C?
 U 1 1 5C66BFBA
-P 9800 3550
+P 9750 3700
 AR Path="/5C66BFBA" Ref="C?"  Part="1" 
 AR Path="/5C667FAF/5C66BFBA" Ref="C?"  Part="1" 
-F 0 "C?" H 9915 3596 50  0000 L CNN
-F 1 "10uF" H 9915 3505 50  0000 L CNN
-F 2 "Capacitor_SMD:C_0603_1608Metric" H 9838 3400 50  0001 C CNN
-F 3 "~" H 9800 3550 50  0001 C CNN
-	1    9800 3550
+F 0 "C?" H 9865 3746 50  0000 L CNN
+F 1 "10uF" H 9865 3655 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 9788 3550 50  0001 C CNN
+F 3 "~" H 9750 3700 50  0001 C CNN
+	1    9750 3700
 	1    0    0    -1  
 $EndComp
-Text HLabel 9850 3400 2    50   Input ~ 0
+Text HLabel 9800 3550 2    50   Input ~ 0
 5V_OUT
 Wire Wire Line
-	9850 3400 9800 3400
-Connection ~ 9800 3400
+	9800 3550 9750 3550
+Connection ~ 9750 3550
+Wire Notes Line
+	3300 4650 7450 4650
+Wire Notes Line
+	3300 6200 7450 6200
+Wire Notes Line
+	6000 4750 7400 4750
+Wire Notes Line
+	6000 5800 7400 5800
+Wire Notes Line
+	3350 5100 4500 5100
+Wire Notes Line
+	3350 6150 4500 6150
+Wire Notes Line
+	3350 6150 3350 5100
+Wire Notes Line
+	8050 4200 10150 4200
+Wire Notes Line
+	8050 2900 8050 4200
+Wire Notes Line
+	8050 2900 10150 2900
+Wire Notes Line width 39 rgb(253, 0, 1)
+	3150 1150 5400 1150
+Wire Notes Line width 39 rgb(255, 0, 0)
+	5400 1150 5400 6300
+Wire Notes Line width 39 rgb(253, 0, 0)
+	5400 6300 3150 6300
+Wire Notes Line width 39 rgb(255, 0, 0)
+	3150 1150 3150 6300
+Text Notes 3550 1000 0    157  ~ 31
+Fix all the HV/LV interface shit
 $EndSCHEMATC
