@@ -1,0 +1,619 @@
+EESchema Schematic File Version 4
+LIBS:interface-board-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 3 4
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5C5EECB4
+P 4550 2500
+AR Path="/5C5EECB4" Ref="Q?"  Part="1" 
+AR Path="/5C5EE841/5C5EECB4" Ref="Q?"  Part="1" 
+F 0 "Q?" H 4800 2400 50  0000 C CNN
+F 1 "Q_NMOS_GDS" H 5000 2550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 4750 2600 50  0001 C CNN
+F 3 "~" H 4550 2500 50  0001 C CNN
+	1    4550 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5C5EECE9
+P 4300 2150
+AR Path="/5C5EECE9" Ref="D?"  Part="1" 
+AR Path="/5C5EE841/5C5EECE9" Ref="D?"  Part="1" 
+F 0 "D?" H 4300 2350 50  0000 C CNN
+F 1 "1N4001" H 4300 2250 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4300 2150 50  0001 C CNN
+F 3 "~" H 4300 2150 50  0001 C CNN
+	1    4300 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C5EECF0
+P 4100 2100
+AR Path="/5C5EECF0" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5EECF0" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4100 1950 50  0001 C CNN
+F 1 "+12V" H 4115 2273 50  0000 C CNN
+F 2 "" H 4100 2100 50  0001 C CNN
+F 3 "" H 4100 2100 50  0001 C CNN
+	1    4100 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5C5EED0B
+P 5050 2650
+AR Path="/5C5EED0B" Ref="R?"  Part="1" 
+AR Path="/5C5EE841/5C5EED0B" Ref="R?"  Part="1" 
+F 0 "R?" H 4982 2604 50  0000 R CNN
+F 1 "R_US" H 4982 2695 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5090 2640 50  0001 C CNN
+F 3 "~" H 5050 2650 50  0001 C CNN
+	1    5050 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5C5EED27
+P 4900 2500
+AR Path="/5C5EED27" Ref="R?"  Part="1" 
+AR Path="/5C5EE841/5C5EED27" Ref="R?"  Part="1" 
+F 0 "R?" V 4800 2500 50  0000 C CNN
+F 1 "R_US" V 5000 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4940 2490 50  0001 C CNN
+F 3 "~" H 4900 2500 50  0001 C CNN
+	1    4900 2500
+	0    1    -1   0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C5EED44
+P 2050 3350
+AR Path="/5C5EED44" Ref="C?"  Part="1" 
+AR Path="/5C5EE841/5C5EED44" Ref="C?"  Part="1" 
+F 0 "C?" H 2165 3396 50  0000 L CNN
+F 1 "C" H 2165 3305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2088 3200 50  0001 C CNN
+F 3 "~" H 2050 3350 50  0001 C CNN
+	1    2050 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C5EED4B
+P 2350 3350
+AR Path="/5C5EED4B" Ref="C?"  Part="1" 
+AR Path="/5C5EE841/5C5EED4B" Ref="C?"  Part="1" 
+F 0 "C?" H 2465 3396 50  0000 L CNN
+F 1 "C" H 2465 3305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2388 3200 50  0001 C CNN
+F 3 "~" H 2350 3350 50  0001 C CNN
+	1    2350 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C5EED52
+P 2600 3350
+AR Path="/5C5EED52" Ref="C?"  Part="1" 
+AR Path="/5C5EE841/5C5EED52" Ref="C?"  Part="1" 
+F 0 "C?" H 2715 3396 50  0000 L CNN
+F 1 "C" H 2715 3305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2638 3200 50  0001 C CNN
+F 3 "~" H 2600 3350 50  0001 C CNN
+	1    2600 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C5EED59
+P 2850 3350
+AR Path="/5C5EED59" Ref="C?"  Part="1" 
+AR Path="/5C5EE841/5C5EED59" Ref="C?"  Part="1" 
+F 0 "C?" H 2965 3396 50  0000 L CNN
+F 1 "C" H 2965 3305 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2888 3200 50  0001 C CNN
+F 3 "~" H 2850 3350 50  0001 C CNN
+	1    2850 3350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C5EED60
+P 2050 3500
+AR Path="/5C5EED60" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5EED60" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2050 3250 50  0001 C CNN
+F 1 "GND" H 2055 3327 50  0000 C CNN
+F 2 "" H 2050 3500 50  0001 C CNN
+F 3 "" H 2050 3500 50  0001 C CNN
+	1    2050 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C5EED66
+P 2350 3500
+AR Path="/5C5EED66" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5EED66" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2350 3250 50  0001 C CNN
+F 1 "GND" H 2355 3327 50  0000 C CNN
+F 2 "" H 2350 3500 50  0001 C CNN
+F 3 "" H 2350 3500 50  0001 C CNN
+	1    2350 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C5EED6C
+P 2600 3500
+AR Path="/5C5EED6C" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5EED6C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2600 3250 50  0001 C CNN
+F 1 "GND" H 2605 3327 50  0000 C CNN
+F 2 "" H 2600 3500 50  0001 C CNN
+F 3 "" H 2600 3500 50  0001 C CNN
+	1    2600 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C5EED72
+P 2850 3500
+AR Path="/5C5EED72" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5EED72" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2850 3250 50  0001 C CNN
+F 1 "GND" H 2855 3327 50  0000 C CNN
+F 2 "" H 2850 3500 50  0001 C CNN
+F 3 "" H 2850 3500 50  0001 C CNN
+	1    2850 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C5EED78
+P 2050 3200
+AR Path="/5C5EED78" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5EED78" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2050 3050 50  0001 C CNN
+F 1 "+12V" H 2065 3373 50  0000 C CNN
+F 2 "" H 2050 3200 50  0001 C CNN
+F 3 "" H 2050 3200 50  0001 C CNN
+	1    2050 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C5EED7E
+P 2350 3200
+AR Path="/5C5EED7E" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5EED7E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2350 3050 50  0001 C CNN
+F 1 "+12V" H 2365 3373 50  0000 C CNN
+F 2 "" H 2350 3200 50  0001 C CNN
+F 3 "" H 2350 3200 50  0001 C CNN
+	1    2350 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C5EED84
+P 2600 3200
+AR Path="/5C5EED84" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5EED84" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2600 3050 50  0001 C CNN
+F 1 "+12V" H 2615 3373 50  0000 C CNN
+F 2 "" H 2600 3200 50  0001 C CNN
+F 3 "" H 2600 3200 50  0001 C CNN
+	1    2600 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C5EED8A
+P 2850 3200
+AR Path="/5C5EED8A" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5EED8A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2850 3050 50  0001 C CNN
+F 1 "+12V" H 2865 3373 50  0000 C CNN
+F 2 "" H 2850 3200 50  0001 C CNN
+F 3 "" H 2850 3200 50  0001 C CNN
+	1    2850 3200
+	1    0    0    -1  
+$EndComp
+Text Notes 2000 3900 0    50   ~ 0
+Move these caps to \nacross fan outputs?
+$Comp
+L power:GND #PWR?
+U 1 1 5C5EEDC2
+P 4450 2800
+AR Path="/5C5EEDC2" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5EEDC2" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4450 2550 50  0001 C CNN
+F 1 "GND" H 4455 2627 50  0000 C CNN
+F 2 "" H 4450 2800 50  0001 C CNN
+F 3 "" H 4450 2800 50  0001 C CNN
+	1    4450 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 2800 4450 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5C5F2488
+P 5050 2800
+AR Path="/5C5F2488" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5F2488" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5050 2550 50  0001 C CNN
+F 1 "GND" H 5055 2627 50  0000 C CNN
+F 2 "" H 5050 2800 50  0001 C CNN
+F 3 "" H 5050 2800 50  0001 C CNN
+	1    5050 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 2100 4100 2150
+Wire Wire Line
+	4100 2150 4150 2150
+Wire Wire Line
+	4450 2150 4450 2250
+Text HLabel 4400 2250 0    50   Output ~ 0
+FANOUT0
+Wire Wire Line
+	4400 2250 4450 2250
+Connection ~ 4450 2250
+Wire Wire Line
+	4450 2250 4450 2300
+Text HLabel 5100 2500 2    50   Input ~ 0
+FAN_CTRL_0
+Wire Wire Line
+	5100 2500 5050 2500
+Connection ~ 5050 2500
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5C5F732E
+P 6900 2500
+AR Path="/5C5F732E" Ref="Q?"  Part="1" 
+AR Path="/5C5EE841/5C5F732E" Ref="Q?"  Part="1" 
+F 0 "Q?" H 7150 2400 50  0000 C CNN
+F 1 "Q_NMOS_GDS" H 7350 2550 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7100 2600 50  0001 C CNN
+F 3 "~" H 6900 2500 50  0001 C CNN
+	1    6900 2500
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5C5F7335
+P 6650 2150
+AR Path="/5C5F7335" Ref="D?"  Part="1" 
+AR Path="/5C5EE841/5C5F7335" Ref="D?"  Part="1" 
+F 0 "D?" H 6650 2350 50  0000 C CNN
+F 1 "1N4001" H 6650 2250 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6650 2150 50  0001 C CNN
+F 3 "~" H 6650 2150 50  0001 C CNN
+	1    6650 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C5F733C
+P 6450 2100
+AR Path="/5C5F733C" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5F733C" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6450 1950 50  0001 C CNN
+F 1 "+12V" H 6465 2273 50  0000 C CNN
+F 2 "" H 6450 2100 50  0001 C CNN
+F 3 "" H 6450 2100 50  0001 C CNN
+	1    6450 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5C5F7342
+P 7400 2650
+AR Path="/5C5F7342" Ref="R?"  Part="1" 
+AR Path="/5C5EE841/5C5F7342" Ref="R?"  Part="1" 
+F 0 "R?" H 7332 2604 50  0000 R CNN
+F 1 "R_US" H 7332 2695 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7440 2640 50  0001 C CNN
+F 3 "~" H 7400 2650 50  0001 C CNN
+	1    7400 2650
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5C5F7349
+P 7250 2500
+AR Path="/5C5F7349" Ref="R?"  Part="1" 
+AR Path="/5C5EE841/5C5F7349" Ref="R?"  Part="1" 
+F 0 "R?" V 7150 2500 50  0000 C CNN
+F 1 "R_US" V 7350 2500 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7290 2490 50  0001 C CNN
+F 3 "~" H 7250 2500 50  0001 C CNN
+	1    7250 2500
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C5F7350
+P 6800 2800
+AR Path="/5C5F7350" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5F7350" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6800 2550 50  0001 C CNN
+F 1 "GND" H 6805 2627 50  0000 C CNN
+F 2 "" H 6800 2800 50  0001 C CNN
+F 3 "" H 6800 2800 50  0001 C CNN
+	1    6800 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 2800 6800 2700
+$Comp
+L power:GND #PWR?
+U 1 1 5C5F7357
+P 7400 2800
+AR Path="/5C5F7357" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5F7357" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7400 2550 50  0001 C CNN
+F 1 "GND" H 7405 2627 50  0000 C CNN
+F 2 "" H 7400 2800 50  0001 C CNN
+F 3 "" H 7400 2800 50  0001 C CNN
+	1    7400 2800
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 2100 6450 2150
+Wire Wire Line
+	6450 2150 6500 2150
+Wire Wire Line
+	6800 2150 6800 2250
+Text HLabel 6750 2250 0    50   Output ~ 0
+FANOUT1
+Wire Wire Line
+	6750 2250 6800 2250
+Connection ~ 6800 2250
+Wire Wire Line
+	6800 2250 6800 2300
+Text HLabel 7450 2500 2    50   Input ~ 0
+FAN_CTRL_1
+Wire Wire Line
+	7450 2500 7400 2500
+Connection ~ 7400 2500
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5C5F7B5C
+P 4550 4050
+AR Path="/5C5F7B5C" Ref="Q?"  Part="1" 
+AR Path="/5C5EE841/5C5F7B5C" Ref="Q?"  Part="1" 
+F 0 "Q?" H 4800 3950 50  0000 C CNN
+F 1 "Q_NMOS_GDS" H 5000 4100 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 4750 4150 50  0001 C CNN
+F 3 "~" H 4550 4050 50  0001 C CNN
+	1    4550 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5C5F7B63
+P 4300 3700
+AR Path="/5C5F7B63" Ref="D?"  Part="1" 
+AR Path="/5C5EE841/5C5F7B63" Ref="D?"  Part="1" 
+F 0 "D?" H 4300 3900 50  0000 C CNN
+F 1 "1N4001" H 4300 3800 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4300 3700 50  0001 C CNN
+F 3 "~" H 4300 3700 50  0001 C CNN
+	1    4300 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C5F7B6A
+P 4100 3650
+AR Path="/5C5F7B6A" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5F7B6A" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4100 3500 50  0001 C CNN
+F 1 "+12V" H 4115 3823 50  0000 C CNN
+F 2 "" H 4100 3650 50  0001 C CNN
+F 3 "" H 4100 3650 50  0001 C CNN
+	1    4100 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5C5F7B70
+P 5050 4200
+AR Path="/5C5F7B70" Ref="R?"  Part="1" 
+AR Path="/5C5EE841/5C5F7B70" Ref="R?"  Part="1" 
+F 0 "R?" H 4982 4154 50  0000 R CNN
+F 1 "R_US" H 4982 4245 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 5090 4190 50  0001 C CNN
+F 3 "~" H 5050 4200 50  0001 C CNN
+	1    5050 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5C5F7B77
+P 4900 4050
+AR Path="/5C5F7B77" Ref="R?"  Part="1" 
+AR Path="/5C5EE841/5C5F7B77" Ref="R?"  Part="1" 
+F 0 "R?" V 4800 4050 50  0000 C CNN
+F 1 "R_US" V 5000 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4940 4040 50  0001 C CNN
+F 3 "~" H 4900 4050 50  0001 C CNN
+	1    4900 4050
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C5F7B7E
+P 4450 4350
+AR Path="/5C5F7B7E" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5F7B7E" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 4450 4100 50  0001 C CNN
+F 1 "GND" H 4455 4177 50  0000 C CNN
+F 2 "" H 4450 4350 50  0001 C CNN
+F 3 "" H 4450 4350 50  0001 C CNN
+	1    4450 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4450 4350 4450 4250
+$Comp
+L power:GND #PWR?
+U 1 1 5C5F7B85
+P 5050 4350
+AR Path="/5C5F7B85" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5F7B85" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5050 4100 50  0001 C CNN
+F 1 "GND" H 5055 4177 50  0000 C CNN
+F 2 "" H 5050 4350 50  0001 C CNN
+F 3 "" H 5050 4350 50  0001 C CNN
+	1    5050 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4100 3650 4100 3700
+Wire Wire Line
+	4100 3700 4150 3700
+Wire Wire Line
+	4450 3700 4450 3800
+Text HLabel 4400 3800 0    50   Output ~ 0
+FANOUT2
+Wire Wire Line
+	4400 3800 4450 3800
+Connection ~ 4450 3800
+Wire Wire Line
+	4450 3800 4450 3850
+Text HLabel 5100 4050 2    50   Input ~ 0
+FAN_CTRL_2
+Wire Wire Line
+	5100 4050 5050 4050
+Connection ~ 5050 4050
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5C5F7B95
+P 6900 4050
+AR Path="/5C5F7B95" Ref="Q?"  Part="1" 
+AR Path="/5C5EE841/5C5F7B95" Ref="Q?"  Part="1" 
+F 0 "Q?" H 7150 3950 50  0000 C CNN
+F 1 "Q_NMOS_GDS" H 7350 4100 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7100 4150 50  0001 C CNN
+F 3 "~" H 6900 4050 50  0001 C CNN
+	1    6900 4050
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5C5F7B9C
+P 6650 3700
+AR Path="/5C5F7B9C" Ref="D?"  Part="1" 
+AR Path="/5C5EE841/5C5F7B9C" Ref="D?"  Part="1" 
+F 0 "D?" H 6650 3900 50  0000 C CNN
+F 1 "1N4001" H 6650 3800 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6650 3700 50  0001 C CNN
+F 3 "~" H 6650 3700 50  0001 C CNN
+	1    6650 3700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C5F7BA3
+P 6450 3650
+AR Path="/5C5F7BA3" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5F7BA3" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6450 3500 50  0001 C CNN
+F 1 "+12V" H 6465 3823 50  0000 C CNN
+F 2 "" H 6450 3650 50  0001 C CNN
+F 3 "" H 6450 3650 50  0001 C CNN
+	1    6450 3650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5C5F7BA9
+P 7400 4200
+AR Path="/5C5F7BA9" Ref="R?"  Part="1" 
+AR Path="/5C5EE841/5C5F7BA9" Ref="R?"  Part="1" 
+F 0 "R?" H 7332 4154 50  0000 R CNN
+F 1 "R_US" H 7332 4245 50  0000 R CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7440 4190 50  0001 C CNN
+F 3 "~" H 7400 4200 50  0001 C CNN
+	1    7400 4200
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5C5F7BB0
+P 7250 4050
+AR Path="/5C5F7BB0" Ref="R?"  Part="1" 
+AR Path="/5C5EE841/5C5F7BB0" Ref="R?"  Part="1" 
+F 0 "R?" V 7150 4050 50  0000 C CNN
+F 1 "R_US" V 7350 4050 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 7290 4040 50  0001 C CNN
+F 3 "~" H 7250 4050 50  0001 C CNN
+	1    7250 4050
+	0    1    -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C5F7BB7
+P 6800 4350
+AR Path="/5C5F7BB7" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5F7BB7" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6800 4100 50  0001 C CNN
+F 1 "GND" H 6805 4177 50  0000 C CNN
+F 2 "" H 6800 4350 50  0001 C CNN
+F 3 "" H 6800 4350 50  0001 C CNN
+	1    6800 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4350 6800 4250
+$Comp
+L power:GND #PWR?
+U 1 1 5C5F7BBE
+P 7400 4350
+AR Path="/5C5F7BBE" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5F7BBE" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7400 4100 50  0001 C CNN
+F 1 "GND" H 7405 4177 50  0000 C CNN
+F 2 "" H 7400 4350 50  0001 C CNN
+F 3 "" H 7400 4350 50  0001 C CNN
+	1    7400 4350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 3650 6450 3700
+Wire Wire Line
+	6450 3700 6500 3700
+Wire Wire Line
+	6800 3700 6800 3800
+Text HLabel 6750 3800 0    50   Output ~ 0
+FANOUT3
+Wire Wire Line
+	6750 3800 6800 3800
+Connection ~ 6800 3800
+Wire Wire Line
+	6800 3800 6800 3850
+Text HLabel 7450 4050 2    50   Input ~ 0
+FAN_CTRL_3
+Wire Wire Line
+	7450 4050 7400 4050
+Connection ~ 7400 4050
+$EndSCHEMATC
