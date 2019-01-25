@@ -471,7 +471,7 @@ Wire Notes Line
 	7400 4750 7400 5800
 Wire Notes Line
 	3300 6200 3300 4650
-Text Notes 3850 1550 0    50   ~ 0
+Text Notes 1150 1750 0    157  ~ 31
 May want to change value
 $Comp
 L Isolator:LTV-827S U?

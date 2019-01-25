@@ -14,22 +14,22 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 2700 1000 2    50   ~ 0
+Text Notes 2750 1050 2    50   ~ 0
 2.5A fuses give some \nheadroom, maybe \nshould change to 2A.
 $Comp
 L Device:Fuse_Small F?
 U 1 1 5C49093C
-P 1950 1300
-F 0 "F?" H 1950 1485 50  0000 C CNN
-F 1 "2.5A" H 1950 1394 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 1950 1300 50  0001 C CNN
-F 3 "~" H 1950 1300 50  0001 C CNN
-	1    1950 1300
+P 2000 1350
+F 0 "F?" H 2000 1535 50  0000 C CNN
+F 1 "2.5A" H 2000 1444 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 2000 1350 50  0001 C CNN
+F 3 "~" H 2000 1350 50  0001 C CNN
+	1    2000 1350
 	1    0    0    -1  
 $EndComp
-Text Label 2250 1300 2    50   ~ 0
+Text Label 2300 1350 2    50   ~ 0
 HV+
-Text Label 2250 1450 2    50   ~ 0
+Text Label 2300 1500 2    50   ~ 0
 HV-
 $Comp
 L Connector_Generic:Conn_01x14 J?
@@ -263,47 +263,47 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x01 J?
 U 1 1 5C7C388D
-P 900 1450
-F 0 "J?" H 1050 1350 50  0000 C CNN
-F 1 "HV-" H 1150 1450 50  0000 C CNN
-F 2 "" H 900 1450 50  0001 C CNN
-F 3 "~" H 900 1450 50  0001 C CNN
-	1    900  1450
+P 950 1500
+F 0 "J?" H 1100 1400 50  0000 C CNN
+F 1 "HV-" H 1200 1500 50  0000 C CNN
+F 2 "" H 950 1500 50  0001 C CNN
+F 3 "~" H 950 1500 50  0001 C CNN
+	1    950  1500
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J?
 U 1 1 5C83C6D2
-P 900 1300
-F 0 "J?" H 900 1200 50  0000 C CNN
-F 1 "HV+" H 1150 1300 50  0000 C CNN
-F 2 "" H 900 1300 50  0001 C CNN
-F 3 "~" H 900 1300 50  0001 C CNN
-	1    900  1300
+P 950 1350
+F 0 "J?" H 950 1250 50  0000 C CNN
+F 1 "HV+" H 1200 1350 50  0000 C CNN
+F 2 "" H 950 1350 50  0001 C CNN
+F 3 "~" H 950 1350 50  0001 C CNN
+	1    950  1350
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5C871653
-P 1200 1050
-F 0 "J?" V 1166 862 50  0000 R CNN
-F 1 "IMD" V 1300 1050 50  0000 R CNN
-F 2 "" H 1200 1050 50  0001 C CNN
-F 3 "~" H 1200 1050 50  0001 C CNN
-	1    1200 1050
+P 1250 1100
+F 0 "J?" V 1216 912 50  0000 R CNN
+F 1 "IMD" V 1350 1100 50  0000 R CNN
+F 2 "" H 1250 1100 50  0001 C CNN
+F 3 "~" H 1250 1100 50  0001 C CNN
+	1    1250 1100
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1100 1300 1200 1300
+	1150 1350 1250 1350
 Wire Wire Line
-	1200 1250 1200 1300
+	1250 1300 1250 1350
 Wire Wire Line
-	1300 1250 1300 1450
+	1350 1300 1350 1500
 Wire Wire Line
-	1300 1450 1100 1450
+	1350 1500 1150 1500
 Wire Wire Line
-	2250 1300 2050 1300
-Connection ~ 1200 1300
+	2300 1350 2100 1350
+Connection ~ 1250 1350
 $Sheet
 S 4600 1250 1600 900 
 U 5C4E5628
@@ -378,26 +378,26 @@ Global nets connected to this sheet: \nGND, 5V
 $Comp
 L Connector_Generic:Conn_01x02 J?
 U 1 1 5C4C2740
-P 1550 1050
-F 0 "J?" V 1516 862 50  0000 R CNN
-F 1 "TSMP" V 1650 1100 50  0000 R CNN
-F 2 "" H 1550 1050 50  0001 C CNN
-F 3 "~" H 1550 1050 50  0001 C CNN
-	1    1550 1050
+P 1600 1100
+F 0 "J?" V 1566 912 50  0000 R CNN
+F 1 "TSMP" V 1700 1150 50  0000 R CNN
+F 2 "" H 1600 1100 50  0001 C CNN
+F 3 "~" H 1600 1100 50  0001 C CNN
+	1    1600 1100
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1200 1300 1550 1300
+	1250 1350 1600 1350
 Wire Wire Line
-	1550 1250 1550 1300
-Connection ~ 1550 1300
+	1600 1300 1600 1350
+Connection ~ 1600 1350
 Wire Wire Line
-	1550 1300 1850 1300
+	1600 1350 1900 1350
 Wire Wire Line
-	1650 1250 1650 1450
+	1700 1300 1700 1500
 Wire Wire Line
-	1300 1450 1650 1450
-Connection ~ 1300 1450
+	1350 1500 1700 1500
+Connection ~ 1350 1500
 Wire Wire Line
 	4600 2650 4350 2650
 Wire Wire Line
@@ -741,38 +741,34 @@ UART_TX
 $Comp
 L Connector:RJ45 J?
 U 1 1 5C565B8C
-P 3000 6150
-F 0 "J?" H 2670 6154 50  0000 R CNN
-F 1 "RJ45" H 2670 6245 50  0000 R CNN
-F 2 "" V 3000 6175 50  0001 C CNN
-F 3 "~" V 3000 6175 50  0001 C CNN
-	1    3000 6150
+P 3000 5550
+F 0 "J?" H 2670 5554 50  0000 R CNN
+F 1 "RJ45" H 2670 5645 50  0000 R CNN
+F 2 "" V 3000 5575 50  0001 C CNN
+F 3 "~" V 3000 5575 50  0001 C CNN
+	1    3000 5550
 	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C569DF7
-P 3450 6700
-F 0 "#PWR?" H 3450 6450 50  0001 C CNN
-F 1 "GND" H 3455 6527 50  0000 C CNN
-F 2 "" H 3450 6700 50  0001 C CNN
-F 3 "" H 3450 6700 50  0001 C CNN
-	1    3450 6700
+P 3500 6100
+F 0 "#PWR?" H 3500 5850 50  0001 C CNN
+F 1 "GND" H 3505 5927 50  0000 C CNN
+F 2 "" H 3500 6100 50  0001 C CNN
+F 3 "" H 3500 6100 50  0001 C CNN
+	1    3500 6100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3450 6700 3450 6350
+	3500 6100 3500 5750
 Wire Wire Line
-	3450 6350 3400 6350
+	3500 5750 3500 5450
+Connection ~ 3500 5750
 Wire Wire Line
-	3450 6350 3450 6050
+	3400 5250 3700 5250
 Wire Wire Line
-	3450 6050 3400 6050
-Connection ~ 3450 6350
-Wire Wire Line
-	3400 5850 3700 5850
-Wire Wire Line
-	3400 5950 3700 5950
+	3400 5350 3700 5350
 Wire Wire Line
 	4600 1350 4300 1350
 Wire Wire Line
@@ -781,26 +777,26 @@ Text Label 4300 1350 0    50   ~ 0
 CAN+
 Text Label 4300 1450 0    50   ~ 0
 CAN-
-Text Label 3700 5850 2    50   ~ 0
+Text Label 3700 5250 2    50   ~ 0
 CAN+
-Text Label 3700 5950 2    50   ~ 0
+Text Label 3700 5350 2    50   ~ 0
 CAN-
 $Comp
 L Device:Fuse_Small F?
 U 1 1 5C584F9F
-P 1950 1450
-F 0 "F?" H 1950 1350 50  0000 C CNN
-F 1 "2.5A" H 1950 1250 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 1950 1450 50  0001 C CNN
-F 3 "~" H 1950 1450 50  0001 C CNN
-	1    1950 1450
+P 2000 1500
+F 0 "F?" H 2000 1400 50  0000 C CNN
+F 1 "2.5A" H 2000 1300 50  0000 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 2000 1500 50  0001 C CNN
+F 3 "~" H 2000 1500 50  0001 C CNN
+	1    2000 1500
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	1650 1450 1850 1450
-Connection ~ 1650 1450
+	1700 1500 1900 1500
+Connection ~ 1700 1500
 Wire Wire Line
-	2050 1450 2250 1450
+	2100 1500 2300 1500
 Text Label 6500 1900 2    50   ~ 0
 TEMP_1
 Text Label 6500 2000 2    50   ~ 0
@@ -869,4 +865,96 @@ Wire Wire Line
 	2100 4700 2400 4700
 Text Label 2400 4700 2    50   ~ 0
 TEMP_2
+Wire Wire Line
+	3400 5450 3500 5450
+Wire Wire Line
+	3400 5750 3500 5750
+$Comp
+L Device:C C?
+U 1 1 5C62DA6B
+P 1950 6550
+AR Path="/5C62DA6B" Ref="C?"  Part="1" 
+AR Path="/5C5EE841/5C62DA6B" Ref="C?"  Part="1" 
+F 0 "C?" H 2065 6596 50  0000 L CNN
+F 1 "470uF" H 2065 6505 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 1988 6400 50  0001 C CNN
+F 3 "~" H 1950 6550 50  0001 C CNN
+	1    1950 6550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C62DA87
+P 1950 6700
+AR Path="/5C62DA87" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C62DA87" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1950 6450 50  0001 C CNN
+F 1 "GND" H 1955 6527 50  0000 C CNN
+F 2 "" H 1950 6700 50  0001 C CNN
+F 3 "" H 1950 6700 50  0001 C CNN
+	1    1950 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C62DA9F
+P 1950 6400
+AR Path="/5C62DA9F" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C62DA9F" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 1950 6250 50  0001 C CNN
+F 1 "+12V" H 1965 6573 50  0000 C CNN
+F 2 "" H 1950 6400 50  0001 C CNN
+F 3 "" H 1950 6400 50  0001 C CNN
+	1    1950 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C62DAA5
+P 2400 6400
+AR Path="/5C62DAA5" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C62DAA5" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2400 6250 50  0001 C CNN
+F 1 "+12V" H 2415 6573 50  0000 C CNN
+F 2 "" H 2400 6400 50  0001 C CNN
+F 3 "" H 2400 6400 50  0001 C CNN
+	1    2400 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C62DA8D
+P 2400 6700
+AR Path="/5C62DA8D" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C62DA8D" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 2400 6450 50  0001 C CNN
+F 1 "GND" H 2405 6527 50  0000 C CNN
+F 2 "" H 2400 6700 50  0001 C CNN
+F 3 "" H 2400 6700 50  0001 C CNN
+	1    2400 6700
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5C62DA72
+P 2400 6550
+AR Path="/5C62DA72" Ref="C?"  Part="1" 
+AR Path="/5C5EE841/5C62DA72" Ref="C?"  Part="1" 
+F 0 "C?" H 2515 6596 50  0000 L CNN
+F 1 "470uF" H 2515 6505 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2438 6400 50  0001 C CNN
+F 3 "~" H 2400 6550 50  0001 C CNN
+	1    2400 6550
+	1    0    0    -1  
+$EndComp
+Wire Notes Line width 39 rgb(253, 0, 0)
+	550  550  2800 550 
+Wire Notes Line width 39 rgb(255, 0, 0)
+	2800 550  2800 1800
+Wire Notes Line width 39 rgb(255, 0, 0)
+	2800 1800 550  1800
+Wire Notes Line width 39 rgb(255, 0, 0)
+	550  1800 550  550 
+Text Notes 600  800  0    157  ~ 31
+HV Danger!
 $EndSCHEMATC
