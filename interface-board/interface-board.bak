@@ -14,39 +14,28 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Notes 2750 1050 2    50   ~ 0
-2.5A fuses give some \nheadroom, maybe \nshould change to 2A.
-$Comp
-L Device:Fuse_Small F?
-U 1 1 5C49093C
-P 2000 1350
-F 0 "F?" H 2000 1535 50  0000 C CNN
-F 1 "2.5A" H 2000 1444 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 2000 1350 50  0001 C CNN
-F 3 "~" H 2000 1350 50  0001 C CNN
-	1    2000 1350
-	1    0    0    -1  
-$EndComp
-Text Label 2300 1350 2    50   ~ 0
+Text Notes 2350 1250 2    50   ~ 0
+Fuses?
+Text Label 2100 1350 2    50   ~ 0
 HV+
-Text Label 2300 1500 2    50   ~ 0
+Text Label 2100 1500 2    50   ~ 0
 HV-
 $Comp
-L Connector_Generic:Conn_01x14 J?
+L Connector_Generic:Conn_01x14 J5
 U 1 1 5C49DE86
 P 900 6850
-F 0 "J?" H 900 7550 50  0000 C CNN
+F 0 "J5" H 900 7550 50  0000 C CNN
 F 1 "AMPSEAL_MAIN" V 1000 6850 50  0000 C CNN
-F 2 "" H 900 6850 50  0001 C CNN
+F 2 "CustomFootprints:AMPSEAL 776266-1 14-PIN" H 900 6850 50  0001 C CNN
 F 3 "~" H 900 6850 50  0001 C CNN
 	1    900  6850
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR06
 U 1 1 5C49DC58
 P 1200 5150
-F 0 "#PWR?" H 1200 5000 50  0001 C CNN
+F 0 "#PWR06" H 1200 5000 50  0001 C CNN
 F 1 "+12V" H 1215 5323 50  0000 C CNN
 F 2 "" H 1200 5150 50  0001 C CNN
 F 3 "" H 1200 5150 50  0001 C CNN
@@ -54,10 +43,10 @@ F 3 "" H 1200 5150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR05
 U 1 1 5C512F6B
 P 1150 7550
-F 0 "#PWR?" H 1150 7300 50  0001 C CNN
+F 0 "#PWR05" H 1150 7300 50  0001 C CNN
 F 1 "GND" V 1155 7422 50  0000 R CNN
 F 2 "" H 1150 7550 50  0001 C CNN
 F 3 "" H 1150 7550 50  0001 C CNN
@@ -79,10 +68,10 @@ FANOUT2
 Text Label 1450 6450 2    50   ~ 0
 FANOUT3
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR07
 U 1 1 5C5AF86A
 P 1200 6550
-F 0 "#PWR?" H 1200 6400 50  0001 C CNN
+F 0 "#PWR07" H 1200 6400 50  0001 C CNN
 F 1 "+5V" V 1200 6650 50  0000 L CNN
 F 2 "" H 1200 6550 50  0001 C CNN
 F 3 "" H 1200 6550 50  0001 C CNN
@@ -104,45 +93,45 @@ Wire Wire Line
 Wire Wire Line
 	1100 7050 1450 7050
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP1
 U 1 1 5C6A6FBB
 P 2200 7150
-F 0 "JP?" H 2500 7150 50  0000 C CNN
+F 0 "JP1" H 2500 7150 50  0000 C CNN
 F 1 "Jumper" H 2750 7150 50  0000 C CNN
-F 2 "" H 2200 7150 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2200 7150 50  0001 C CNN
 F 3 "~" H 2200 7150 50  0001 C CNN
 	1    2200 7150
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP2
 U 1 1 5C6A7073
 P 2200 7250
-F 0 "JP?" H 2500 7250 50  0000 C CNN
+F 0 "JP2" H 2500 7250 50  0000 C CNN
 F 1 "Jumper" H 2750 7250 50  0000 C CNN
-F 2 "" H 2200 7250 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2200 7250 50  0001 C CNN
 F 3 "~" H 2200 7250 50  0001 C CNN
 	1    2200 7250
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP3
 U 1 1 5C6A712D
 P 2200 7350
-F 0 "JP?" H 2500 7350 50  0000 C CNN
+F 0 "JP3" H 2500 7350 50  0000 C CNN
 F 1 "Jumper" H 2750 7350 50  0000 C CNN
-F 2 "" H 2200 7350 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2200 7350 50  0001 C CNN
 F 3 "~" H 2200 7350 50  0001 C CNN
 	1    2200 7350
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP4
 U 1 1 5C6A71E9
 P 2200 7450
-F 0 "JP?" H 2500 7450 50  0000 C CNN
+F 0 "JP4" H 2500 7450 50  0000 C CNN
 F 1 "Jumper" H 2750 7450 50  0000 C CNN
-F 2 "" H 2200 7450 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2200 7450 50  0001 C CNN
 F 3 "~" H 2200 7450 50  0001 C CNN
 	1    2200 7450
 	1    0    0    -1  
@@ -164,10 +153,10 @@ Wire Wire Line
 Wire Wire Line
 	2400 7150 2400 7250
 $Comp
-L power:GND #PWR?
+L power:GND #PWR017
 U 1 1 5C771CC6
 P 2400 7500
-F 0 "#PWR?" H 2400 7250 50  0001 C CNN
+F 0 "#PWR017" H 2400 7250 50  0001 C CNN
 F 1 "GND" H 2405 7327 50  0000 C CNN
 F 2 "" H 2400 7500 50  0001 C CNN
 F 3 "" H 2400 7500 50  0001 C CNN
@@ -178,21 +167,21 @@ Wire Wire Line
 	2400 7500 2400 7450
 Connection ~ 2400 7450
 $Comp
-L Connector_Generic:Conn_01x08 J?
+L Connector_Generic:Conn_01x08 J4
 U 1 1 5C4D8B07
 P 900 5550
-F 0 "J?" H 900 5950 50  0000 C CNN
+F 0 "J4" H 900 5950 50  0000 C CNN
 F 1 "AMPSEAL_PWR" V 1000 5550 50  0000 C CNN
-F 2 "" H 900 5550 50  0001 C CNN
+F 2 "Connector_JST:JST_ZE_B08B-ZESK-1D_1x08_P1.50mm_Vertical" H 900 5550 50  0001 C CNN
 F 3 "~" H 900 5550 50  0001 C CNN
 	1    900  5550
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR08
 U 1 1 5C4B6D8C
 P 1400 5800
-F 0 "#PWR?" H 1400 5550 50  0001 C CNN
+F 0 "#PWR08" H 1400 5550 50  0001 C CNN
 F 1 "GND" V 1405 5672 50  0000 R CNN
 F 2 "" H 1400 5800 50  0001 C CNN
 F 3 "" H 1400 5800 50  0001 C CNN
@@ -238,12 +227,12 @@ CAN+
 Text Label 1450 6850 2    50   ~ 0
 CAN-
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J10
 U 1 1 5C6BA890
 P 1850 7350
-F 0 "J?" H 1850 7650 50  0000 C CNN
+F 0 "J10" H 1850 7650 50  0000 C CNN
 F 1 "AUX" H 1850 7550 50  0000 C CNN
-F 2 "" H 1850 7350 50  0001 C CNN
+F 2 "Connector_Wago:Wago_734-134_1x04_P3.50mm_Vertical" H 1850 7350 50  0001 C CNN
 F 3 "~" H 1850 7350 50  0001 C CNN
 	1    1850 7350
 	-1   0    0    1   
@@ -261,34 +250,34 @@ Connection ~ 2050 7150
 Wire Wire Line
 	1100 7150 2050 7150
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J7
 U 1 1 5C7C388D
 P 950 1500
-F 0 "J?" H 1100 1400 50  0000 C CNN
+F 0 "J7" H 1100 1400 50  0000 C CNN
 F 1 "HV-" H 1200 1500 50  0000 C CNN
-F 2 "" H 950 1500 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 950 1500 50  0001 C CNN
 F 3 "~" H 950 1500 50  0001 C CNN
 	1    950  1500
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x01 J?
+L Connector_Generic:Conn_01x01 J6
 U 1 1 5C83C6D2
 P 950 1350
-F 0 "J?" H 950 1250 50  0000 C CNN
+F 0 "J6" H 950 1250 50  0000 C CNN
 F 1 "HV+" H 1200 1350 50  0000 C CNN
-F 2 "" H 950 1350 50  0001 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 950 1350 50  0001 C CNN
 F 3 "~" H 950 1350 50  0001 C CNN
 	1    950  1350
 	-1   0    0    1   
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J8
 U 1 1 5C871653
 P 1250 1100
-F 0 "J?" V 1216 912 50  0000 R CNN
+F 0 "J8" V 1216 912 50  0000 R CNN
 F 1 "IMD" V 1350 1100 50  0000 R CNN
-F 2 "" H 1250 1100 50  0001 C CNN
+F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_2-G-5.08_1x02_P5.08mm_Vertical" H 1250 1100 50  0001 C CNN
 F 3 "~" H 1250 1100 50  0001 C CNN
 	1    1250 1100
 	0    -1   -1   0   
@@ -301,8 +290,6 @@ Wire Wire Line
 	1350 1300 1350 1500
 Wire Wire Line
 	1350 1500 1150 1500
-Wire Wire Line
-	2300 1350 2100 1350
 Connection ~ 1250 1350
 $Sheet
 S 4600 1250 1600 900 
@@ -373,15 +360,15 @@ F1 "file5C4BAF40.sch" 50
 F2 "IN" I L 8150 2650 50 
 F3 "OUT" I L 8150 2550 50 
 $EndSheet
-Text Notes 8050 2350 0    50   ~ 0
+Text Notes 8150 2350 0    50   ~ 0
 Global nets connected to this sheet: \nGND, 5V
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J9
 U 1 1 5C4C2740
 P 1600 1100
-F 0 "J?" V 1566 912 50  0000 R CNN
+F 0 "J9" V 1566 912 50  0000 R CNN
 F 1 "TSMP" V 1700 1150 50  0000 R CNN
-F 2 "" H 1600 1100 50  0001 C CNN
+F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_2-G-5.08_1x02_P5.08mm_Vertical" H 1600 1100 50  0001 C CNN
 F 3 "~" H 1600 1100 50  0001 C CNN
 	1    1600 1100
 	0    -1   -1   0   
@@ -391,8 +378,6 @@ Wire Wire Line
 Wire Wire Line
 	1600 1300 1600 1350
 Connection ~ 1600 1350
-Wire Wire Line
-	1600 1350 1900 1350
 Wire Wire Line
 	1700 1300 1700 1500
 Wire Wire Line
@@ -433,12 +418,12 @@ DC_DC_FAULT
 Text Label 6250 2550 0    50   ~ 0
 SHDN_LOOP_OUT
 $Comp
-L Device:Fuse F?
+L Device:Fuse F4
 U 1 1 5C4F1BA8
 P 6650 2650
-F 0 "F?" V 6750 2650 50  0000 C CNN
+F 0 "F4" V 6750 2650 50  0000 C CNN
 F 1 "20A" V 6850 2650 50  0000 C CNN
-F 2 "" V 6580 2650 50  0001 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" V 6580 2650 50  0001 C CNN
 F 3 "~" H 6650 2650 50  0001 C CNN
 	1    6650 2650
 	0    1    1    0   
@@ -446,12 +431,12 @@ $EndComp
 Wire Wire Line
 	6200 2650 6500 2650
 $Comp
-L Jumper:SolderJumper_2_Open JP?
+L Jumper:SolderJumper_2_Open JP5
 U 1 1 5C4F846B
 P 7100 2600
-F 0 "JP?" V 6900 2500 50  0000 L CNN
+F 0 "JP5" V 6900 2500 50  0000 L CNN
 F 1 "SolderJumper_2_Open" V 6750 2500 50  0000 L CNN
-F 2 "" H 7100 2600 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 7100 2600 50  0001 C CNN
 F 3 "~" H 7100 2600 50  0001 C CNN
 	1    7100 2600
 	0    1    1    0   
@@ -483,23 +468,23 @@ Connection ~ 7100 2750
 Wire Wire Line
 	7100 2750 7250 2750
 $Comp
-L Jumper:SolderJumper_2_Bridged JP?
+L Jumper:SolderJumper_2_Bridged JP6
 U 1 1 5C4FC42F
 P 7650 2550
-F 0 "JP?" H 7650 2755 50  0000 C CNN
+F 0 "JP6" H 7650 2755 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 7650 2664 50  0000 C CNN
-F 2 "" H 7650 2550 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7650 2550 50  0001 C CNN
 F 3 "~" H 7650 2550 50  0001 C CNN
 	1    7650 2550
 	1    0    0    -1  
 $EndComp
 $Comp
-L Jumper:SolderJumper_2_Bridged JP?
+L Jumper:SolderJumper_2_Bridged JP7
 U 1 1 5C4FC4FB
 P 7650 2650
-F 0 "JP?" H 7650 2550 50  0000 C CNN
+F 0 "JP7" H 7650 2550 50  0000 C CNN
 F 1 "SolderJumper_2_Bridged" H 7650 2500 50  0000 C CNN
-F 2 "" H 7650 2650 50  0001 C CNN
+F 2 "Jumper:SolderJumper-2_P1.3mm_Bridged_RoundedPad1.0x1.5mm" H 7650 2650 50  0001 C CNN
 F 3 "~" H 7650 2650 50  0001 C CNN
 	1    7650 2650
 	1    0    0    -1  
@@ -532,12 +517,12 @@ Wire Wire Line
 	1200 5450 1100 5450
 Connection ~ 1200 5350
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J3
 U 1 1 5C50D03B
 P 900 4600
-F 0 "J?" H 900 4700 50  0000 C CNN
+F 0 "J3" H 900 4700 50  0000 C CNN
 F 1 "CASEFAN2" V 1050 4550 50  0000 C CNN
-F 2 "" H 900 4600 50  0001 C CNN
+F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 900 4600 50  0001 C CNN
 F 3 "~" H 900 4600 50  0001 C CNN
 	1    900  4600
 	-1   0    0    -1  
@@ -549,10 +534,10 @@ Wire Wire Line
 Text Label 1450 4700 2    50   ~ 0
 FANOUT0
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR04
 U 1 1 5C510DD6
 P 1150 4550
-F 0 "#PWR?" H 1150 4400 50  0001 C CNN
+F 0 "#PWR04" H 1150 4400 50  0001 C CNN
 F 1 "+12V" H 1165 4723 50  0000 C CNN
 F 2 "" H 1150 4550 50  0001 C CNN
 F 3 "" H 1150 4550 50  0001 C CNN
@@ -564,12 +549,12 @@ Wire Wire Line
 Wire Wire Line
 	1150 4600 1100 4600
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J2
 U 1 1 5C51F28D
 P 900 4100
-F 0 "J?" H 900 4200 50  0000 C CNN
+F 0 "J2" H 900 4200 50  0000 C CNN
 F 1 "CASEFAN1" V 1050 4050 50  0000 C CNN
-F 2 "" H 900 4100 50  0001 C CNN
+F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 900 4100 50  0001 C CNN
 F 3 "~" H 900 4100 50  0001 C CNN
 	1    900  4100
 	-1   0    0    -1  
@@ -579,10 +564,10 @@ Wire Wire Line
 Text Label 1450 4200 2    50   ~ 0
 FANOUT0
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR03
 U 1 1 5C51F296
 P 1150 4050
-F 0 "#PWR?" H 1150 3900 50  0001 C CNN
+F 0 "#PWR03" H 1150 3900 50  0001 C CNN
 F 1 "+12V" H 1165 4223 50  0000 C CNN
 F 2 "" H 1150 4050 50  0001 C CNN
 F 3 "" H 1150 4050 50  0001 C CNN
@@ -594,12 +579,12 @@ Wire Wire Line
 Wire Wire Line
 	1150 4100 1100 4100
 $Comp
-L Device:Fuse F?
+L Device:Fuse F3
 U 1 1 5C52E25F
 P 6400 2900
-F 0 "F?" V 6200 2900 50  0000 C CNN
+F 0 "F3" V 6200 2900 50  0000 C CNN
 F 1 "1A" V 6300 2900 50  0000 C CNN
-F 2 "" V 6330 2900 50  0001 C CNN
+F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" V 6330 2900 50  0001 C CNN
 F 3 "~" H 6400 2900 50  0001 C CNN
 	1    6400 2900
 	0    1    1    0   
@@ -607,10 +592,10 @@ $EndComp
 Wire Wire Line
 	6200 2900 6250 2900
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR020
 U 1 1 5C530767
 P 6800 2900
-F 0 "#PWR?" H 6800 2750 50  0001 C CNN
+F 0 "#PWR020" H 6800 2750 50  0001 C CNN
 F 1 "+12V" H 6815 3073 50  0000 C CNN
 F 2 "" H 6800 2900 50  0001 C CNN
 F 3 "" H 6800 2900 50  0001 C CNN
@@ -620,10 +605,10 @@ $EndComp
 Wire Wire Line
 	6800 2900 6550 2900
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR019
 U 1 1 5C5334AC
 P 6400 3000
-F 0 "#PWR?" H 6400 2850 50  0001 C CNN
+F 0 "#PWR019" H 6400 2850 50  0001 C CNN
 F 1 "+5V" V 6415 3128 50  0000 L CNN
 F 2 "" H 6400 3000 50  0001 C CNN
 F 3 "" H 6400 3000 50  0001 C CNN
@@ -633,21 +618,21 @@ $EndComp
 Wire Wire Line
 	6400 3000 6200 3000
 $Comp
-L Connector_Generic:Conn_01x05 J?
+L Connector_Generic:Conn_01x05 J1
 U 1 1 5C5369F5
 P 900 3250
-F 0 "J?" H 900 2950 50  0000 C CNN
+F 0 "J1" H 900 2950 50  0000 C CNN
 F 1 "HECS" V 1050 3250 50  0000 C CNN
-F 2 "" H 900 3250 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 900 3250 50  0001 C CNN
 F 3 "~" H 900 3250 50  0001 C CNN
 	1    900  3250
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR01
 U 1 1 5C536CD3
 P 1150 3350
-F 0 "#PWR?" H 1150 3200 50  0001 C CNN
+F 0 "#PWR01" H 1150 3200 50  0001 C CNN
 F 1 "+5V" V 1165 3478 50  0000 L CNN
 F 2 "" H 1150 3350 50  0001 C CNN
 F 3 "" H 1150 3350 50  0001 C CNN
@@ -657,10 +642,10 @@ $EndComp
 Wire Wire Line
 	1150 3350 1100 3350
 $Comp
-L power:GND #PWR?
+L power:GND #PWR02
 U 1 1 5C539587
 P 1150 3500
-F 0 "#PWR?" H 1150 3250 50  0001 C CNN
+F 0 "#PWR02" H 1150 3250 50  0001 C CNN
 F 1 "GND" H 1155 3327 50  0000 C CNN
 F 2 "" H 1150 3500 50  0001 C CNN
 F 3 "" H 1150 3500 50  0001 C CNN
@@ -684,21 +669,21 @@ IMD_AN2
 Text Label 1450 3250 2    50   ~ 0
 IMD_AN3
 $Comp
-L Connector_Generic:Conn_01x04 J?
+L Connector_Generic:Conn_01x04 J11
 U 1 1 5C546232
 P 1900 3300
-F 0 "J?" H 1900 3000 50  0000 C CNN
+F 0 "J11" H 1900 3000 50  0000 C CNN
 F 1 "UART" V 2000 3250 50  0000 C CNN
-F 2 "" H 1900 3300 50  0001 C CNN
+F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 1900 3300 50  0001 C CNN
 F 3 "~" H 1900 3300 50  0001 C CNN
 	1    1900 3300
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR012
 U 1 1 5C549431
 P 2150 3200
-F 0 "#PWR?" H 2150 2950 50  0001 C CNN
+F 0 "#PWR012" H 2150 2950 50  0001 C CNN
 F 1 "GND" V 2155 3072 50  0000 R CNN
 F 2 "" H 2150 3200 50  0001 C CNN
 F 3 "" H 2150 3200 50  0001 C CNN
@@ -708,10 +693,10 @@ $EndComp
 Wire Wire Line
 	2150 3200 2100 3200
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR011
 U 1 1 5C54C53B
 P 2150 3050
-F 0 "#PWR?" H 2150 2900 50  0001 C CNN
+F 0 "#PWR011" H 2150 2900 50  0001 C CNN
 F 1 "+5V" H 2165 3223 50  0000 C CNN
 F 2 "" H 2150 3050 50  0001 C CNN
 F 3 "" H 2150 3050 50  0001 C CNN
@@ -739,36 +724,36 @@ UART_RX
 Text Label 2450 3300 2    50   ~ 0
 UART_TX
 $Comp
-L Connector:RJ45 J?
+L Connector:RJ45 J14
 U 1 1 5C565B8C
-P 3000 6150
-F 0 "J?" H 2670 6154 50  0000 R CNN
-F 1 "RJ45" H 2670 6245 50  0000 R CNN
-F 2 "" V 3000 6175 50  0001 C CNN
-F 3 "~" V 3000 6175 50  0001 C CNN
-	1    3000 6150
+P 3000 5550
+F 0 "J14" H 2670 5554 50  0000 R CNN
+F 1 "RJ45" H 2670 5645 50  0000 R CNN
+F 2 "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal" V 3000 5575 50  0001 C CNN
+F 3 "~" V 3000 5575 50  0001 C CNN
+	1    3000 5550
 	1    0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR018
 U 1 1 5C569DF7
-P 3500 6700
-F 0 "#PWR?" H 3500 6450 50  0001 C CNN
-F 1 "GND" H 3505 6527 50  0000 C CNN
-F 2 "" H 3500 6700 50  0001 C CNN
-F 3 "" H 3500 6700 50  0001 C CNN
-	1    3500 6700
+P 3500 6100
+F 0 "#PWR018" H 3500 5850 50  0001 C CNN
+F 1 "GND" H 3505 5927 50  0000 C CNN
+F 2 "" H 3500 6100 50  0001 C CNN
+F 3 "" H 3500 6100 50  0001 C CNN
+	1    3500 6100
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3500 6700 3500 6350
+	3500 6100 3500 5750
 Wire Wire Line
-	3500 6350 3500 6050
-Connection ~ 3500 6350
+	3500 5750 3500 5450
+Connection ~ 3500 5750
 Wire Wire Line
-	3400 5850 3700 5850
+	3400 5250 3700 5250
 Wire Wire Line
-	3400 5950 3700 5950
+	3400 5350 3700 5350
 Wire Wire Line
 	4600 1350 4300 1350
 Wire Wire Line
@@ -777,26 +762,11 @@ Text Label 4300 1350 0    50   ~ 0
 CAN+
 Text Label 4300 1450 0    50   ~ 0
 CAN-
-Text Label 3700 5850 2    50   ~ 0
+Text Label 3700 5250 2    50   ~ 0
 CAN+
-Text Label 3700 5950 2    50   ~ 0
+Text Label 3700 5350 2    50   ~ 0
 CAN-
-$Comp
-L Device:Fuse_Small F?
-U 1 1 5C584F9F
-P 2000 1500
-F 0 "F?" H 2000 1400 50  0000 C CNN
-F 1 "2.5A" H 2000 1300 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" H 2000 1500 50  0001 C CNN
-F 3 "~" H 2000 1500 50  0001 C CNN
-	1    2000 1500
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1700 1500 1900 1500
 Connection ~ 1700 1500
-Wire Wire Line
-	2100 1500 2300 1500
 Text Label 6500 1900 2    50   ~ 0
 TEMP_1
 Text Label 6500 2000 2    50   ~ 0
@@ -806,32 +776,32 @@ Wire Wire Line
 Wire Wire Line
 	6200 2000 6500 2000
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J12
 U 1 1 5C5BFA90
 P 1900 4100
-F 0 "J?" H 1900 4200 50  0000 C CNN
+F 0 "J12" H 1900 4200 50  0000 C CNN
 F 1 "NTC1" V 2050 4050 50  0000 C CNN
-F 2 "" H 1900 4100 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 1900 4100 50  0001 C CNN
 F 3 "~" H 1900 4100 50  0001 C CNN
 	1    1900 4100
 	-1   0    0    -1  
 $EndComp
 $Comp
-L Connector_Generic:Conn_01x02 J?
+L Connector_Generic:Conn_01x02 J13
 U 1 1 5C5BFB82
 P 1900 4600
-F 0 "J?" H 1900 4700 50  0000 C CNN
+F 0 "J13" H 1900 4700 50  0000 C CNN
 F 1 "NTC1" V 2050 4550 50  0000 C CNN
-F 2 "" H 1900 4600 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 1900 4600 50  0001 C CNN
 F 3 "~" H 1900 4600 50  0001 C CNN
 	1    1900 4600
 	-1   0    0    -1  
 $EndComp
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR013
 U 1 1 5C5BFC27
 P 2150 4050
-F 0 "#PWR?" H 2150 3900 50  0001 C CNN
+F 0 "#PWR013" H 2150 3900 50  0001 C CNN
 F 1 "+5V" H 2165 4223 50  0000 C CNN
 F 2 "" H 2150 4050 50  0001 C CNN
 F 3 "" H 2150 4050 50  0001 C CNN
@@ -843,10 +813,10 @@ Wire Wire Line
 Wire Wire Line
 	2150 4100 2100 4100
 $Comp
-L power:+5V #PWR?
+L power:+5V #PWR014
 U 1 1 5C5C4219
 P 2150 4550
-F 0 "#PWR?" H 2150 4400 50  0001 C CNN
+F 0 "#PWR014" H 2150 4400 50  0001 C CNN
 F 1 "+5V" H 2165 4723 50  0000 C CNN
 F 2 "" H 2150 4550 50  0001 C CNN
 F 3 "" H 2150 4550 50  0001 C CNN
@@ -866,85 +836,85 @@ Wire Wire Line
 Text Label 2400 4700 2    50   ~ 0
 TEMP_2
 Wire Wire Line
-	3400 6050 3500 6050
+	3400 5450 3500 5450
 Wire Wire Line
-	3400 6350 3500 6350
+	3400 5750 3500 5750
 $Comp
-L Device:C C?
+L Device:C C1
 U 1 1 5C62DA6B
-P 2750 4350
-AR Path="/5C62DA6B" Ref="C?"  Part="1" 
+P 1950 6550
+AR Path="/5C62DA6B" Ref="C1"  Part="1" 
 AR Path="/5C5EE841/5C62DA6B" Ref="C?"  Part="1" 
-F 0 "C?" H 2865 4396 50  0000 L CNN
-F 1 "470uF" H 2865 4305 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2788 4200 50  0001 C CNN
-F 3 "~" H 2750 4350 50  0001 C CNN
-	1    2750 4350
+F 0 "C1" H 2065 6596 50  0000 L CNN
+F 1 "470uF" H 2065 6505 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 1988 6400 50  0001 C CNN
+F 3 "~" H 1950 6550 50  0001 C CNN
+	1    1950 6550
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR010
 U 1 1 5C62DA87
-P 2750 4500
-AR Path="/5C62DA87" Ref="#PWR?"  Part="1" 
+P 1950 6700
+AR Path="/5C62DA87" Ref="#PWR010"  Part="1" 
 AR Path="/5C5EE841/5C62DA87" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2750 4250 50  0001 C CNN
-F 1 "GND" H 2755 4327 50  0000 C CNN
-F 2 "" H 2750 4500 50  0001 C CNN
-F 3 "" H 2750 4500 50  0001 C CNN
-	1    2750 4500
+F 0 "#PWR010" H 1950 6450 50  0001 C CNN
+F 1 "GND" H 1955 6527 50  0000 C CNN
+F 2 "" H 1950 6700 50  0001 C CNN
+F 3 "" H 1950 6700 50  0001 C CNN
+	1    1950 6700
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR09
 U 1 1 5C62DA9F
-P 2750 4200
-AR Path="/5C62DA9F" Ref="#PWR?"  Part="1" 
+P 1950 6400
+AR Path="/5C62DA9F" Ref="#PWR09"  Part="1" 
 AR Path="/5C5EE841/5C62DA9F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 2750 4050 50  0001 C CNN
-F 1 "+12V" H 2765 4373 50  0000 C CNN
-F 2 "" H 2750 4200 50  0001 C CNN
-F 3 "" H 2750 4200 50  0001 C CNN
-	1    2750 4200
+F 0 "#PWR09" H 1950 6250 50  0001 C CNN
+F 1 "+12V" H 1965 6573 50  0000 C CNN
+F 2 "" H 1950 6400 50  0001 C CNN
+F 3 "" H 1950 6400 50  0001 C CNN
+	1    1950 6400
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR015
 U 1 1 5C62DAA5
-P 3200 4200
-AR Path="/5C62DAA5" Ref="#PWR?"  Part="1" 
+P 2400 6400
+AR Path="/5C62DAA5" Ref="#PWR015"  Part="1" 
 AR Path="/5C5EE841/5C62DAA5" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3200 4050 50  0001 C CNN
-F 1 "+12V" H 3215 4373 50  0000 C CNN
-F 2 "" H 3200 4200 50  0001 C CNN
-F 3 "" H 3200 4200 50  0001 C CNN
-	1    3200 4200
+F 0 "#PWR015" H 2400 6250 50  0001 C CNN
+F 1 "+12V" H 2415 6573 50  0000 C CNN
+F 2 "" H 2400 6400 50  0001 C CNN
+F 3 "" H 2400 6400 50  0001 C CNN
+	1    2400 6400
 	1    0    0    -1  
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR016
 U 1 1 5C62DA8D
-P 3200 4500
-AR Path="/5C62DA8D" Ref="#PWR?"  Part="1" 
+P 2400 6700
+AR Path="/5C62DA8D" Ref="#PWR016"  Part="1" 
 AR Path="/5C5EE841/5C62DA8D" Ref="#PWR?"  Part="1" 
-F 0 "#PWR?" H 3200 4250 50  0001 C CNN
-F 1 "GND" H 3205 4327 50  0000 C CNN
-F 2 "" H 3200 4500 50  0001 C CNN
-F 3 "" H 3200 4500 50  0001 C CNN
-	1    3200 4500
+F 0 "#PWR016" H 2400 6450 50  0001 C CNN
+F 1 "GND" H 2405 6527 50  0000 C CNN
+F 2 "" H 2400 6700 50  0001 C CNN
+F 3 "" H 2400 6700 50  0001 C CNN
+	1    2400 6700
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:C C?
+L Device:C C2
 U 1 1 5C62DA72
-P 3200 4350
-AR Path="/5C62DA72" Ref="C?"  Part="1" 
+P 2400 6550
+AR Path="/5C62DA72" Ref="C2"  Part="1" 
 AR Path="/5C5EE841/5C62DA72" Ref="C?"  Part="1" 
-F 0 "C?" H 3315 4396 50  0000 L CNN
-F 1 "470uF" H 3315 4305 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 3238 4200 50  0001 C CNN
-F 3 "~" H 3200 4350 50  0001 C CNN
-	1    3200 4350
+F 0 "C2" H 2515 6596 50  0000 L CNN
+F 1 "470uF" H 2515 6505 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2438 6400 50  0001 C CNN
+F 3 "~" H 2400 6550 50  0001 C CNN
+	1    2400 6550
 	1    0    0    -1  
 $EndComp
 Wire Notes Line width 39 rgb(253, 0, 0)
@@ -957,4 +927,8 @@ Wire Notes Line width 39 rgb(255, 0, 0)
 	550  1800 550  550 
 Text Notes 600  800  0    157  ~ 31
 HV Danger!
+Wire Wire Line
+	1600 1350 2100 1350
+Wire Wire Line
+	1700 1500 2100 1500
 $EndSCHEMATC
