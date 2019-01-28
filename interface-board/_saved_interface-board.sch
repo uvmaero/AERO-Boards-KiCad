@@ -122,7 +122,7 @@ CAN+
 Text Label 1350 6550 2    50   ~ 0
 CAN-
 $Comp
-L Connector_Generic:Conn_01x03 J10
+L Connector_Generic:Conn_01x02 J10
 U 1 1 5C6BA890
 P 1750 7150
 F 0 "J10" H 1750 7450 50  0000 C CNN
@@ -870,21 +870,21 @@ $EndComp
 Wire Wire Line
 	1150 6750 1000 6750
 $Comp
-L Connector_Generic:Conn_01x05 J?
+L Connector_Generic:Conn_01x05 J4
 U 1 1 5C4FC040
 P 2750 5600
-F 0 "J?" H 2750 5300 50  0000 C CNN
+F 0 "J4" H 2750 5300 50  0000 C CNN
 F 1 "Bender-LV" V 2850 5550 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2750 5600 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 2750 5600 50  0001 C CNN
 F 3 "~" H 2750 5600 50  0001 C CNN
 	1    2750 5600
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0105
 U 1 1 5C509587
 P 3000 5700
-F 0 "#PWR?" H 3000 5450 50  0001 C CNN
+F 0 "#PWR0105" H 3000 5450 50  0001 C CNN
 F 1 "GND" V 3005 5572 50  0000 R CNN
 F 2 "" H 3000 5700 50  0001 C CNN
 F 3 "" H 3000 5700 50  0001 C CNN
@@ -903,10 +903,10 @@ Wire Wire Line
 Text Label 3250 5500 2    50   ~ 0
 IMD_OK
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0106
 U 1 1 5C51B056
 P 3000 5350
-F 0 "#PWR?" H 3000 5200 50  0001 C CNN
+F 0 "#PWR0106" H 3000 5200 50  0001 C CNN
 F 1 "+12V" H 3015 5523 50  0000 C CNN
 F 2 "" H 3000 5350 50  0001 C CNN
 F 3 "" H 3000 5350 50  0001 C CNN

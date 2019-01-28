@@ -606,37 +606,6 @@ Text Label 2450 3400 2    50   ~ 0
 UART_RX
 Text Label 2450 3300 2    50   ~ 0
 UART_TX
-$Comp
-L Connector:RJ45 J14
-U 1 1 5C565B8C
-P 3000 5550
-F 0 "J14" H 2670 5554 50  0000 R CNN
-F 1 "RJ45" H 2670 5645 50  0000 R CNN
-F 2 "Connector_RJ:RJ45_Amphenol_54602-x08_Horizontal" V 3000 5575 50  0001 C CNN
-F 3 "~" V 3000 5575 50  0001 C CNN
-	1    3000 5550
-	1    0    0    1   
-$EndComp
-$Comp
-L power:GND #PWR018
-U 1 1 5C569DF7
-P 3500 6100
-F 0 "#PWR018" H 3500 5850 50  0001 C CNN
-F 1 "GND" H 3505 5927 50  0000 C CNN
-F 2 "" H 3500 6100 50  0001 C CNN
-F 3 "" H 3500 6100 50  0001 C CNN
-	1    3500 6100
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	3500 6100 3500 5750
-Wire Wire Line
-	3500 5750 3500 5450
-Connection ~ 3500 5750
-Wire Wire Line
-	3400 5250 3700 5250
-Wire Wire Line
-	3400 5350 3700 5350
 Wire Wire Line
 	4600 1350 4300 1350
 Wire Wire Line
@@ -644,10 +613,6 @@ Wire Wire Line
 Text Label 4300 1350 0    50   ~ 0
 CAN+
 Text Label 4300 1450 0    50   ~ 0
-CAN-
-Text Label 3700 5250 2    50   ~ 0
-CAN+
-Text Label 3700 5350 2    50   ~ 0
 CAN-
 Connection ~ 1700 1500
 Text Label 6500 1900 2    50   ~ 0
@@ -718,10 +683,6 @@ Wire Wire Line
 	2100 4700 2400 4700
 Text Label 2400 4700 2    50   ~ 0
 TEMP_2
-Wire Wire Line
-	3400 5450 3500 5450
-Wire Wire Line
-	3400 5750 3500 5750
 $Comp
 L Device:C C1
 U 1 1 5C62DA6B
@@ -908,4 +869,52 @@ F 3 "" H 1150 6750 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	1150 6750 1000 6750
+$Comp
+L Connector_Generic:Conn_01x05 J4
+U 1 1 5C4FC040
+P 2750 5600
+F 0 "J4" H 2750 5300 50  0000 C CNN
+F 1 "Bender-LV" V 2850 5550 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 2750 5600 50  0001 C CNN
+F 3 "~" H 2750 5600 50  0001 C CNN
+	1    2750 5600
+	-1   0    0    1   
+$EndComp
+$Comp
+L power:GND #PWR0105
+U 1 1 5C509587
+P 3000 5700
+F 0 "#PWR0105" H 3000 5450 50  0001 C CNN
+F 1 "GND" V 3005 5572 50  0000 R CNN
+F 2 "" H 3000 5700 50  0001 C CNN
+F 3 "" H 3000 5700 50  0001 C CNN
+	1    3000 5700
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	2950 5600 2950 5700
+Connection ~ 2950 5700
+Wire Wire Line
+	2950 5700 2950 5800
+Wire Wire Line
+	2950 5700 3000 5700
+Wire Wire Line
+	2950 5500 3250 5500
+Text Label 3250 5500 2    50   ~ 0
+IMD_OK
+$Comp
+L power:+12V #PWR0106
+U 1 1 5C51B056
+P 3000 5350
+F 0 "#PWR0106" H 3000 5200 50  0001 C CNN
+F 1 "+12V" H 3015 5523 50  0000 C CNN
+F 2 "" H 3000 5350 50  0001 C CNN
+F 3 "" H 3000 5350 50  0001 C CNN
+	1    3000 5350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3000 5350 3000 5400
+Wire Wire Line
+	3000 5400 2950 5400
 $EndSCHEMATC
