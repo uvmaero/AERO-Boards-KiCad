@@ -1,5 +1,4 @@
 EESchema Schematic File Version 4
-LIBS:interface-board-cache
 EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
@@ -62,24 +61,9 @@ F 3 "~" H 2100 7150 50  0001 C CNN
 	1    2100 7150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP4
-U 1 1 5C6A71E9
-P 2100 7250
-F 0 "JP4" H 2400 7250 50  0000 C CNN
-F 1 "Jumper" H 2650 7250 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2100 7250 50  0001 C CNN
-F 3 "~" H 2100 7250 50  0001 C CNN
-	1    2100 7250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 7250 2250 7250
 Wire Wire Line
 	2250 7150 2300 7150
 Connection ~ 2300 7150
-Wire Wire Line
-	2300 7150 2300 7250
 Wire Wire Line
 	2250 7050 2300 7050
 Wire Wire Line
@@ -95,9 +79,6 @@ F 3 "" H 2300 7300 50  0001 C CNN
 	1    2300 7300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2300 7300 2300 7250
-Connection ~ 2300 7250
 $Comp
 L power:GND #PWR08
 U 1 1 5C4B6D8C
@@ -122,7 +103,7 @@ CAN+
 Text Label 1350 6550 2    50   ~ 0
 CAN-
 $Comp
-L Connector_Generic:Conn_01x03 J10
+L Connector_Generic:Conn_01x02 J10
 U 1 1 5C6BA890
 P 1750 7150
 F 0 "J10" H 1750 7450 50  0000 C CNN
@@ -135,9 +116,6 @@ $EndComp
 Connection ~ 1950 7150
 Wire Wire Line
 	1000 7150 1950 7150
-Connection ~ 1950 7250
-Wire Wire Line
-	1000 7250 1950 7250
 Connection ~ 1950 7050
 Wire Wire Line
 	1000 7050 1950 7050
@@ -870,21 +848,21 @@ $EndComp
 Wire Wire Line
 	1150 6750 1000 6750
 $Comp
-L Connector_Generic:Conn_01x05 J?
+L Connector_Generic:Conn_01x05 J4
 U 1 1 5C4FC040
 P 2750 5600
-F 0 "J?" H 2750 5300 50  0000 C CNN
+F 0 "J4" H 2750 5300 50  0000 C CNN
 F 1 "Bender-LV" V 2850 5550 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_1x04_P2.54mm_Vertical" H 2750 5600 50  0001 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 2750 5600 50  0001 C CNN
 F 3 "~" H 2750 5600 50  0001 C CNN
 	1    2750 5600
 	-1   0    0    1   
 $EndComp
 $Comp
-L power:GND #PWR?
+L power:GND #PWR0105
 U 1 1 5C509587
 P 3000 5700
-F 0 "#PWR?" H 3000 5450 50  0001 C CNN
+F 0 "#PWR0105" H 3000 5450 50  0001 C CNN
 F 1 "GND" V 3005 5572 50  0000 R CNN
 F 2 "" H 3000 5700 50  0001 C CNN
 F 3 "" H 3000 5700 50  0001 C CNN
@@ -903,10 +881,10 @@ Wire Wire Line
 Text Label 3250 5500 2    50   ~ 0
 IMD_OK
 $Comp
-L power:+12V #PWR?
+L power:+12V #PWR0106
 U 1 1 5C51B056
 P 3000 5350
-F 0 "#PWR?" H 3000 5200 50  0001 C CNN
+F 0 "#PWR0106" H 3000 5200 50  0001 C CNN
 F 1 "+12V" H 3015 5523 50  0000 C CNN
 F 2 "" H 3000 5350 50  0001 C CNN
 F 3 "" H 3000 5350 50  0001 C CNN
@@ -917,4 +895,10 @@ Wire Wire Line
 	3000 5350 3000 5400
 Wire Wire Line
 	3000 5400 2950 5400
+Wire Wire Line
+	2300 7150 2300 7300
+Wire Wire Line
+	1000 7250 1350 7250
+Text Label 1350 7250 2    50   ~ 0
+IMD_OK
 $EndSCHEMATC

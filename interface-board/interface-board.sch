@@ -62,24 +62,9 @@ F 3 "~" H 2100 7150 50  0001 C CNN
 	1    2100 7150
 	1    0    0    -1  
 $EndComp
-$Comp
-L Jumper:SolderJumper_2_Open JP4
-U 1 1 5C6A71E9
-P 2100 7250
-F 0 "JP4" H 2400 7250 50  0000 C CNN
-F 1 "Jumper" H 2650 7250 50  0000 C CNN
-F 2 "Jumper:SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm" H 2100 7250 50  0001 C CNN
-F 3 "~" H 2100 7250 50  0001 C CNN
-	1    2100 7250
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2300 7250 2250 7250
 Wire Wire Line
 	2250 7150 2300 7150
 Connection ~ 2300 7150
-Wire Wire Line
-	2300 7150 2300 7250
 Wire Wire Line
 	2250 7050 2300 7050
 Wire Wire Line
@@ -95,9 +80,6 @@ F 3 "" H 2300 7300 50  0001 C CNN
 	1    2300 7300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2300 7300 2300 7250
-Connection ~ 2300 7250
 $Comp
 L power:GND #PWR08
 U 1 1 5C4B6D8C
@@ -122,7 +104,7 @@ CAN+
 Text Label 1350 6550 2    50   ~ 0
 CAN-
 $Comp
-L Connector_Generic:Conn_01x03 J10
+L Connector_Generic:Conn_01x02 J10
 U 1 1 5C6BA890
 P 1750 7150
 F 0 "J10" H 1750 7450 50  0000 C CNN
@@ -135,9 +117,6 @@ $EndComp
 Connection ~ 1950 7150
 Wire Wire Line
 	1000 7150 1950 7150
-Connection ~ 1950 7250
-Wire Wire Line
-	1000 7250 1950 7250
 Connection ~ 1950 7050
 Wire Wire Line
 	1000 7050 1950 7050
@@ -462,31 +441,16 @@ Wire Wire Line
 Wire Wire Line
 	1150 4100 1100 4100
 $Comp
-L Device:Fuse F3
-U 1 1 5C52E25F
-P 6400 2900
-F 0 "F3" V 6200 2900 50  0000 C CNN
-F 1 "1A" V 6300 2900 50  0000 C CNN
-F 2 "Fuse:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open" V 6330 2900 50  0001 C CNN
-F 3 "~" H 6400 2900 50  0001 C CNN
-	1    6400 2900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6200 2900 6250 2900
-$Comp
 L power:+12V #PWR020
 U 1 1 5C530767
-P 6800 2900
-F 0 "#PWR020" H 6800 2750 50  0001 C CNN
-F 1 "+12V" H 6815 3073 50  0000 C CNN
-F 2 "" H 6800 2900 50  0001 C CNN
-F 3 "" H 6800 2900 50  0001 C CNN
-	1    6800 2900
+P 6500 2900
+F 0 "#PWR020" H 6500 2750 50  0001 C CNN
+F 1 "+12V" H 6515 3073 50  0000 C CNN
+F 2 "" H 6500 2900 50  0001 C CNN
+F 3 "" H 6500 2900 50  0001 C CNN
+	1    6500 2900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	6800 2900 6550 2900
 $Comp
 L power:+5V #PWR019
 U 1 1 5C5334AC
@@ -786,17 +750,6 @@ F 3 "~" H 800 6550 50  0001 C CNN
 	1    800  6550
 	-1   0    0    -1  
 $EndComp
-$Comp
-L power:+5V #PWR0101
-U 1 1 5C4E62B7
-P 1000 7650
-F 0 "#PWR0101" H 1000 7500 50  0001 C CNN
-F 1 "+5V" V 1000 7750 50  0000 L CNN
-F 2 "" H 1000 7650 50  0001 C CNN
-F 3 "" H 1000 7650 50  0001 C CNN
-	1    1000 7650
-	0    1    1    0   
-$EndComp
 Text Label 1750 5450 2    50   ~ 0
 SHDN_LOOP_OUT
 Wire Wire Line
@@ -917,4 +870,12 @@ Wire Wire Line
 	3000 5350 3000 5400
 Wire Wire Line
 	3000 5400 2950 5400
+Wire Wire Line
+	2300 7150 2300 7300
+Wire Wire Line
+	1000 7250 1350 7250
+Text Label 1350 7250 2    50   ~ 0
+IMD_OK
+Wire Wire Line
+	6200 2900 6500 2900
 $EndSCHEMATC
