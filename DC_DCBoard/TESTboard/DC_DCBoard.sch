@@ -389,8 +389,8 @@ L Device:R_POT_TRIM_US RV1
 U 1 1 5BF39F9A
 P 3700 1800
 F 0 "RV1" H 3632 1846 50  0000 R CNN
-F 1 "5k" H 3632 1755 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Piher_PT-15-V02_Vertical" H 3700 1800 50  0001 C CNN
+F 1 "50k" H 3632 1755 50  0000 R CNN
+F 2 "CustomFootprints:TC33X-503ECT-ND" H 3700 1800 50  0001 C CNN
 F 3 "~" H 3700 1800 50  0001 C CNN
 	1    3700 1800
 	-1   0    0    1   
@@ -412,7 +412,7 @@ Wire Notes Line
 	6550 2450 6550 1250
 Wire Notes Line
 	2700 1250 6550 1250
-Text Label 3500 2050 1    50   ~ 0
+Text Label 3200 2050 1    50   ~ 0
 HV-
 Wire Wire Line
 	4900 1850 4950 1850
@@ -430,8 +430,6 @@ Wire Wire Line
 	3700 1650 4300 1650
 Wire Wire Line
 	3550 1800 3500 1800
-Wire Wire Line
-	3500 1800 3500 2050
 Text Notes 3150 4950 0    100  ~ 0
 HV->12V DC-DC
 Wire Notes Line
@@ -796,4 +794,17 @@ Wire Notes Line
 	7750 2700 7750 4050
 Text Notes 7850 2900 0    100  ~ 0
 Test header
+$Comp
+L Device:R_US R2
+U 1 1 5C5B2FDF
+P 3350 1800
+F 0 "R2" V 3145 1800 50  0000 C CNN
+F 1 "6.8k" V 3236 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 3390 1790 50  0001 C CNN
+F 3 "~" H 3350 1800 50  0001 C CNN
+	1    3350 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3200 1800 3200 2050
 $EndSCHEMATC
