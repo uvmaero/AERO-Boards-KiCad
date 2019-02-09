@@ -342,8 +342,8 @@ U 1 1 5C6688A6
 P 6100 5450
 AR Path="/5C6688A6" Ref="C?"  Part="1" 
 AR Path="/5C667FAF/5C6688A6" Ref="C12"  Part="1" 
-F 0 "C12" H 6250 5250 50  0000 L CNN
-F 1 "4700uF" H 6150 5350 50  0000 L CNN
+F 0 "C12" H 6050 5650 50  0000 L CNN
+F 1 "2200uF" H 6050 5050 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm" H 6100 5450 50  0001 C CNN
 F 3 "~" H 6100 5450 50  0001 C CNN
 	1    6100 5450
@@ -367,7 +367,7 @@ Connection ~ 5950 5350
 Wire Wire Line
 	5950 5350 5950 5500
 Wire Wire Line
-	6100 5350 6300 5350
+	6100 5350 6250 5350
 Connection ~ 6100 5350
 Wire Wire Line
 	6300 5350 6300 5050
@@ -397,8 +397,8 @@ U 1 1 5C6688C3
 P 6650 5450
 AR Path="/5C6688C3" Ref="C?"  Part="1" 
 AR Path="/5C667FAF/5C6688C3" Ref="C13"  Part="1" 
-F 0 "C13" H 6400 5250 50  0000 L CNN
-F 1 "4700uF" V 6550 5250 50  0000 L CNN
+F 0 "C13" H 6650 5650 50  0000 L CNN
+F 1 "2200uF" H 6650 5050 50  0000 L CNN
 F 2 "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm" H 6650 5450 50  0001 C CNN
 F 3 "~" H 6650 5450 50  0001 C CNN
 	1    6650 5450
@@ -407,22 +407,20 @@ $EndComp
 $Comp
 L Device:C_Small C?
 U 1 1 5C6688CA
-P 6900 5450
+P 7000 5450
 AR Path="/5C6688CA" Ref="C?"  Part="1" 
 AR Path="/5C667FAF/5C6688CA" Ref="C14"  Part="1" 
-F 0 "C14" H 6400 5150 50  0000 L CNN
-F 1 "4700uF" V 6800 5250 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm" H 6900 5450 50  0001 C CNN
-F 3 "~" H 6900 5450 50  0001 C CNN
-	1    6900 5450
+F 0 "C14" H 6900 5650 50  0000 L CNN
+F 1 "2200uF" H 7000 5050 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm" H 7000 5450 50  0001 C CNN
+F 3 "~" H 7000 5450 50  0001 C CNN
+	1    7000 5450
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
 	6600 5350 6650 5350
 Connection ~ 6600 5350
 Connection ~ 6650 5350
-Wire Wire Line
-	6650 5350 6900 5350
 $Comp
 L power:GND #PWR?
 U 1 1 5C6688D5
@@ -439,14 +437,14 @@ $EndComp
 $Comp
 L power:GND #PWR?
 U 1 1 5C6688DB
-P 6900 5550
+P 7000 5550
 AR Path="/5C6688DB" Ref="#PWR?"  Part="1" 
 AR Path="/5C667FAF/5C6688DB" Ref="#PWR064"  Part="1" 
-F 0 "#PWR064" H 6900 5300 50  0001 C CNN
-F 1 "GND" H 6905 5377 50  0000 C CNN
-F 2 "" H 6900 5550 50  0001 C CNN
-F 3 "" H 6900 5550 50  0001 C CNN
-	1    6900 5550
+F 0 "#PWR064" H 7000 5300 50  0001 C CNN
+F 1 "GND" H 7005 5377 50  0000 C CNN
+F 2 "" H 7000 5550 50  0001 C CNN
+F 3 "" H 7000 5550 50  0001 C CNN
+	1    7000 5550
 	1    0    0    -1  
 $EndComp
 Connection ~ 5900 5650
@@ -613,11 +611,8 @@ Wire Wire Line
 	4600 5200 4950 5200
 Wire Notes Line
 	7450 4650 7450 6200
-Text HLabel 6950 5350 2    50   Input ~ 0
+Text HLabel 7200 5350 2    50   Input ~ 0
 12V_OUT
-Wire Wire Line
-	6900 5350 6950 5350
-Connection ~ 6900 5350
 Text HLabel 8500 3550 0    50   Input ~ 0
 12V_IN
 Wire Wire Line
@@ -721,4 +716,96 @@ F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=11793&prodName=TLP1
 	1    5400 3950
 	1    0    0    -1  
 $EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5C609387
+P 6250 5450
+AR Path="/5C609387" Ref="C?"  Part="1" 
+AR Path="/5C667FAF/5C609387" Ref="C2"  Part="1" 
+F 0 "C2" H 6350 5400 50  0000 L CNN
+F 1 "2200uF" H 6050 4950 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm" H 6250 5450 50  0001 C CNN
+F 3 "~" H 6250 5450 50  0001 C CNN
+	1    6250 5450
+	1    0    0    -1  
+$EndComp
+Connection ~ 6250 5350
+Wire Wire Line
+	6250 5350 6300 5350
+$Comp
+L power:GND #PWR?
+U 1 1 5C6093CD
+P 6250 5550
+AR Path="/5C6093CD" Ref="#PWR?"  Part="1" 
+AR Path="/5C667FAF/5C6093CD" Ref="#PWR0107"  Part="1" 
+F 0 "#PWR0107" H 6250 5300 50  0001 C CNN
+F 1 "GND" H 6255 5377 50  0000 C CNN
+F 2 "" H 6250 5550 50  0001 C CNN
+F 3 "" H 6250 5550 50  0001 C CNN
+	1    6250 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5C60950B
+P 7150 5450
+AR Path="/5C60950B" Ref="C?"  Part="1" 
+AR Path="/5C667FAF/5C60950B" Ref="C21"  Part="1" 
+F 0 "C21" H 7100 5750 50  0000 L CNN
+F 1 "2200uF" H 7000 4950 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm" H 7150 5450 50  0001 C CNN
+F 3 "~" H 7150 5450 50  0001 C CNN
+	1    7150 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C609512
+P 7150 5550
+AR Path="/5C609512" Ref="#PWR?"  Part="1" 
+AR Path="/5C667FAF/5C609512" Ref="#PWR0108"  Part="1" 
+F 0 "#PWR0108" H 7150 5300 50  0001 C CNN
+F 1 "GND" H 7155 5377 50  0000 C CNN
+F 2 "" H 7150 5550 50  0001 C CNN
+F 3 "" H 7150 5550 50  0001 C CNN
+	1    7150 5550
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C_Small C?
+U 1 1 5C60ACA7
+P 6800 5450
+AR Path="/5C60ACA7" Ref="C?"  Part="1" 
+AR Path="/5C667FAF/5C60ACA7" Ref="C20"  Part="1" 
+F 0 "C20" H 6800 5750 50  0000 L CNN
+F 1 "2200uF" H 6650 4950 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D18.0mm_P7.50mm" H 6800 5450 50  0001 C CNN
+F 3 "~" H 6800 5450 50  0001 C CNN
+	1    6800 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C60ACAE
+P 6800 5550
+AR Path="/5C60ACAE" Ref="#PWR?"  Part="1" 
+AR Path="/5C667FAF/5C60ACAE" Ref="#PWR0109"  Part="1" 
+F 0 "#PWR0109" H 6800 5300 50  0001 C CNN
+F 1 "GND" H 6805 5377 50  0000 C CNN
+F 2 "" H 6800 5550 50  0001 C CNN
+F 3 "" H 6800 5550 50  0001 C CNN
+	1    6800 5550
+	1    0    0    -1  
+$EndComp
+Connection ~ 7000 5350
+Wire Wire Line
+	7000 5350 7150 5350
+Connection ~ 7150 5350
+Wire Wire Line
+	7150 5350 7200 5350
+Wire Wire Line
+	6650 5350 6800 5350
+Connection ~ 6800 5350
+Wire Wire Line
+	6800 5350 7000 5350
 $EndSCHEMATC

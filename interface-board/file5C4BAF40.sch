@@ -136,10 +136,6 @@ Wire Wire Line
 	6350 3350 6600 3350
 Wire Wire Line
 	6350 3650 6600 3650
-Text Label 7850 3350 2    50   ~ 0
-SCL
-Text Label 7850 3450 2    50   ~ 0
-SDA
 $Comp
 L power:+5V #PWR?
 U 1 1 5C4BB193
@@ -153,10 +149,6 @@ F 3 "" H 7450 2950 50  0001 C CNN
 	1    7450 2950
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	7450 3350 7850 3350
-Wire Wire Line
-	7450 3450 7850 3450
 $Comp
 L Device:R_US R?
 U 1 1 5C4BB19B
@@ -225,4 +217,12 @@ Text HLabel 4800 3000 0    50   Input ~ 0
 IN
 Text HLabel 4800 3900 0    50   Input ~ 0
 OUT
+Text HLabel 7650 3350 2    50   Input ~ 0
+SCL
+Text HLabel 7650 3450 2    50   Input ~ 0
+SDA
+Wire Wire Line
+	7650 3350 7450 3350
+Wire Wire Line
+	7450 3450 7650 3450
 $EndSCHEMATC
