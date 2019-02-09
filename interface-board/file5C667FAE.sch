@@ -22,7 +22,7 @@ AR Path="/5C6687D9" Ref="U?"  Part="1"
 AR Path="/5C667FAF/5C6687D9" Ref="U5"  Part="1" 
 F 0 "U5" H 5375 5925 50  0000 C CNN
 F 1 "DCM4623TD2J13D0T70" H 5375 5834 50  0000 C CNN
-F 2 "CustomFootprints:DCM4623TD2J13D0T70 w_landpattern" H 5350 5400 50  0001 C CNN
+F 2 "CustomFootprints:DCM4623TD2J13D0T70_w_landpattern" H 5350 5400 50  0001 C CNN
 F 3 "" H 5350 5400 50  0001 C CNN
 	1    5350 5400
 	1    0    0    -1  
@@ -150,19 +150,6 @@ F 3 "~" H 4950 3850 50  0001 C CNN
 	1    4950 3850
 	0    1    1    0   
 $EndComp
-$Comp
-L Device:R_US R?
-U 1 1 5C66882C
-P 4800 4000
-AR Path="/5C66882C" Ref="R?"  Part="1" 
-AR Path="/5C667FAF/5C66882C" Ref="R18"  Part="1" 
-F 0 "R18" H 4650 4050 50  0000 L CNN
-F 1 "50k" H 4550 3950 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4840 3990 50  0001 C CNN
-F 3 "~" H 4800 4000 50  0001 C CNN
-	1    4800 4000
-	1    0    0    -1  
-$EndComp
 Text Label 4350 3850 0    50   ~ 0
 FAULT_HV
 Wire Wire Line
@@ -272,8 +259,8 @@ P 4450 1800
 AR Path="/5C668874" Ref="RV?"  Part="1" 
 AR Path="/5C667FAF/5C668874" Ref="RV1"  Part="1" 
 F 0 "RV1" H 4382 1846 50  0000 R CNN
-F 1 "5k" H 4382 1755 50  0000 R CNN
-F 2 "Potentiometer_THT:Potentiometer_Piher_PT-15-V02_Vertical" H 4450 1800 50  0001 C CNN
+F 1 "50k" H 4382 1755 50  0000 R CNN
+F 2 "CustomFootprints:TC33X-503ECT-ND" H 4450 1800 50  0001 C CNN
 F 3 "~" H 4450 1800 50  0001 C CNN
 	1    4450 1800
 	-1   0    0    1   
@@ -471,52 +458,10 @@ Wire Notes Line
 	7400 4750 7400 5800
 Wire Notes Line
 	3300 6200 3300 4650
-Text Notes 1150 1750 0    157  ~ 31
-May want to change value
-$Comp
-L Isolator:LTV-827S U?
-U 1 1 5C6688F6
-P 5350 1750
-AR Path="/5C6688F6" Ref="U?"  Part="1" 
-AR Path="/5C667FAF/5C6688F6" Ref="U4"  Part="1" 
-F 0 "U4" H 5350 2075 50  0000 C CNN
-F 1 "LTV-827S" H 5350 1984 50  0000 C CNN
-F 2 "Package_DIP:SMDIP-8_W9.53mm" H 5350 1450 50  0001 C CNN
-F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 4550 2300 50  0001 C CNN
-	1    5350 1750
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
 	5700 4050 5700 4200
-$Comp
-L Isolator:LTV-824 U?
-U 1 1 5C6688FE
-P 5400 3150
-AR Path="/5C6688FE" Ref="U?"  Part="1" 
-AR Path="/5C667FAF/5C6688FE" Ref="U6"  Part="1" 
-F 0 "U6" H 5400 3475 50  0000 C CNN
-F 1 "LTV-824" H 5400 3384 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 5200 2950 50  0001 L CIN
-F 3 "http://optoelectronics.liteon.com/upload/download/DS-70-96-0013/S_110_LTV-814%20824%20844%20(M,%20S,%20S-TA,%20S-TA1,%20S-TP)%20Series.pdf" H 5425 3150 50  0001 L CNN
-	1    5400 3150
-	1    0    0    -1  
-$EndComp
-$Comp
-L Isolator:LTV-824 U?
-U 2 1 5C668905
-P 5400 3950
-AR Path="/5C668905" Ref="U?"  Part="2" 
-AR Path="/5C667FAF/5C668905" Ref="U6"  Part="2" 
-F 0 "U6" H 5400 3633 50  0000 C CNN
-F 1 "LTV-824" H 5400 3724 50  0000 C CNN
-F 2 "Package_DIP:DIP-8_W7.62mm" H 5200 3750 50  0001 L CIN
-F 3 "http://optoelectronics.liteon.com/upload/download/DS-70-96-0013/S_110_LTV-814%20824%20844%20(M,%20S,%20S-TA,%20S-TA1,%20S-TP)%20Series.pdf" H 5425 3950 50  0001 L CNN
-	2    5400 3950
-	1    0    0    1   
-$EndComp
 Wire Wire Line
 	4350 3850 4800 3850
-Connection ~ 4800 3850
 $Comp
 L Regulator_Switching:R-78E5.0-0.5 U?
 U 1 1 5C66BF9B
@@ -654,14 +599,10 @@ Wire Wire Line
 	5050 3300 5050 3250
 Wire Wire Line
 	5050 3250 5100 3250
-Wire Wire Line
-	4800 4150 5050 4150
 Text HLabel 5050 4150 3    50   Input ~ 0
 HV-
-Text HLabel 4250 1850 3    50   Input ~ 0
+Text HLabel 3900 1850 3    50   Input ~ 0
 HV-
-Wire Wire Line
-	4250 1800 4250 1850
 Wire Wire Line
 	4850 3050 5100 3050
 Wire Wire Line
@@ -732,4 +673,52 @@ Wire Notes Line width 39 rgb(255, 0, 0)
 	3150 1150 3150 6300
 Text Notes 3550 1000 0    157  ~ 31
 Fix all the HV/LV interface shit
+$Comp
+L Device:R_US R18
+U 1 1 5C602E65
+P 4100 1800
+F 0 "R18" V 3895 1800 50  0000 C CNN
+F 1 "6.8k" V 3986 1800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4140 1790 50  0001 C CNN
+F 3 "~" H 4100 1800 50  0001 C CNN
+	1    4100 1800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3900 1850 3900 1800
+Wire Wire Line
+	3900 1800 3950 1800
+$Comp
+L Isolator:LTV-817S U4
+U 1 1 5C6049E0
+P 5350 1750
+F 0 "U4" H 5350 2075 50  0000 C CNN
+F 1 "LTV-817S" H 5350 1984 50  0000 C CNN
+F 2 "Package_DIP:SMDIP-4_W9.53mm" H 5350 1450 50  0001 C CNN
+F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 5000 2050 50  0001 C CNN
+	1    5350 1750
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Isolator:LTV-817S U6
+U 1 1 5C60528B
+P 5400 3150
+F 0 "U6" H 5400 3475 50  0000 C CNN
+F 1 "LTV-817S" H 5400 3384 50  0000 C CNN
+F 2 "Package_DIP:SMDIP-4_W9.53mm" H 5400 2850 50  0001 C CNN
+F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 5050 3450 50  0001 C CNN
+	1    5400 3150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Isolator:TLP184 U9
+U 1 1 5C60549B
+P 5400 3950
+F 0 "U9" H 5400 4275 50  0000 C CNN
+F 1 "TLP184" H 5400 4184 50  0000 C CNN
+F 2 "CustomFootprints:TLP182" H 5400 3650 50  0001 C CIN
+F 3 "https://toshiba.semicon-storage.com/info/docget.jsp?did=11793&prodName=TLP184" H 5450 3950 50  0001 L CNN
+	1    5400 3950
+	1    0    0    -1  
+$EndComp
 $EndSCHEMATC

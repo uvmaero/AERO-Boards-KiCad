@@ -1,4 +1,2 @@
 (fp_lib_table
-  (lib (name CustomFootprints)(type KiCad)(uri "C:/Users/Willem Hillier/OneDrive/AERO/CustomFootprints")(options "")(descr ""))
-  (lib (name g2rl)(type KiCad)(uri "C:/Users/Willem Hillier/OneDrive/AERO/BattMon/BattMonV1.0/g2rl.pretty")(options "")(descr ""))
 )

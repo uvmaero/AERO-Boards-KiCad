@@ -15,7 +15,7 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L AEROParts:DCM4623TD2J13D0T70 U1
+L DC_DCBoard-rescue:DCM4623TD2J13D0T70-AEROParts U1
 U 1 1 5BDD1F41
 P 4650 5500
 F 0 "U1" H 4675 6025 50  0000 C CNN
@@ -170,8 +170,6 @@ Text Label 3050 5600 0    50   ~ 0
 HV+
 Text Label 3050 5800 0    50   ~ 0
 HV-
-Text Label 4200 4350 1    50   ~ 0
-HV-
 $Comp
 L Device:R_US R6
 U 1 1 5BDD58DC
@@ -184,27 +182,9 @@ F 3 "~" H 4000 3800 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4200 4100 4200 4350
-$Comp
-L Device:R_US R7
-U 1 1 5BDD6180
-P 4200 3950
-F 0 "R7" H 4050 4000 50  0000 L CNN
-F 1 "100k" H 3950 3900 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4240 3940 50  0001 C CNN
-F 3 "~" H 4200 3950 50  0001 C CNN
-	1    4200 3950
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
 	3850 3800 3600 3800
 Text Label 3600 3800 0    50   ~ 0
 FAULT
-Wire Wire Line
-	4150 3800 4200 3800
-Connection ~ 4200 3800
-Wire Wire Line
-	4200 3800 4350 3800
 Wire Wire Line
 	4250 5200 4050 5200
 Text Label 4050 5200 0    50   ~ 0
@@ -807,4 +787,6 @@ F 3 "~" H 3350 1800 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	3200 1800 3200 2050
+Wire Wire Line
+	4150 3800 4350 3800
 $EndSCHEMATC

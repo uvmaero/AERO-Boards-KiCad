@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name FanBoy-rescue)(type Legacy)(uri ${KIPRJMOD}/FanBoy-rescue.lib)(options "")(descr ""))
+)
