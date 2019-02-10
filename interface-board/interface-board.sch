@@ -14,9 +14,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 2100 1350 2    50   ~ 0
+Text Label 2150 1300 2    50   ~ 0
 HV+
-Text Label 2100 1500 2    50   ~ 0
+Text Label 2150 1450 2    50   ~ 0
 HV-
 Text Label 1350 6150 2    50   ~ 0
 FANOUT1
@@ -64,45 +64,45 @@ CAN-
 $Comp
 L Connector_Generic:Conn_01x01 J7
 U 1 1 5C7C388D
-P 950 1500
-F 0 "J7" H 1100 1400 50  0000 C CNN
-F 1 "HV-" H 1200 1500 50  0000 C CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 950 1500 50  0001 C CNN
-F 3 "~" H 950 1500 50  0001 C CNN
-	1    950  1500
+P 1000 1450
+F 0 "J7" H 1150 1350 50  0000 C CNN
+F 1 "HV-" H 1250 1450 50  0000 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 1000 1450 50  0001 C CNN
+F 3 "~" H 1000 1450 50  0001 C CNN
+	1    1000 1450
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x01 J6
 U 1 1 5C83C6D2
-P 950 1350
-F 0 "J6" H 950 1250 50  0000 C CNN
-F 1 "HV+" H 1200 1350 50  0000 C CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 950 1350 50  0001 C CNN
-F 3 "~" H 950 1350 50  0001 C CNN
-	1    950  1350
+P 1000 1300
+F 0 "J6" H 1000 1200 50  0000 C CNN
+F 1 "HV+" H 1250 1300 50  0000 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 1000 1300 50  0001 C CNN
+F 3 "~" H 1000 1300 50  0001 C CNN
+	1    1000 1300
 	-1   0    0    1   
 $EndComp
 $Comp
 L Connector_Generic:Conn_01x02 J8
 U 1 1 5C871653
-P 1250 1100
-F 0 "J8" V 1216 912 50  0000 R CNN
-F 1 "IMD" V 1350 1100 50  0000 R CNN
-F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_2-G-5.08_1x02_P5.08mm_Vertical" H 1250 1100 50  0001 C CNN
-F 3 "~" H 1250 1100 50  0001 C CNN
-	1    1250 1100
+P 1300 1050
+F 0 "J8" V 1266 862 50  0000 R CNN
+F 1 "IMD" V 1400 1050 50  0000 R CNN
+F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_2-G-5.08_1x02_P5.08mm_Vertical" H 1300 1050 50  0001 C CNN
+F 3 "~" H 1300 1050 50  0001 C CNN
+	1    1300 1050
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1150 1350 1250 1350
+	1200 1300 1300 1300
 Wire Wire Line
-	1250 1300 1250 1350
+	1300 1250 1300 1300
 Wire Wire Line
-	1350 1300 1350 1500
+	1400 1250 1400 1450
 Wire Wire Line
-	1350 1500 1150 1500
-Connection ~ 1250 1350
+	1400 1450 1200 1450
+Connection ~ 1300 1300
 $Sheet
 S 4600 1150 1600 900 
 U 5C4E5628
@@ -179,24 +179,24 @@ Global nets connected to this sheet: \nGND, 5V
 $Comp
 L Connector_Generic:Conn_01x02 J9
 U 1 1 5C4C2740
-P 1600 1100
-F 0 "J9" V 1566 912 50  0000 R CNN
-F 1 "TSMP" V 1700 1150 50  0000 R CNN
-F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_2-G-5.08_1x02_P5.08mm_Vertical" H 1600 1100 50  0001 C CNN
-F 3 "~" H 1600 1100 50  0001 C CNN
-	1    1600 1100
+P 1650 1050
+F 0 "J9" V 1616 862 50  0000 R CNN
+F 1 "TSMP" V 1750 1100 50  0000 R CNN
+F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_2-G-5.08_1x02_P5.08mm_Vertical" H 1650 1050 50  0001 C CNN
+F 3 "~" H 1650 1050 50  0001 C CNN
+	1    1650 1050
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1250 1350 1600 1350
+	1300 1300 1650 1300
 Wire Wire Line
-	1600 1300 1600 1350
-Connection ~ 1600 1350
+	1650 1250 1650 1300
+Connection ~ 1650 1300
 Wire Wire Line
-	1700 1300 1700 1500
+	1750 1250 1750 1450
 Wire Wire Line
-	1350 1500 1700 1500
-Connection ~ 1350 1500
+	1400 1450 1750 1450
+Connection ~ 1400 1450
 Text Label 3850 2550 0    50   ~ 0
 HV+
 Text Label 3850 2650 0    50   ~ 0
@@ -451,7 +451,7 @@ Text Label 4300 1250 0    50   ~ 0
 CAN+
 Text Label 4300 1350 0    50   ~ 0
 CAN-
-Connection ~ 1700 1500
+Connection ~ 1750 1450
 Text Label 6500 1800 2    50   ~ 0
 TEMP_1
 Text Label 6500 1900 2    50   ~ 0
@@ -560,19 +560,19 @@ F 3 "" H 2550 6350 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Notes Line width 39 rgb(253, 0, 0)
-	550  550  2800 550 
+	600  850  2850 850 
 Wire Notes Line width 39 rgb(255, 0, 0)
-	2800 550  2800 1800
+	2900 900  2900 2150
 Wire Notes Line width 39 rgb(255, 0, 0)
-	2800 1800 550  1800
+	2850 2150 600  2150
 Wire Notes Line width 39 rgb(255, 0, 0)
-	550  1800 550  550 
+	600  2100 600  850 
 Text Notes 600  800  0    157  ~ 31
 HV Danger!
 Wire Wire Line
-	1600 1350 2100 1350
+	1650 1300 2150 1300
 Wire Wire Line
-	1700 1500 2100 1500
+	1750 1450 2150 1450
 $Comp
 L Connector_Generic:Conn_01x23 J16
 U 1 1 5C4D7AA0
@@ -751,4 +751,42 @@ Text GLabel 8950 2450 2    50   Input ~ 0
 SCL
 Wire Wire Line
 	8850 2450 8950 2450
+$Comp
+L CUSTOM_IC:EPM1510SJ U10
+U 1 1 5C600D22
+P 1550 2000
+F 0 "U10" H 1550 2450 50  0000 C CNN
+F 1 "EPM1510SJ" H 1550 1950 50  0000 C CNN
+F 2 "CustomFootprints:EPM1510SJ" H 1550 2000 50  0001 C CNN
+F 3 "" H 1550 2000 50  0001 C CNN
+	1    1550 2000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1000 1700 800  1700
+Wire Wire Line
+	1000 1900 800  1900
+Text Label 800  1700 0    50   ~ 0
+HV+
+Text Label 800  1900 0    50   ~ 0
+HV-
+$Comp
+L Connector_Generic:Conn_01x02 J5
+U 1 1 5C61B783
+P 2350 1750
+F 0 "J5" V 2316 1562 50  0000 R CNN
+F 1 "BLINKY" H 2500 1850 50  0000 R CNN
+F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_2-G-5.08_1x02_P5.08mm_Vertical" H 2350 1750 50  0001 C CNN
+F 3 "~" H 2350 1750 50  0001 C CNN
+	1    2350 1750
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2100 1700 2150 1700
+Wire Wire Line
+	2150 1700 2150 1750
+Wire Wire Line
+	2100 1900 2150 1900
+Wire Wire Line
+	2150 1900 2150 1850
 $EndSCHEMATC
