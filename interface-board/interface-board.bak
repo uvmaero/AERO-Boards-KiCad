@@ -14,9 +14,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 2150 1300 2    50   ~ 0
+Text Label 2100 1150 2    50   ~ 0
 HV+
-Text Label 2150 1450 2    50   ~ 0
+Text Label 2100 1400 2    50   ~ 0
 HV-
 Text Label 1350 6150 2    50   ~ 0
 FANOUT1
@@ -62,47 +62,16 @@ CAN+
 Text Label 1350 6550 2    50   ~ 0
 CAN-
 $Comp
-L Connector_Generic:Conn_01x01 J7
-U 1 1 5C7C388D
-P 1000 1450
-F 0 "J7" H 1150 1350 50  0000 C CNN
-F 1 "HV-" H 1250 1450 50  0000 C CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 1000 1450 50  0001 C CNN
-F 3 "~" H 1000 1450 50  0001 C CNN
-	1    1000 1450
-	-1   0    0    1   
-$EndComp
-$Comp
 L Connector_Generic:Conn_01x01 J6
 U 1 1 5C83C6D2
-P 1000 1300
-F 0 "J6" H 1000 1200 50  0000 C CNN
-F 1 "HV+" H 1250 1300 50  0000 C CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 1000 1300 50  0001 C CNN
-F 3 "~" H 1000 1300 50  0001 C CNN
-	1    1000 1300
+P 950 1150
+F 0 "J6" H 950 1050 50  0000 C CNN
+F 1 "HV+" H 1100 1150 50  0000 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 950 1150 50  0001 C CNN
+F 3 "~" H 950 1150 50  0001 C CNN
+	1    950  1150
 	-1   0    0    1   
 $EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J8
-U 1 1 5C871653
-P 1300 1050
-F 0 "J8" V 1266 862 50  0000 R CNN
-F 1 "IMD" V 1400 1050 50  0000 R CNN
-F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_2-G-5.08_1x02_P5.08mm_Vertical" H 1300 1050 50  0001 C CNN
-F 3 "~" H 1300 1050 50  0001 C CNN
-	1    1300 1050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1200 1300 1300 1300
-Wire Wire Line
-	1300 1250 1300 1300
-Wire Wire Line
-	1400 1250 1400 1450
-Wire Wire Line
-	1400 1450 1200 1450
-Connection ~ 1300 1300
 $Sheet
 S 4600 1150 1600 900 
 U 5C4E5628
@@ -176,27 +145,6 @@ F5 "SDA" I R 8850 2550 50
 $EndSheet
 Text Notes 8150 2250 0    50   ~ 0
 Global nets connected to this sheet: \nGND, 5V
-$Comp
-L Connector_Generic:Conn_01x02 J9
-U 1 1 5C4C2740
-P 1650 1050
-F 0 "J9" V 1616 862 50  0000 R CNN
-F 1 "TSMP" V 1750 1100 50  0000 R CNN
-F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_2-G-5.08_1x02_P5.08mm_Vertical" H 1650 1050 50  0001 C CNN
-F 3 "~" H 1650 1050 50  0001 C CNN
-	1    1650 1050
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1300 1300 1650 1300
-Wire Wire Line
-	1650 1250 1650 1300
-Connection ~ 1650 1300
-Wire Wire Line
-	1750 1250 1750 1450
-Wire Wire Line
-	1400 1450 1750 1450
-Connection ~ 1400 1450
 Text Label 3850 2550 0    50   ~ 0
 HV+
 Text Label 3850 2650 0    50   ~ 0
@@ -451,7 +399,6 @@ Text Label 4300 1250 0    50   ~ 0
 CAN+
 Text Label 4300 1350 0    50   ~ 0
 CAN-
-Connection ~ 1750 1450
 Text Label 6500 1800 2    50   ~ 0
 TEMP_1
 Text Label 6500 1900 2    50   ~ 0
@@ -569,10 +516,6 @@ Wire Notes Line width 39 rgb(255, 0, 0)
 	600  2100 600  850 
 Text Notes 600  800  0    157  ~ 31
 HV Danger!
-Wire Wire Line
-	1650 1300 2150 1300
-Wire Wire Line
-	1750 1450 2150 1450
 $Comp
 L Connector_Generic:Conn_01x23 J16
 U 1 1 5C4D7AA0
@@ -789,4 +732,44 @@ Wire Wire Line
 	2100 1900 2150 1900
 Wire Wire Line
 	2150 1900 2150 1850
+$Comp
+L Connector_Generic:Conn_01x03 J8
+U 1 1 5C622267
+P 1450 950
+F 0 "J8" V 1416 762 50  0000 R CNN
+F 1 "HV+" V 1325 762 50  0000 R CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770870-x_1x03_P4.14mm_Vertical" H 1450 950 50  0001 C CNN
+F 3 "~" H 1450 950 50  0001 C CNN
+	1    1450 950 
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	1150 1150 1350 1150
+Wire Wire Line
+	1150 1400 2100 1400
+Wire Wire Line
+	1550 1150 2100 1150
+Wire Wire Line
+	1350 1150 1450 1150
+Connection ~ 1350 1150
+Connection ~ 1550 1150
+Connection ~ 1450 1150
+Wire Wire Line
+	1450 1150 1550 1150
+$Comp
+L Connector_Generic:Conn_01x03 J7
+U 1 1 5C62A13D
+P 950 1400
+F 0 "J7" H 870 1075 50  0000 C CNN
+F 1 "HV-" H 1100 1400 50  0000 C CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770870-x_1x03_P4.14mm_Vertical" H 950 1400 50  0001 C CNN
+F 3 "~" H 950 1400 50  0001 C CNN
+	1    950  1400
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1150 1300 1150 1400
+Connection ~ 1150 1400
+Wire Wire Line
+	1150 1400 1150 1500
 $EndSCHEMATC
