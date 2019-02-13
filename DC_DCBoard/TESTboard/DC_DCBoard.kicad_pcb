@@ -2698,7 +2698,7 @@
     (pad 1 np_thru_hole circle (at 0 0) (size 4.3 4.3) (drill 4.3) (layers *.Cu *.Mask))
   )
 
-  (module CustomFootprints:TC33X-503ECT-ND (layer F.Cu) (tedit 5C5B1C18) (tstamp 5C75A353)
+  (module CustomFootprints:TC33X-503ECT-ND (layer F.Cu) (tedit 5C61F1C0) (tstamp 5C75A353)
     (at 95.885 125.095 270)
     (path /5BF39F9A)
     (fp_text reference RV1 (at 1.1 -4.8 270) (layer F.SilkS)
@@ -2717,14 +2717,14 @@
     (pad 3 smd rect (at 2 0 270) (size 1.2 1.2) (layers F.Cu F.Paste F.Mask)
       (net 9 /TRIM))
     (pad 1 smd rect (at 0 0 270) (size 1.2 1.2) (layers F.Cu F.Paste F.Mask))
-    (model D:/AERO/AERO-Boards-KiCad/3d_models/TC-33X-2.stp
+    (model "C:/Users/Willem Hillier/Documents/Github/AERO-boards-kicad/3d_models/TC-33X-2.STEP"
       (offset (xyz 1 1.7 0))
       (scale (xyz 1 1 1))
       (rotate (xyz -90 0 0))
     )
   )
 
-  (module CustomFootprints:TLP182 (layer F.Cu) (tedit 5C5A33E7) (tstamp 5C67B069)
+  (module CustomFootprints:TLP182 (layer F.Cu) (tedit 5C61E9E6) (tstamp 5C67B069)
     (at 117.475 127)
     (path /5C5A3E1C)
     (fp_text reference U3 (at 3.175 -2.54) (layer F.SilkS)
@@ -2746,6 +2746,11 @@
       (net 2 /HV-))
     (pad 4 smd rect (at 6.3 2.54) (size 1.2 0.8) (layers F.Cu F.Paste F.Mask)
       (net 3 GND))
+    (model "C:/Users/Willem Hillier/Documents/Github/AERO-boards-kicad/3d_models/IC_Toshiba_TLP185_SE_eec.STEP"
+      (offset (xyz 3.13 -1.25 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 0))
+    )
   )
 
   (gr_arc (start 189.865 71.755) (end 194.31 71.755) (angle -90) (layer Edge.Cuts) (width 0.2))
