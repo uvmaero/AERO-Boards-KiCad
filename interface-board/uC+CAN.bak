@@ -834,7 +834,7 @@ Wire Wire Line
 	7550 4950 7500 4950
 Wire Wire Line
 	7550 5050 7500 5050
-Text Notes 2300 4750 0    157  ~ 31
+Text Notes 900  7050 0    157  ~ 31
 Tight constraints on which\npins can be which. Hoping\nthis isn't a routing nightmare.
 Wire Notes Line
 	8350 2550 8350 6200
