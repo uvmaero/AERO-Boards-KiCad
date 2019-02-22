@@ -666,8 +666,6 @@ Wire Notes Line width 39 rgb(253, 0, 0)
 	5400 6300 3150 6300
 Wire Notes Line width 39 rgb(255, 0, 0)
 	3150 1150 3150 6300
-Text Notes 3550 1000 0    157  ~ 31
-Fix all the HV/LV interface shit
 $Comp
 L Device:R_US R18
 U 1 1 5C602E65
