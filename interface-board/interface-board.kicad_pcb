@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 117)
+    (drawings 119)
     (tracks 722)
     (zones 0)
     (modules 90)
@@ -28,7 +28,7 @@
     (44 Edge.Cuts user)
     (45 Margin user)
     (46 B.CrtYd user hide)
-    (47 F.CrtYd user hide)
+    (47 F.CrtYd user)
     (48 B.Fab user)
     (49 F.Fab user hide)
   )
@@ -68,7 +68,7 @@
     (pad_to_mask_clearance 0.0508)
     (solder_mask_min_width 0.25)
     (aux_axis_origin 0 0)
-    (grid_origin 213.3 118.095)
+    (grid_origin 227.935 106.504)
     (visible_elements 7FFFFFFF)
     (pcbplotparams
       (layerselection 0x01000_7ffffffe)
@@ -6374,6 +6374,8 @@
       (xy -1.740913 9.932148) (xy -1.469415 9.932388) (xy -1.166069 9.93222)) (layer B.SilkS) (width 0.01))
   )
 
+  (gr_line (start 69.935 106.504) (end 69.935 105.504) (layer F.CrtYd) (width 0.15))
+  (gr_line (start 227.935 106.504) (end 69.935 106.504) (layer F.CrtYd) (width 0.2))
   (dimension 6.5 (width 0.3) (layer Dwgs.User) (tstamp 5C6F73C1)
     (gr_text "6.500 mm" (at 216.57947 106.466125) (layer Dwgs.User) (tstamp 5C6F73C1)
       (effects (font (size 1.5 1.5) (thickness 0.3)))
@@ -6654,7 +6656,7 @@
   (gr_line (start 244.22285 128.4167) (end 244.22285 59.824) (layer Dwgs.User) (width 0.2) (tstamp 5C6B9AF8))
   (gr_arc (start 55.3167 128.4167) (end 50.92885 128.4167) (angle -90) (layer Dwgs.User) (width 0.2))
   (gr_arc (start 55.3167 137.1924) (end 59.70455 137.1924) (angle -90) (layer Dwgs.User) (width 0.2))
-  (gr_line (start 236.9139 106.504) (end 69.935 106.504) (layer Dwgs.User) (width 0.2) (tstamp 5C5F86C9))
+  (gr_line (start 231.0713 150.76235) (end 64.0924 150.76235) (layer Dwgs.User) (width 0.2) (tstamp 5C5F86C9))
   (gr_arc (start 239.835 59.824) (end 244.22285 59.824) (angle -90) (layer Dwgs.User) (width 0.2))
   (gr_line (start 233.935 42.124) (end 233.935 146.124) (layer Edge.Cuts) (width 0.15))
   (gr_line (start 230.935 39.124) (end 64.435 39.124) (layer Edge.Cuts) (width 0.15))

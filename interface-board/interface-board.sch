@@ -724,6 +724,7 @@ Wire Wire Line
 Connection ~ 1150 1400
 Wire Wire Line
 	1150 1400 1150 1500
+<<<<<<< HEAD
 Text Notes 600  5200 0    50   ~ 0
 SHDN_LOOP_OUT is connected to 12V through shutdown loop
 Text Notes 3150 6950 0    50   ~ 0
@@ -867,4 +868,17 @@ U 5C83278E
 F0 "Title Page" 50
 F1 "file5C83278D.sch" 50
 $EndSheet
+=======
+$Comp
+L Device:Fuse F?
+U 1 1 5C705837
+P 1400 2500
+F 0 "F?" V 1203 2500 50  0000 C CNN
+F 1 "2A" V 1294 2500 50  0000 C CNN
+F 2 "CustomFootprints:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open_3d" V 1330 2500 50  0001 C CNN
+F 3 "~" H 1400 2500 50  0001 C CNN
+	1    1400 2500
+	0    1    1    0   
+$EndComp
+>>>>>>> 7418de54ff9798b92c511b139942fba3b8aba9af
 $EndSCHEMATC
