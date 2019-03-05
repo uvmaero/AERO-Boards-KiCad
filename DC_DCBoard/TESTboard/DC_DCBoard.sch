@@ -347,21 +347,6 @@ F 3 "~" H 5100 3050 50  0001 C CNN
 $EndComp
 Text Notes 7800 4400 0    100  ~ 0
 Power Connectors
-$Comp
-L Device:R_US R10
-U 1 1 5BEFADC1
-P 5250 1650
-F 0 "R10" V 5045 1650 50  0000 C CNN
-F 1 "1k" V 5136 1650 50  0000 C CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 5290 1640 50  0001 C CNN
-F 3 "~" H 5250 1650 50  0001 C CNN
-	1    5250 1650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5400 1650 5750 1650
-Text Label 5750 1650 2    50   ~ 0
-TRIM_EN
 Wire Notes Line
 	2700 1250 2700 2450
 $Comp
@@ -375,39 +360,10 @@ F 3 "~" H 3700 1800 50  0001 C CNN
 	1    3700 1800
 	-1   0    0    1   
 $EndComp
-$Comp
-L power:GND #PWR012
-U 1 1 5BF48D46
-P 4950 1950
-F 0 "#PWR012" H 4950 1700 50  0001 C CNN
-F 1 "GND" H 4955 1777 50  0000 C CNN
-F 2 "" H 4950 1950 50  0001 C CNN
-F 3 "" H 4950 1950 50  0001 C CNN
-	1    4950 1950
-	1    0    0    -1  
-$EndComp
-Wire Notes Line
-	2700 2450 6550 2450
-Wire Notes Line
-	6550 2450 6550 1250
-Wire Notes Line
-	2700 1250 6550 1250
 Text Label 3200 2050 1    50   ~ 0
 HV-
-Wire Wire Line
-	4900 1850 4950 1850
-Wire Wire Line
-	4950 1850 4950 1950
-Wire Wire Line
-	4900 1650 5100 1650
-Wire Wire Line
-	4300 1850 4300 2050
-Text Label 4300 2050 1    50   ~ 0
-HV-
-Text Label 4050 1650 2    50   ~ 0
+Text Label 4300 1650 2    50   ~ 0
 TRIM
-Wire Wire Line
-	3700 1650 4300 1650
 Wire Wire Line
 	3550 1800 3500 1800
 Text Notes 3150 4950 0    100  ~ 0
@@ -676,17 +632,6 @@ F 3 "" H 8950 5050 50  0001 C CNN
 	0    -1   -1   0   
 $EndComp
 $Comp
-L Isolator:LTV-817S U2
-U 1 1 5C5B92F0
-P 4600 1750
-F 0 "U2" H 4600 2075 50  0000 C CNN
-F 1 "LTV-817S" H 4600 1984 50  0000 C CNN
-F 2 "Package_DIP:SMDIP-4_W9.53mm" H 4600 1450 50  0001 C CNN
-F 3 "http://www.us.liteon.com/downloads/LTV-817-827-847.PDF" H 4250 2050 50  0001 C CNN
-	1    4600 1750
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Isolator:LTV-817S U4
 U 1 1 5C5BC8D5
 P 4650 3150
@@ -789,4 +734,12 @@ Wire Wire Line
 	3200 1800 3200 2050
 Wire Wire Line
 	4150 3800 4350 3800
+Wire Wire Line
+	3700 1650 4300 1650
+Wire Notes Line
+	2700 1250 4400 1250
+Wire Notes Line
+	4400 1250 4400 2450
+Wire Notes Line
+	4400 2450 2700 2450
 $EndSCHEMATC
