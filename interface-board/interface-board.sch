@@ -4,7 +4,7 @@ EELAYER 26 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 5
+Sheet 1 6
 Title ""
 Date ""
 Rev ""
@@ -73,131 +73,121 @@ F 3 "~" H 950 1150 50  0001 C CNN
 	-1   0    0    1   
 $EndComp
 $Sheet
-S 4600 1150 1600 900 
+S 5750 1500 1600 900 
 U 5C4E5628
 F0 "uC+CAN" 50
 F1 "uC+CAN.sch" 50
-F2 "FAN_CTRL_0" O R 6200 1250 50 
-F3 "FAN_CTRL_1" O R 6200 1350 50 
-F4 "FAN_CTRL_2" O R 6200 1450 50 
-F5 "FAN_CTRL_3" O R 6200 1550 50 
-F6 "CAN+" B L 4600 1250 50 
-F7 "CAN-" B L 4600 1350 50 
-F8 "DC_DC_EN" O L 4600 1850 50 
-F9 "DC_DC_FAULT" I L 4600 1950 50 
-F10 "RXD" I L 4600 1600 50 
-F11 "TXD" O L 4600 1500 50 
-F12 "DC_DC_TRIM_EN" O L 4600 1750 50 
-F13 "NTC1" I R 6200 1800 50 
-F14 "NTC2" I R 6200 1900 50 
+F2 "FAN_CTRL_0" O R 7350 1600 50 
+F3 "FAN_CTRL_1" O R 7350 1700 50 
+F4 "FAN_CTRL_2" O R 7350 1800 50 
+F5 "FAN_CTRL_3" O R 7350 1900 50 
+F6 "CAN+" B L 5750 1600 50 
+F7 "CAN-" B L 5750 1700 50 
+F8 "DC_DC_EN" O L 5750 2200 50 
+F9 "DC_DC_FAULT" I L 5750 2300 50 
+F10 "RXD" I L 5750 1950 50 
+F11 "TXD" O L 5750 1850 50 
+F12 "DC_DC_TRIM_EN" O L 5750 2100 50 
+F13 "NTC1" I R 7350 2150 50 
+F14 "NTC2" I R 7350 2250 50 
 $EndSheet
-Text Notes 4600 1050 0    50   ~ 0
+Text Notes 5750 1400 0    50   ~ 0
 Global nets connected to this sheet: \nGND, 5V,  SDA, SCL
 $Sheet
-S 6550 1150 1100 500 
+S 7700 1500 1100 500 
 U 5C5EE841
 F0 "fanControl" 50
 F1 "file5C5EE840.sch" 50
-F2 "FANOUT0" O R 7650 1250 50 
-F3 "FAN_CTRL_0" I L 6550 1250 50 
-F4 "FANOUT1" O R 7650 1350 50 
-F5 "FAN_CTRL_1" I L 6550 1350 50 
-F6 "FANOUT2" O R 7650 1450 50 
-F7 "FAN_CTRL_2" I L 6550 1450 50 
-F8 "FANOUT3" O R 7650 1550 50 
-F9 "FAN_CTRL_3" I L 6550 1550 50 
+F2 "FANOUT0" O R 8800 1600 50 
+F3 "FAN_CTRL_0" I L 7700 1600 50 
+F4 "FANOUT1" O R 8800 1700 50 
+F5 "FAN_CTRL_1" I L 7700 1700 50 
+F6 "FANOUT2" O R 8800 1800 50 
+F7 "FAN_CTRL_2" I L 7700 1800 50 
+F8 "FANOUT3" O R 8800 1900 50 
+F9 "FAN_CTRL_3" I L 7700 1900 50 
 $EndSheet
-Text Notes 6550 1050 0    50   ~ 0
+Text Notes 7700 1400 0    50   ~ 0
 Global nets connected to this sheet: \nGND, 12V
 Wire Wire Line
-	6200 1250 6550 1250
+	7350 1600 7700 1600
 Wire Wire Line
-	6200 1350 6550 1350
+	7350 1700 7700 1700
 Wire Wire Line
-	6200 1450 6550 1450
+	7350 1800 7700 1800
 Wire Wire Line
-	6200 1550 6550 1550
+	7350 1900 7700 1900
 $Sheet
-S 4600 2450 1600 850 
+S 5800 3150 1600 850 
 U 5C667FAF
-F0 "DC->DC Converters" 50
+F0 "DC->DC Converter" 50
 F1 "file5C667FAE.sch" 50
-F2 "TRIM_EN" I L 4600 2900 50 
-F3 "ENABLE" I L 4600 2800 50 
-F4 "FAULT" O L 4600 3000 50 
-F5 "HV+" I L 4600 2550 50 
-F6 "HV-" I L 4600 2650 50 
-F7 "12V_OUT" O R 6200 2550 50 
-F8 "5V_OUT" I R 6200 2900 50 
-F9 "12V_IN" I R 6200 2800 50 
+F2 "TRIM_EN" I L 5800 3600 50 
+F3 "ENABLE" I L 5800 3500 50 
+F4 "FAULT" O L 5800 3700 50 
+F5 "HV+" I L 5800 3250 50 
+F6 "HV-" I L 5800 3350 50 
+F7 "12V_OUT" O R 7400 3250 50 
 $EndSheet
-Text Notes 4600 2350 0    50   ~ 0
+Text Notes 5800 3050 0    50   ~ 0
 Global nets connected to this sheet: \nGND
 $Sheet
-S 8150 2350 700  300 
+S 8150 3050 700  300 
 U 5C4BAF41
 F0 "meter" 50
 F1 "file5C4BAF40.sch" 50
-F2 "IN" I L 8150 2550 50 
-F3 "OUT" I L 8150 2450 50 
-F4 "SCL" I R 8850 2450 50 
-F5 "SDA" I R 8850 2550 50 
+F2 "IN" I L 8150 3250 50 
+F3 "OUT" I L 8150 3150 50 
+F4 "SCL" I R 8850 3150 50 
+F5 "SDA" I R 8850 3250 50 
 $EndSheet
-Text Notes 8150 2250 0    50   ~ 0
+Text Notes 8150 2950 0    50   ~ 0
 Global nets connected to this sheet: \nGND, 5V
-Text Label 3850 2550 0    50   ~ 0
+Text Label 5050 3250 0    50   ~ 0
 HV+
-Text Label 3850 2650 0    50   ~ 0
+Text Label 5050 3350 0    50   ~ 0
 HV-
-Text Label 4000 1750 0    50   ~ 0
+Text Label 5150 2100 0    50   ~ 0
 DC_DC_TRIM_EN
 Wire Wire Line
-	4000 1750 4600 1750
+	5150 2100 5750 2100
 Wire Wire Line
-	4000 1850 4600 1850
-Text Label 4000 1850 0    50   ~ 0
+	5150 2200 5750 2200
+Text Label 5150 2200 0    50   ~ 0
 DC_DC_EN
 Wire Wire Line
-	4000 1950 4600 1950
-Text Label 4000 1950 0    50   ~ 0
+	5150 2300 5750 2300
+Text Label 5150 2300 0    50   ~ 0
 DC_DC_FAULT
-Text Label 4000 2900 0    50   ~ 0
+Text Label 5200 3600 0    50   ~ 0
 DC_DC_TRIM_EN
 Wire Wire Line
-	4000 2900 4600 2900
+	5200 3600 5800 3600
 Wire Wire Line
-	4000 2800 4600 2800
-Text Label 4000 2800 0    50   ~ 0
+	5200 3500 5800 3500
+Text Label 5200 3500 0    50   ~ 0
 DC_DC_EN
 Wire Wire Line
-	4000 3000 4600 3000
-Text Label 4000 3000 0    50   ~ 0
+	5200 3700 5800 3700
+Text Label 5200 3700 0    50   ~ 0
 DC_DC_FAULT
-Text Label 6250 2450 0    50   ~ 0
+Text Label 7450 3150 0    50   ~ 0
 SHDN_LOOP_OUT
 Wire Wire Line
-	6950 2450 6950 2350
+	7450 3150 8150 3150
 Wire Wire Line
-	7250 2350 7250 2450
+	8800 1600 9300 1600
 Wire Wire Line
-	6250 2450 6950 2450
+	8800 1700 9300 1700
 Wire Wire Line
-	6950 2550 6950 2650
+	8800 1800 9300 1800
 Wire Wire Line
-	7250 2650 7250 2550
-Wire Wire Line
-	7650 1250 8150 1250
-Wire Wire Line
-	7650 1350 8150 1350
-Wire Wire Line
-	7650 1450 8150 1450
-Wire Wire Line
-	7650 1550 8150 1550
-Text Label 8150 1350 2    50   ~ 0
+	8800 1900 9300 1900
+Text Label 9300 1700 2    50   ~ 0
 FANOUT1
-Text Label 8150 1450 2    50   ~ 0
+Text Label 9300 1800 2    50   ~ 0
 FANOUT2
-Text Label 8150 1550 2    50   ~ 0
+Text Label 9300 1900 2    50   ~ 0
 FANOUT3
 $Comp
 L Connector_Generic:Conn_01x02 J3
@@ -210,7 +200,7 @@ F 3 "~" H 900 4600 50  0001 C CNN
 	1    900  4600
 	-1   0    0    -1  
 $EndComp
-Text Label 8150 1250 2    50   ~ 0
+Text Label 9300 1600 2    50   ~ 0
 FANOUT0
 Wire Wire Line
 	1100 4700 1450 4700
@@ -261,30 +251,6 @@ Wire Wire Line
 	1150 4050 1150 4100
 Wire Wire Line
 	1150 4100 1100 4100
-$Comp
-L power:+12V #PWR020
-U 1 1 5C530767
-P 6450 2750
-F 0 "#PWR020" H 6450 2600 50  0001 C CNN
-F 1 "+12V" H 6465 2923 50  0000 C CNN
-F 2 "" H 6450 2750 50  0001 C CNN
-F 3 "" H 6450 2750 50  0001 C CNN
-	1    6450 2750
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR019
-U 1 1 5C5334AC
-P 6400 2900
-F 0 "#PWR019" H 6400 2750 50  0001 C CNN
-F 1 "+5V" V 6415 3028 50  0000 L CNN
-F 2 "" H 6400 2900 50  0001 C CNN
-F 3 "" H 6400 2900 50  0001 C CNN
-	1    6400 2900
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	6400 2900 6200 2900
 $Comp
 L Connector_Generic:Conn_01x05 J1
 U 1 1 5C5369F5
@@ -380,33 +346,33 @@ Wire Wire Line
 Wire Wire Line
 	2100 3400 2450 3400
 Wire Wire Line
-	4600 1500 4250 1500
+	5750 1850 5400 1850
 Wire Wire Line
-	4600 1600 4250 1600
-Text Label 4250 1600 0    50   ~ 0
+	5750 1950 5400 1950
+Text Label 5400 1950 0    50   ~ 0
 UART_RX
-Text Label 4250 1500 0    50   ~ 0
+Text Label 5400 1850 0    50   ~ 0
 UART_TX
 Text Label 2450 3400 2    50   ~ 0
 UART_RX
 Text Label 2450 3300 2    50   ~ 0
 UART_TX
 Wire Wire Line
-	4600 1250 4300 1250
+	5750 1600 5450 1600
 Wire Wire Line
-	4600 1350 4300 1350
-Text Label 4300 1250 0    50   ~ 0
+	5750 1700 5450 1700
+Text Label 5450 1600 0    50   ~ 0
 CAN+
-Text Label 4300 1350 0    50   ~ 0
+Text Label 5450 1700 0    50   ~ 0
 CAN-
-Text Label 6500 1800 2    50   ~ 0
+Text Label 7650 2150 2    50   ~ 0
 TEMP_1
-Text Label 6500 1900 2    50   ~ 0
+Text Label 7650 2250 2    50   ~ 0
 TEMP_2
 Wire Wire Line
-	6200 1800 6500 1800
+	7350 2150 7650 2150
 Wire Wire Line
-	6200 1900 6500 1900
+	7350 2250 7650 2250
 $Comp
 L Connector_Generic:Conn_01x02 J12
 U 1 1 5C5BFA90
@@ -470,40 +436,40 @@ TEMP_2
 $Comp
 L Device:C C1
 U 1 1 5C62DA6B
-P 2550 6500
+P 3000 7100
 AR Path="/5C62DA6B" Ref="C1"  Part="1" 
 AR Path="/5C5EE841/5C62DA6B" Ref="C?"  Part="1" 
-F 0 "C1" H 2665 6546 50  0000 L CNN
-F 1 "470uF" H 2665 6455 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 2588 6350 50  0001 C CNN
-F 3 "~" H 2550 6500 50  0001 C CNN
-	1    2550 6500
+F 0 "C1" H 3115 7146 50  0000 L CNN
+F 1 "470uF" H 3115 7055 50  0000 L CNN
+F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 3038 6950 50  0001 C CNN
+F 3 "~" H 3000 7100 50  0001 C CNN
+	1    3000 7100
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:GND #PWR010
 U 1 1 5C62DA87
-P 2550 6650
+P 3000 7250
 AR Path="/5C62DA87" Ref="#PWR010"  Part="1" 
 AR Path="/5C5EE841/5C62DA87" Ref="#PWR?"  Part="1" 
-F 0 "#PWR010" H 2550 6400 50  0001 C CNN
-F 1 "GND" H 2555 6477 50  0000 C CNN
-F 2 "" H 2550 6650 50  0001 C CNN
-F 3 "" H 2550 6650 50  0001 C CNN
-	1    2550 6650
+F 0 "#PWR010" H 3000 7000 50  0001 C CNN
+F 1 "GND" H 3005 7077 50  0000 C CNN
+F 2 "" H 3000 7250 50  0001 C CNN
+F 3 "" H 3000 7250 50  0001 C CNN
+	1    3000 7250
 	1    0    0    -1  
 $EndComp
 $Comp
 L power:+12V #PWR09
 U 1 1 5C62DA9F
-P 2550 6350
+P 3000 6950
 AR Path="/5C62DA9F" Ref="#PWR09"  Part="1" 
 AR Path="/5C5EE841/5C62DA9F" Ref="#PWR?"  Part="1" 
-F 0 "#PWR09" H 2550 6200 50  0001 C CNN
-F 1 "+12V" H 2565 6523 50  0000 C CNN
-F 2 "" H 2550 6350 50  0001 C CNN
-F 3 "" H 2550 6350 50  0001 C CNN
-	1    2550 6350
+F 0 "#PWR09" H 3000 6800 50  0001 C CNN
+F 1 "+12V" H 3015 7123 50  0000 C CNN
+F 2 "" H 3000 6950 50  0001 C CNN
+F 3 "" H 3000 6950 50  0001 C CNN
+	1    3000 6950
 	1    0    0    -1  
 $EndComp
 Wire Notes Line width 39 rgb(253, 0, 0)
@@ -602,51 +568,51 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x05 J4
 U 1 1 5C4FC040
-P 2750 5600
-F 0 "J4" H 2750 5300 50  0000 C CNN
-F 1 "Bender-LV" V 2850 5550 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 2750 5600 50  0001 C CNN
-F 3 "~" H 2750 5600 50  0001 C CNN
-	1    2750 5600
+P 2950 5850
+F 0 "J4" H 2950 5550 50  0000 C CNN
+F 1 "Bender-LV" V 3050 5800 50  0000 C CNN
+F 2 "Connector_Molex:Molex_KK-254_AE-6410-05A_1x05_P2.54mm_Vertical" H 2950 5850 50  0001 C CNN
+F 3 "~" H 2950 5850 50  0001 C CNN
+	1    2950 5850
 	-1   0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0105
 U 1 1 5C509587
-P 3000 5700
-F 0 "#PWR0105" H 3000 5450 50  0001 C CNN
-F 1 "GND" V 3005 5572 50  0000 R CNN
-F 2 "" H 3000 5700 50  0001 C CNN
-F 3 "" H 3000 5700 50  0001 C CNN
-	1    3000 5700
+P 3200 5950
+F 0 "#PWR0105" H 3200 5700 50  0001 C CNN
+F 1 "GND" V 3205 5822 50  0000 R CNN
+F 2 "" H 3200 5950 50  0001 C CNN
+F 3 "" H 3200 5950 50  0001 C CNN
+	1    3200 5950
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	2950 5600 2950 5700
-Connection ~ 2950 5700
+	3150 5850 3150 5950
+Connection ~ 3150 5950
 Wire Wire Line
-	2950 5700 2950 5800
+	3150 5950 3150 6050
 Wire Wire Line
-	2950 5700 3000 5700
+	3150 5950 3200 5950
 Wire Wire Line
-	2950 5500 3250 5500
-Text Label 3250 5500 2    50   ~ 0
+	3150 5750 3450 5750
+Text Label 3450 5750 2    50   ~ 0
 IMD_OK
 $Comp
 L power:+12V #PWR0106
 U 1 1 5C51B056
-P 3000 5350
-F 0 "#PWR0106" H 3000 5200 50  0001 C CNN
-F 1 "+12V" H 3015 5523 50  0000 C CNN
-F 2 "" H 3000 5350 50  0001 C CNN
-F 3 "" H 3000 5350 50  0001 C CNN
-	1    3000 5350
+P 3200 5600
+F 0 "#PWR0106" H 3200 5450 50  0001 C CNN
+F 1 "+12V" H 3215 5773 50  0000 C CNN
+F 2 "" H 3200 5600 50  0001 C CNN
+F 3 "" H 3200 5600 50  0001 C CNN
+	1    3200 5600
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	3000 5350 3000 5400
+	3200 5600 3200 5650
 Wire Wire Line
-	3000 5400 2950 5400
+	3200 5650 3150 5650
 Wire Wire Line
 	1000 7250 1350 7250
 Text Label 1350 7250 2    50   ~ 0
@@ -654,48 +620,34 @@ IMD_OK
 $Comp
 L Device:Fuse F1
 U 1 1 5C5E871F
-P 4400 2550
-F 0 "F1" V 4203 2550 50  0000 C CNN
-F 1 "2A" V 4294 2550 50  0000 C CNN
-F 2 "CustomFootprints:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open_3d" V 4330 2550 50  0001 C CNN
-F 3 "~" H 4400 2550 50  0001 C CNN
-	1    4400 2550
+P 5600 3250
+F 0 "F1" V 5403 3250 50  0000 C CNN
+F 1 "2A" V 5494 3250 50  0000 C CNN
+F 2 "CustomFootprints:Fuseholder_Cylinder-5x20mm_Schurter_0031_8201_Horizontal_Open_3d" V 5530 3250 50  0001 C CNN
+F 3 "~" H 5600 3250 50  0001 C CNN
+	1    5600 3250
 	0    1    1    0   
 $EndComp
 Wire Wire Line
-	4600 2550 4550 2550
+	5800 3250 5750 3250
 Wire Wire Line
-	3850 2550 4250 2550
+	5050 3250 5450 3250
 Wire Wire Line
-	3850 2650 4600 2650
+	5050 3350 5800 3350
 Wire Wire Line
-	6200 2550 6950 2550
-Wire Wire Line
-	6450 2750 6450 2800
+	7400 3250 8150 3250
 Text Notes 1600 6000 0    50   ~ 0
 Return from safety loop
-Wire Wire Line
-	6200 2800 6450 2800
-Text Notes 7200 2050 0    50   ~ 0
-change to open jumpers
-Wire Wire Line
-	6950 2350 7250 2350
-Wire Wire Line
-	6950 2650 7250 2650
-Wire Wire Line
-	7250 2450 8150 2450
-Wire Wire Line
-	7250 2550 8150 2550
-Text GLabel 8950 2550 2    50   Input ~ 0
+Text GLabel 8950 3250 2    50   Input ~ 0
 SDA
 Wire Wire Line
-	8950 2550 8850 2550
-Text GLabel 8950 2450 2    50   Input ~ 0
+	8950 3250 8850 3250
+Text GLabel 8950 3150 2    50   Input ~ 0
 SCL
 Wire Wire Line
-	8850 2450 8950 2450
+	8850 3150 8950 3150
 $Comp
-L CUSTOM_IC:EPM1510SJ U10
+L interface-board-rescue:EPM1510SJ-CUSTOM_IC U10
 U 1 1 5C600D22
 P 1550 2000
 F 0 "U10" H 1550 2450 50  0000 C CNN
@@ -772,6 +724,151 @@ Wire Wire Line
 Connection ~ 1150 1400
 Wire Wire Line
 	1150 1400 1150 1500
+<<<<<<< HEAD
+Text Notes 600  5200 0    50   ~ 0
+SHDN_LOOP_OUT is connected to 12V through shutdown loop
+Text Notes 3150 6950 0    50   ~ 0
+Can remove this
+Text Notes 850  3850 0    50   ~ 0
+Local fan controls and thermocoupler inputs
+Text Notes 850  2800 0    50   ~ 0
+Current monitor for HV and UART debug port
+Text Notes 1800 1550 0    50   ~ 0
+This is to run a HV indicator LED (called blinky).
+$Comp
+L Regulator_Switching:R-78E5.0-0.5 U?
+U 1 1 5C80E327
+P 6450 5300
+AR Path="/5C80E327" Ref="U?"  Part="1" 
+AR Path="/5C667FAF/5C80E327" Ref="U?"  Part="1" 
+F 0 "U?" H 6450 5542 50  0000 C CNN
+F 1 "R-78E5.0-0.5" H 6450 5451 50  0000 C CNN
+F 2 "Converter_DCDC:Converter_DCDC_RECOM_R-78E-0.5_THT" H 6500 5050 50  0001 L CIN
+F 3 "https://www.recom-power.com/pdf/Innoline/R-78Exx-0.5.pdf" H 6450 5300 50  0001 C CNN
+	1    6450 5300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6000 5300 6150 5300
+Wire Wire Line
+	6900 5300 6750 5300
+$Comp
+L power:GND #PWR?
+U 1 1 5C80E330
+P 6450 5650
+AR Path="/5C80E330" Ref="#PWR?"  Part="1" 
+AR Path="/5C667FAF/5C80E330" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6450 5400 50  0001 C CNN
+F 1 "GND" H 6455 5477 50  0000 C CNN
+F 2 "" H 6450 5650 50  0001 C CNN
+F 3 "" H 6450 5650 50  0001 C CNN
+	1    6450 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6450 5650 6450 5600
+Text Notes 5550 4800 0    100  ~ 0
+12V->5V
+$Comp
+L Device:C C?
+U 1 1 5C80E338
+P 6900 5450
+AR Path="/5C80E338" Ref="C?"  Part="1" 
+AR Path="/5C667FAF/5C80E338" Ref="C?"  Part="1" 
+F 0 "C?" H 7015 5496 50  0000 L CNN
+F 1 "0.1uF" H 6650 5350 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6938 5300 50  0001 C CNN
+F 3 "~" H 6900 5450 50  0001 C CNN
+	1    6900 5450
+	1    0    0    -1  
+$EndComp
+Connection ~ 6900 5300
+$Comp
+L power:GND #PWR?
+U 1 1 5C80E340
+P 7050 5650
+AR Path="/5C80E340" Ref="#PWR?"  Part="1" 
+AR Path="/5C667FAF/5C80E340" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 7050 5400 50  0001 C CNN
+F 1 "GND" H 7055 5477 50  0000 C CNN
+F 2 "" H 7050 5650 50  0001 C CNN
+F 3 "" H 7050 5650 50  0001 C CNN
+	1    7050 5650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6900 5600 7050 5600
+Wire Wire Line
+	7050 5600 7050 5650
+Connection ~ 7050 5600
+Wire Wire Line
+	7050 5600 7200 5600
+$Comp
+L Device:C C?
+U 1 1 5C80E34A
+P 6000 5450
+AR Path="/5C80E34A" Ref="C?"  Part="1" 
+AR Path="/5C667FAF/5C80E34A" Ref="C?"  Part="1" 
+F 0 "C?" H 6115 5496 50  0000 L CNN
+F 1 "10uF" H 6115 5405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 6038 5300 50  0001 C CNN
+F 3 "~" H 6000 5450 50  0001 C CNN
+	1    6000 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C80E351
+P 6000 5600
+AR Path="/5C80E351" Ref="#PWR?"  Part="1" 
+AR Path="/5C667FAF/5C80E351" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 6000 5350 50  0001 C CNN
+F 1 "GND" H 6005 5427 50  0000 C CNN
+F 2 "" H 6000 5600 50  0001 C CNN
+F 3 "" H 6000 5600 50  0001 C CNN
+	1    6000 5600
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	7600 4650 7600 5950
+Text HLabel 5950 5300 0    50   Input ~ 0
+12V_IN
+Wire Wire Line
+	5950 5300 6000 5300
+Connection ~ 6000 5300
+Wire Wire Line
+	7200 5300 6900 5300
+$Comp
+L Device:C C?
+U 1 1 5C80E35C
+P 7200 5450
+AR Path="/5C80E35C" Ref="C?"  Part="1" 
+AR Path="/5C667FAF/5C80E35C" Ref="C?"  Part="1" 
+F 0 "C?" H 7315 5496 50  0000 L CNN
+F 1 "10uF" H 7315 5405 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0603_1608Metric" H 7238 5300 50  0001 C CNN
+F 3 "~" H 7200 5450 50  0001 C CNN
+	1    7200 5450
+	1    0    0    -1  
+$EndComp
+Text HLabel 7300 5300 2    50   Input ~ 0
+5V_OUT
+Connection ~ 7200 5300
+Wire Notes Line
+	5500 5950 7600 5950
+Wire Notes Line
+	5500 4650 5500 5950
+Wire Notes Line
+	5500 4650 7600 4650
+Wire Wire Line
+	7200 5300 7300 5300
+$Sheet
+S 9800 6150 1300 250 
+U 5C83278E
+F0 "Title Page" 50
+F1 "file5C83278D.sch" 50
+$EndSheet
+=======
 $Comp
 L Device:Fuse F?
 U 1 1 5C705837
@@ -783,4 +880,5 @@ F 3 "~" H 1400 2500 50  0001 C CNN
 	1    1400 2500
 	0    1    1    0   
 $EndComp
+>>>>>>> 7418de54ff9798b92c511b139942fba3b8aba9af
 $EndSCHEMATC
