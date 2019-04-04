@@ -1,0 +1,6 @@
+"Id";"Designator";"Package";"Quantity";"Designation";"Supplier and ref";
+1;"G***,G***";"AERO_Logo_15x6mm";2;"LOGO";;;
+2;"D1";"LPA-C011301S-x LED 0805 LIGHT PIPE SINGLE VERT SMD";1;"RED_LED";;;
+3;"R1,R2,R3,R4,R5,R6,R7,R8,R9,R10";"R_0805_2012Metric";10;"1k";;;
+4;"M3";"MountingHole_3.2mm_M3_DIN965";1;"MountingHole_3.2mm_M3_DIN965";;;
+5;"J1,J2";"TE_MATE-N-LOK_1-770866-x_1x02_P4.14mm_Vertical";2;"Conn_01x02";;;
