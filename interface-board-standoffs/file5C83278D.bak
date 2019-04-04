@@ -14,9 +14,9 @@ Comment2 ""
 Comment3 ""
 Comment4 ""
 $EndDescr
-Text Label 2150 1150 2    50   ~ 0
+Text Label 2450 1450 2    50   ~ 0
 HV+
-Text Label 2150 1400 2    50   ~ 0
+Text Label 2450 1700 2    50   ~ 0
 HV-
 Text Label 1400 6150 2    50   ~ 0
 FANOUT1
@@ -31,11 +31,11 @@ FANOUT2
 Text Label 1400 6050 2    50   ~ 0
 FANOUT3
 Text Label 1400 7350 2    50   ~ 0
-IMD_AN1
+HECS_AN1
 Text Label 1400 7450 2    50   ~ 0
-IMD_AN2
+HECS_AN2
 Text Label 1400 7550 2    50   ~ 0
-IMD_AN3
+HECS_AN3
 Wire Wire Line
 	1050 7450 1400 7450
 $Comp
@@ -66,14 +66,14 @@ CAN-
 $Comp
 L Connector_Generic:Conn_01x01 J?
 U 1 1 5C830497
-P 1000 1150
+P 1300 1450
 AR Path="/5C830497" Ref="J?"  Part="1" 
 AR Path="/5C83278E/5C830497" Ref="J6"  Part="1" 
-F 0 "J6" H 1000 1050 50  0000 C CNN
-F 1 "HV+" H 1150 1150 50  0000 C CNN
-F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 1000 1150 50  0001 C CNN
-F 3 "~" H 1000 1150 50  0001 C CNN
-	1    1000 1150
+F 0 "J6" H 1300 1350 50  0000 C CNN
+F 1 "HV+" H 1450 1450 50  0000 C CNN
+F 2 "MountingHole:MountingHole_4.3mm_M4_Pad_Via" H 1300 1450 50  0001 C CNN
+F 3 "~" H 1300 1450 50  0001 C CNN
+	1    1300 1450
 	-1   0    0    1   
 $EndComp
 $Sheet
@@ -193,76 +193,33 @@ Text Label 9900 1800 2    50   ~ 0
 FANOUT2
 Text Label 9900 1900 2    50   ~ 0
 FANOUT3
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 5C8304E4
-P 950 4600
-AR Path="/5C8304E4" Ref="J?"  Part="1" 
-AR Path="/5C83278E/5C8304E4" Ref="J3"  Part="1" 
-F 0 "J3" H 950 4700 50  0000 C CNN
-F 1 "CASEFAN2" V 1100 4550 50  0000 C CNN
-F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 950 4600 50  0001 C CNN
-F 3 "~" H 950 4600 50  0001 C CNN
-	1    950  4600
-	-1   0    0    -1  
-$EndComp
 Text Label 9900 1600 2    50   ~ 0
 FANOUT0
 Wire Wire Line
-	1150 4700 1500 4700
-Text Label 1500 4700 2    50   ~ 0
+	1100 4500 1450 4500
+Text Label 1450 4500 2    50   ~ 0
 FANOUT0
-$Comp
-L power:+12V #PWR?
-U 1 1 5C8304EE
-P 1200 4550
-AR Path="/5C8304EE" Ref="#PWR?"  Part="1" 
-AR Path="/5C83278E/5C8304EE" Ref="#PWR0106"  Part="1" 
-F 0 "#PWR0106" H 1200 4400 50  0001 C CNN
-F 1 "+12V" H 1215 4723 50  0000 C CNN
-F 2 "" H 1200 4550 50  0001 C CNN
-F 3 "" H 1200 4550 50  0001 C CNN
-	1    1200 4550
-	-1   0    0    -1  
-$EndComp
 Wire Wire Line
-	1200 4550 1200 4600
-Wire Wire Line
-	1200 4600 1150 4600
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 5C8304F6
-P 950 4100
-AR Path="/5C8304F6" Ref="J?"  Part="1" 
-AR Path="/5C83278E/5C8304F6" Ref="J2"  Part="1" 
-F 0 "J2" H 950 4200 50  0000 C CNN
-F 1 "CASEFAN1" V 1100 4050 50  0000 C CNN
-F 2 "Connector:FanPinHeader_1x03_P2.54mm_Vertical" H 950 4100 50  0001 C CNN
-F 3 "~" H 950 4100 50  0001 C CNN
-	1    950  4100
-	-1   0    0    -1  
-$EndComp
-Wire Wire Line
-	1150 4200 1500 4200
-Text Label 1500 4200 2    50   ~ 0
+	1100 4600 1450 4600
+Text Label 1450 4600 2    50   ~ 0
 FANOUT0
 $Comp
 L power:+12V #PWR?
 U 1 1 5C8304FF
-P 1200 4050
+P 1150 4250
 AR Path="/5C8304FF" Ref="#PWR?"  Part="1" 
 AR Path="/5C83278E/5C8304FF" Ref="#PWR0110"  Part="1" 
-F 0 "#PWR0110" H 1200 3900 50  0001 C CNN
-F 1 "+12V" H 1215 4223 50  0000 C CNN
-F 2 "" H 1200 4050 50  0001 C CNN
-F 3 "" H 1200 4050 50  0001 C CNN
-	1    1200 4050
+F 0 "#PWR0110" H 1150 4100 50  0001 C CNN
+F 1 "+12V" H 1165 4423 50  0000 C CNN
+F 2 "" H 1150 4250 50  0001 C CNN
+F 3 "" H 1150 4250 50  0001 C CNN
+	1    1150 4250
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	1200 4050 1200 4100
+	1150 4250 1150 4300
 Wire Wire Line
-	1200 4100 1150 4100
+	1150 4300 1100 4300
 $Comp
 L Connector_Generic:Conn_01x05 J?
 U 1 1 5C830507
@@ -315,11 +272,11 @@ Wire Wire Line
 Wire Wire Line
 	1150 3050 1500 3050
 Text Label 1500 3050 2    50   ~ 0
-IMD_AN1
+HECS_AN1
 Text Label 1500 3150 2    50   ~ 0
-IMD_AN2
+HECS_AN2
 Text Label 1500 3250 2    50   ~ 0
-IMD_AN3
+HECS_AN3
 $Comp
 L Connector_Generic:Conn_01x04 J?
 U 1 1 5C830523
@@ -398,115 +355,26 @@ Wire Wire Line
 Wire Wire Line
 	7950 2250 8250 2250
 $Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 5C830549
-P 1950 4100
-AR Path="/5C830549" Ref="J?"  Part="1" 
-AR Path="/5C83278E/5C830549" Ref="J12"  Part="1" 
-F 0 "J12" H 1950 4200 50  0000 C CNN
-F 1 "NTC1" V 2100 4050 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 1950 4100 50  0001 C CNN
-F 3 "~" H 1950 4100 50  0001 C CNN
-	1    1950 4100
-	-1   0    0    -1  
-$EndComp
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 5C830550
-P 1950 4600
-AR Path="/5C830550" Ref="J?"  Part="1" 
-AR Path="/5C83278E/5C830550" Ref="J13"  Part="1" 
-F 0 "J13" H 1950 4700 50  0000 C CNN
-F 1 "NTC1" V 2100 4550 50  0000 C CNN
-F 2 "Connector_Molex:Molex_KK-254_AE-6410-02A_1x02_P2.54mm_Vertical" H 1950 4600 50  0001 C CNN
-F 3 "~" H 1950 4600 50  0001 C CNN
-	1    1950 4600
-	-1   0    0    -1  
-$EndComp
-$Comp
-L power:+5V #PWR?
-U 1 1 5C830557
-P 2200 4050
-AR Path="/5C830557" Ref="#PWR?"  Part="1" 
-AR Path="/5C83278E/5C830557" Ref="#PWR0115"  Part="1" 
-F 0 "#PWR0115" H 2200 3900 50  0001 C CNN
-F 1 "+5V" H 2215 4223 50  0000 C CNN
-F 2 "" H 2200 4050 50  0001 C CNN
-F 3 "" H 2200 4050 50  0001 C CNN
-	1    2200 4050
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2200 4050 2200 4100
-Wire Wire Line
-	2200 4100 2150 4100
-$Comp
 L power:+5V #PWR?
 U 1 1 5C83055F
-P 2200 4550
+P 2400 4250
 AR Path="/5C83055F" Ref="#PWR?"  Part="1" 
 AR Path="/5C83278E/5C83055F" Ref="#PWR0116"  Part="1" 
-F 0 "#PWR0116" H 2200 4400 50  0001 C CNN
-F 1 "+5V" H 2215 4723 50  0000 C CNN
-F 2 "" H 2200 4550 50  0001 C CNN
-F 3 "" H 2200 4550 50  0001 C CNN
-	1    2200 4550
+F 0 "#PWR0116" H 2400 4100 50  0001 C CNN
+F 1 "+5V" H 2415 4423 50  0000 C CNN
+F 2 "" H 2400 4250 50  0001 C CNN
+F 3 "" H 2400 4250 50  0001 C CNN
+	1    2400 4250
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2200 4550 2200 4600
-Wire Wire Line
-	2200 4600 2150 4600
-Text Label 2450 4200 2    50   ~ 0
+Text Label 2600 4500 2    50   ~ 0
 TEMP_1
 Wire Wire Line
-	2150 4200 2450 4200
+	2300 4500 2600 4500
 Wire Wire Line
-	2150 4700 2450 4700
-Text Label 2450 4700 2    50   ~ 0
+	2300 4600 2600 4600
+Text Label 2600 4600 2    50   ~ 0
 TEMP_2
-$Comp
-L Device:C C?
-U 1 1 5C83056B
-P 3050 7100
-AR Path="/5C83056B" Ref="C?"  Part="1" 
-AR Path="/5C5EE841/5C83056B" Ref="C?"  Part="1" 
-AR Path="/5C83278E/5C83056B" Ref="C1"  Part="1" 
-F 0 "C1" H 3165 7146 50  0000 L CNN
-F 1 "470uF" H 3165 7055 50  0000 L CNN
-F 2 "Capacitor_THT:CP_Radial_D10.0mm_P5.00mm" H 3088 6950 50  0001 C CNN
-F 3 "~" H 3050 7100 50  0001 C CNN
-	1    3050 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5C830572
-P 3050 7250
-AR Path="/5C830572" Ref="#PWR?"  Part="1" 
-AR Path="/5C5EE841/5C830572" Ref="#PWR?"  Part="1" 
-AR Path="/5C83278E/5C830572" Ref="#PWR0117"  Part="1" 
-F 0 "#PWR0117" H 3050 7000 50  0001 C CNN
-F 1 "GND" H 3055 7077 50  0000 C CNN
-F 2 "" H 3050 7250 50  0001 C CNN
-F 3 "" H 3050 7250 50  0001 C CNN
-	1    3050 7250
-	1    0    0    -1  
-$EndComp
-$Comp
-L power:+12V #PWR?
-U 1 1 5C830578
-P 3050 6950
-AR Path="/5C830578" Ref="#PWR?"  Part="1" 
-AR Path="/5C5EE841/5C830578" Ref="#PWR?"  Part="1" 
-AR Path="/5C83278E/5C830578" Ref="#PWR0118"  Part="1" 
-F 0 "#PWR0118" H 3050 6800 50  0001 C CNN
-F 1 "+12V" H 3065 7123 50  0000 C CNN
-F 2 "" H 3050 6950 50  0001 C CNN
-F 3 "" H 3050 6950 50  0001 C CNN
-	1    3050 6950
-	1    0    0    -1  
-$EndComp
 Wire Notes Line width 39 rgb(253, 0, 0)
 	650  850  2900 850 
 Wire Notes Line width 39 rgb(255, 0, 0)
@@ -698,101 +566,55 @@ SCL
 Wire Wire Line
 	9450 3150 9550 3150
 $Comp
-L interface-board-rescue:EPM1510SJ-CUSTOM_IC U?
-U 1 1 5C8305DD
-P 1600 2000
-AR Path="/5C8305DD" Ref="U?"  Part="1" 
-AR Path="/5C83278E/5C8305DD" Ref="U10"  Part="1" 
-F 0 "U10" H 1600 2450 50  0000 C CNN
-F 1 "EPM1510SJ" H 1600 1950 50  0000 C CNN
-F 2 "CustomFootprints:EPM1510SJ" H 1600 2000 50  0001 C CNN
-F 3 "" H 1600 2000 50  0001 C CNN
-	1    1600 2000
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	1050 1700 850  1700
-Wire Wire Line
-	1050 1900 850  1900
-Text Label 850  1700 0    50   ~ 0
-HV+
-Text Label 850  1900 0    50   ~ 0
-HV-
-$Comp
-L Connector_Generic:Conn_01x02 J?
-U 1 1 5C8305E8
-P 2400 1750
-AR Path="/5C8305E8" Ref="J?"  Part="1" 
-AR Path="/5C83278E/5C8305E8" Ref="J5"  Part="1" 
-F 0 "J5" V 2366 1562 50  0000 R CNN
-F 1 "BLINKY" H 2550 1850 50  0000 R CNN
-F 2 "Connector_Phoenix_MC_HighVoltage:PhoenixContact_MCV_1,5_2-G-5.08_1x02_P5.08mm_Vertical" H 2400 1750 50  0001 C CNN
-F 3 "~" H 2400 1750 50  0001 C CNN
-	1    2400 1750
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	2150 1700 2200 1700
-Wire Wire Line
-	2200 1700 2200 1750
-Wire Wire Line
-	2150 1900 2200 1900
-Wire Wire Line
-	2200 1900 2200 1850
-$Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 5C8305F3
-P 1500 950
+P 1800 1250
 AR Path="/5C8305F3" Ref="J?"  Part="1" 
 AR Path="/5C83278E/5C8305F3" Ref="J8"  Part="1" 
-F 0 "J8" V 1466 762 50  0000 R CNN
-F 1 "HV+" V 1375 762 50  0000 R CNN
-F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770870-x_1x03_P4.14mm_Vertical" H 1500 950 50  0001 C CNN
-F 3 "~" H 1500 950 50  0001 C CNN
-	1    1500 950 
+F 0 "J8" V 1766 1062 50  0000 R CNN
+F 1 "HV+" V 1675 1062 50  0000 R CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770870-x_1x03_P4.14mm_Vertical" H 1800 1250 50  0001 C CNN
+F 3 "~" H 1800 1250 50  0001 C CNN
+	1    1800 1250
 	0    -1   -1   0   
 $EndComp
 Wire Wire Line
-	1200 1150 1400 1150
+	1500 1450 1700 1450
 Wire Wire Line
-	1200 1400 2150 1400
+	1500 1700 2450 1700
 Wire Wire Line
-	1600 1150 2150 1150
+	1900 1450 2450 1450
 Wire Wire Line
-	1400 1150 1500 1150
-Connection ~ 1400 1150
-Connection ~ 1600 1150
-Connection ~ 1500 1150
+	1700 1450 1800 1450
+Connection ~ 1700 1450
+Connection ~ 1900 1450
+Connection ~ 1800 1450
 Wire Wire Line
-	1500 1150 1600 1150
+	1800 1450 1900 1450
 $Comp
 L Connector_Generic:Conn_01x03 J?
 U 1 1 5C830602
-P 1000 1400
+P 1300 1700
 AR Path="/5C830602" Ref="J?"  Part="1" 
 AR Path="/5C83278E/5C830602" Ref="J7"  Part="1" 
-F 0 "J7" H 920 1075 50  0000 C CNN
-F 1 "HV-" H 1150 1400 50  0000 C CNN
-F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770870-x_1x03_P4.14mm_Vertical" H 1000 1400 50  0001 C CNN
-F 3 "~" H 1000 1400 50  0001 C CNN
-	1    1000 1400
+F 0 "J7" H 1220 1375 50  0000 C CNN
+F 1 "HV-" H 1450 1700 50  0000 C CNN
+F 2 "Connector_TE-Connectivity:TE_MATE-N-LOK_1-770870-x_1x03_P4.14mm_Vertical" H 1300 1700 50  0001 C CNN
+F 3 "~" H 1300 1700 50  0001 C CNN
+	1    1300 1700
 	-1   0    0    1   
 $EndComp
 Wire Wire Line
-	1200 1300 1200 1400
-Connection ~ 1200 1400
+	1500 1600 1500 1700
+Connection ~ 1500 1700
 Wire Wire Line
-	1200 1400 1200 1500
+	1500 1700 1500 1800
 Text Notes 650  5200 0    50   ~ 0
 SHDN_LOOP_OUT is connected to 12V through shutdown loop
-Text Notes 3200 6950 0    50   ~ 0
-Can remove this
 Text Notes 900  3850 0    50   ~ 0
 Local fan controls and thermocoupler inputs
 Text Notes 900  2800 0    50   ~ 0
 Current monitor for HV and UART debug port
-Text Notes 1850 1550 0    50   ~ 0
-This is to run a HV indicator LED (called blinky).
 $Comp
 L Regulator_Switching:R-78E5.0-0.5 U?
 U 1 1 5C830611
@@ -951,4 +773,40 @@ Wire Wire Line
 	7800 5250 7800 5300
 Text Notes 8800 7050 0    100  ~ 0
 Willem Hillier\nUVM AERO\n3/5/2019
+$Comp
+L Connector_Generic:Conn_01x04 J2
+U 1 1 5CA58654
+P 900 4500
+F 0 "J2" H 820 4075 50  0000 C CNN
+F 1 "FANS" V 1000 4450 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 900 4500 50  0001 C CNN
+F 3 "~" H 900 4500 50  0001 C CNN
+	1    900  4500
+	-1   0    0    1   
+$EndComp
+$Comp
+L Connector_Generic:Conn_01x04 J3
+U 1 1 5CA5874A
+P 2100 4500
+F 0 "J3" H 2020 4075 50  0000 C CNN
+F 1 "NTCs" V 2200 4450 50  0000 C CNN
+F 2 "Connector_JST:JST_PH_B4B-PH-K_1x04_P2.00mm_Vertical" H 2100 4500 50  0001 C CNN
+F 3 "~" H 2100 4500 50  0001 C CNN
+	1    2100 4500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	1150 4300 1150 4400
+Wire Wire Line
+	1150 4400 1100 4400
+Connection ~ 1150 4300
+Wire Wire Line
+	2300 4300 2400 4300
+Wire Wire Line
+	2400 4400 2300 4400
+Wire Wire Line
+	2400 4250 2400 4300
+Connection ~ 2400 4300
+Wire Wire Line
+	2400 4300 2400 4400
 $EndSCHEMATC

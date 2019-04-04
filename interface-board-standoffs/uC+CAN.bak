@@ -15,19 +15,6 @@ Comment3 ""
 Comment4 ""
 $EndDescr
 $Comp
-L interface-board-rescue:MCP2515-IST-Interface_CAN_LIN U2
-U 1 1 5C509F1F
-P 4250 4350
-AR Path="/5C4E5628/5C509F1F" Ref="U2"  Part="1" 
-AR Path="/5C83278E/5C8304A7/5C509F1F" Ref="U2"  Part="1" 
-F 0 "U2" H 4450 5150 50  0000 C CNN
-F 1 "MCP2515-IST" H 3950 5150 50  0000 C CNN
-F 2 "Package_SO:TSSOP-20_4.4x6.5mm_P0.65mm" H 4250 3450 50  0001 C CIN
-F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 4350 3550 50  0001 C CNN
-	1    4250 4350
-	-1   0    0    -1  
-$EndComp
-$Comp
 L Interface_CAN_LIN:MCP2551-I-SN U1
 U 1 1 5C509F26
 P 2600 3950
@@ -905,4 +892,15 @@ Text Label 5400 4750 2    50   ~ 0
 MCU_CLK
 Wire Wire Line
 	5400 4750 4850 4750
+$Comp
+L Interface_CAN_LIN:MCP2515-xSO U2
+U 1 1 5C813768
+P 4250 4350
+F 0 "U2" H 4250 5328 50  0000 C CNN
+F 1 "MCP2515-xSO" H 4250 5237 50  0000 C CNN
+F 2 "Package_SO:SOIC-18W_7.5x11.6mm_P1.27mm" H 4250 3450 50  0001 C CIN
+F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/21801e.pdf" H 4350 3550 50  0001 C CNN
+	1    4250 4350
+	-1   0    0    -1  
+$EndComp
 $EndSCHEMATC
