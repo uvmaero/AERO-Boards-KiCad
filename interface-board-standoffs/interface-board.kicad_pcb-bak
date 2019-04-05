@@ -5416,7 +5416,7 @@
   (gr_text "+\n\n-" (at 133.604 65.2526) (layer F.SilkS) (tstamp 5C808AB5)
     (effects (font (size 5.08 5.08) (thickness 0.4572)) (justify left))
   )
-  (gr_text "TSV Interface and\nGLV PD Board rev1.1" (at 141.732 64.77) (layer F.SilkS) (tstamp 5CB18EAB)
+  (gr_text "TSV Interface and\nGLV PD Board 1.1" (at 137.16 65.024) (layer F.SilkS) (tstamp 5CA55582)
     (effects (font (size 2.5 2.5) (thickness 0.4)) (justify left))
   )
   (gr_text "5V\nGND\nTX\nRX" (at 71.12 121.92) (layer F.SilkS)

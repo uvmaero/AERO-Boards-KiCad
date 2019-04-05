@@ -1,0 +1,415 @@
+EESchema Schematic File Version 4
+LIBS:interface-board-cache
+EELAYER 26 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 4 6
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:D D?
+U 1 1 5C5EECE9
+P 6550 1800
+AR Path="/5C5EECE9" Ref="D?"  Part="1" 
+AR Path="/5C5EE841/5C5EECE9" Ref="D3"  Part="1" 
+AR Path="/5C83278E/5C8304B2/5C5EECE9" Ref="D3"  Part="1" 
+F 0 "D3" H 6550 2000 50  0000 C CNN
+F 1 "1N4001" H 6550 1900 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6550 1800 50  0001 C CNN
+F 3 "~" H 6550 1800 50  0001 C CNN
+	1    6550 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C5EECF0
+P 6350 1750
+AR Path="/5C5EECF0" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5EECF0" Ref="#PWR045"  Part="1" 
+AR Path="/5C83278E/5C8304B2/5C5EECF0" Ref="#PWR045"  Part="1" 
+F 0 "#PWR045" H 6350 1600 50  0001 C CNN
+F 1 "+12V" H 6365 1923 50  0000 C CNN
+F 2 "" H 6350 1750 50  0001 C CNN
+F 3 "" H 6350 1750 50  0001 C CNN
+	1    6350 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C5EEDC2
+P 6700 2450
+AR Path="/5C5EEDC2" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5EEDC2" Ref="#PWR047"  Part="1" 
+AR Path="/5C83278E/5C8304B2/5C5EEDC2" Ref="#PWR047"  Part="1" 
+F 0 "#PWR047" H 6700 2200 50  0001 C CNN
+F 1 "GND" H 6705 2277 50  0000 C CNN
+F 2 "" H 6700 2450 50  0001 C CNN
+F 3 "" H 6700 2450 50  0001 C CNN
+	1    6700 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6700 2450 6700 2350
+Wire Wire Line
+	6350 1750 6350 1800
+Wire Wire Line
+	6350 1800 6400 1800
+Wire Wire Line
+	6700 1800 6700 1900
+Text HLabel 6650 1900 0    50   Output ~ 0
+FANOUT0
+Wire Wire Line
+	6650 1900 6700 1900
+Connection ~ 6700 1900
+Wire Wire Line
+	6700 1900 6700 1950
+Text HLabel 9300 3000 2    50   Input ~ 0
+FAN_CTRL_0
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5C5F732E
+P 5100 2150
+AR Path="/5C5F732E" Ref="Q?"  Part="1" 
+AR Path="/5C5EE841/5C5F732E" Ref="Q3"  Part="1" 
+AR Path="/5C83278E/5C8304B2/5C5F732E" Ref="Q3"  Part="1" 
+F 0 "Q3" H 5350 2050 50  0000 C CNN
+F 1 "Q_NMOS_GDS" H 5550 2200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 5300 2250 50  0001 C CNN
+F 3 "~" H 5100 2150 50  0001 C CNN
+	1    5100 2150
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5C5F7335
+P 4850 1800
+AR Path="/5C5F7335" Ref="D?"  Part="1" 
+AR Path="/5C5EE841/5C5F7335" Ref="D5"  Part="1" 
+AR Path="/5C83278E/5C8304B2/5C5F7335" Ref="D5"  Part="1" 
+F 0 "D5" H 4850 2000 50  0000 C CNN
+F 1 "1N4001" H 4850 1900 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 4850 1800 50  0001 C CNN
+F 3 "~" H 4850 1800 50  0001 C CNN
+	1    4850 1800
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C5F733C
+P 4650 1750
+AR Path="/5C5F733C" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5F733C" Ref="#PWR051"  Part="1" 
+AR Path="/5C83278E/5C8304B2/5C5F733C" Ref="#PWR051"  Part="1" 
+F 0 "#PWR051" H 4650 1600 50  0001 C CNN
+F 1 "+12V" H 4665 1923 50  0000 C CNN
+F 2 "" H 4650 1750 50  0001 C CNN
+F 3 "" H 4650 1750 50  0001 C CNN
+	1    4650 1750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C5F7350
+P 5000 2450
+AR Path="/5C5F7350" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5F7350" Ref="#PWR053"  Part="1" 
+AR Path="/5C83278E/5C8304B2/5C5F7350" Ref="#PWR053"  Part="1" 
+F 0 "#PWR053" H 5000 2200 50  0001 C CNN
+F 1 "GND" H 5005 2277 50  0000 C CNN
+F 2 "" H 5000 2450 50  0001 C CNN
+F 3 "" H 5000 2450 50  0001 C CNN
+	1    5000 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5000 2450 5000 2350
+Wire Wire Line
+	4650 1750 4650 1800
+Wire Wire Line
+	4650 1800 4700 1800
+Wire Wire Line
+	5000 1800 5000 1900
+Text HLabel 4950 1900 0    50   Output ~ 0
+FANOUT1
+Wire Wire Line
+	4950 1900 5000 1900
+Connection ~ 5000 1900
+Wire Wire Line
+	5000 1900 5000 1950
+Text HLabel 9300 3100 2    50   Input ~ 0
+FAN_CTRL_1
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5C5F7B5C
+P 5300 4300
+AR Path="/5C5F7B5C" Ref="Q?"  Part="1" 
+AR Path="/5C5EE841/5C5F7B5C" Ref="Q2"  Part="1" 
+AR Path="/5C83278E/5C8304B2/5C5F7B5C" Ref="Q2"  Part="1" 
+F 0 "Q2" H 5550 4200 50  0000 C CNN
+F 1 "Q_NMOS_GDS" H 5750 4350 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 5500 4400 50  0001 C CNN
+F 3 "~" H 5300 4300 50  0001 C CNN
+	1    5300 4300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5C5F7B63
+P 5050 3950
+AR Path="/5C5F7B63" Ref="D?"  Part="1" 
+AR Path="/5C5EE841/5C5F7B63" Ref="D4"  Part="1" 
+AR Path="/5C83278E/5C8304B2/5C5F7B63" Ref="D4"  Part="1" 
+F 0 "D4" H 5050 4150 50  0000 C CNN
+F 1 "1N4001" H 5050 4050 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 5050 3950 50  0001 C CNN
+F 3 "~" H 5050 3950 50  0001 C CNN
+	1    5050 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C5F7B6A
+P 4850 3900
+AR Path="/5C5F7B6A" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5F7B6A" Ref="#PWR046"  Part="1" 
+AR Path="/5C83278E/5C8304B2/5C5F7B6A" Ref="#PWR046"  Part="1" 
+F 0 "#PWR046" H 4850 3750 50  0001 C CNN
+F 1 "+12V" H 4865 4073 50  0000 C CNN
+F 2 "" H 4850 3900 50  0001 C CNN
+F 3 "" H 4850 3900 50  0001 C CNN
+	1    4850 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C5F7B7E
+P 5200 4600
+AR Path="/5C5F7B7E" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5F7B7E" Ref="#PWR048"  Part="1" 
+AR Path="/5C83278E/5C8304B2/5C5F7B7E" Ref="#PWR048"  Part="1" 
+F 0 "#PWR048" H 5200 4350 50  0001 C CNN
+F 1 "GND" H 5205 4427 50  0000 C CNN
+F 2 "" H 5200 4600 50  0001 C CNN
+F 3 "" H 5200 4600 50  0001 C CNN
+	1    5200 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5200 4600 5200 4500
+Wire Wire Line
+	4850 3900 4850 3950
+Wire Wire Line
+	4850 3950 4900 3950
+Wire Wire Line
+	5200 3950 5200 4050
+Text HLabel 5150 4050 0    50   Output ~ 0
+FANOUT2
+Wire Wire Line
+	5150 4050 5200 4050
+Connection ~ 5200 4050
+Wire Wire Line
+	5200 4050 5200 4100
+Text HLabel 9300 3200 2    50   Input ~ 0
+FAN_CTRL_2
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5C5F7B95
+P 6900 4300
+AR Path="/5C5F7B95" Ref="Q?"  Part="1" 
+AR Path="/5C5EE841/5C5F7B95" Ref="Q4"  Part="1" 
+AR Path="/5C83278E/5C8304B2/5C5F7B95" Ref="Q4"  Part="1" 
+F 0 "Q4" H 7150 4200 50  0000 C CNN
+F 1 "Q_NMOS_GDS" H 7350 4350 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7100 4400 50  0001 C CNN
+F 3 "~" H 6900 4300 50  0001 C CNN
+	1    6900 4300
+	-1   0    0    -1  
+$EndComp
+$Comp
+L Device:D D?
+U 1 1 5C5F7B9C
+P 6650 3950
+AR Path="/5C5F7B9C" Ref="D?"  Part="1" 
+AR Path="/5C5EE841/5C5F7B9C" Ref="D6"  Part="1" 
+AR Path="/5C83278E/5C8304B2/5C5F7B9C" Ref="D6"  Part="1" 
+F 0 "D6" H 6650 4150 50  0000 C CNN
+F 1 "1N4001" H 6650 4050 50  0000 C CNN
+F 2 "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal" H 6650 3950 50  0001 C CNN
+F 3 "~" H 6650 3950 50  0001 C CNN
+	1    6650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+12V #PWR?
+U 1 1 5C5F7BA3
+P 6450 3900
+AR Path="/5C5F7BA3" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5F7BA3" Ref="#PWR052"  Part="1" 
+AR Path="/5C83278E/5C8304B2/5C5F7BA3" Ref="#PWR052"  Part="1" 
+F 0 "#PWR052" H 6450 3750 50  0001 C CNN
+F 1 "+12V" H 6465 4073 50  0000 C CNN
+F 2 "" H 6450 3900 50  0001 C CNN
+F 3 "" H 6450 3900 50  0001 C CNN
+	1    6450 3900
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5C5F7BB7
+P 6800 4600
+AR Path="/5C5F7BB7" Ref="#PWR?"  Part="1" 
+AR Path="/5C5EE841/5C5F7BB7" Ref="#PWR054"  Part="1" 
+AR Path="/5C83278E/5C8304B2/5C5F7BB7" Ref="#PWR054"  Part="1" 
+F 0 "#PWR054" H 6800 4350 50  0001 C CNN
+F 1 "GND" H 6805 4427 50  0000 C CNN
+F 2 "" H 6800 4600 50  0001 C CNN
+F 3 "" H 6800 4600 50  0001 C CNN
+	1    6800 4600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	6800 4600 6800 4500
+Wire Wire Line
+	6450 3900 6450 3950
+Wire Wire Line
+	6450 3950 6500 3950
+Wire Wire Line
+	6800 3950 6800 4050
+Text HLabel 6750 4050 0    50   Output ~ 0
+FANOUT3
+Wire Wire Line
+	6750 4050 6800 4050
+Connection ~ 6800 4050
+Wire Wire Line
+	6800 4050 6800 4100
+Text HLabel 9300 3300 2    50   Input ~ 0
+FAN_CTRL_3
+Text Notes 550  750  0    157  ~ 31
+Caps across fan outputs a good idea maybe?
+$Comp
+L Device:R_Pack04 RN1
+U 1 1 5C62451B
+P 8550 3100
+AR Path="/5C5EE841/5C62451B" Ref="RN1"  Part="1" 
+AR Path="/5C83278E/5C8304B2/5C62451B" Ref="RN1"  Part="1" 
+F 0 "RN1" V 8875 3100 50  0000 C CNN
+F 1 "1k" V 8784 3100 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 8825 3100 50  0001 C CNN
+F 3 "~" H 8550 3100 50  0001 C CNN
+	1    8550 3100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L Device:Q_NMOS_GDS Q?
+U 1 1 5C5EECB4
+P 6800 2150
+AR Path="/5C5EECB4" Ref="Q?"  Part="1" 
+AR Path="/5C5EE841/5C5EECB4" Ref="Q1"  Part="1" 
+AR Path="/5C83278E/5C8304B2/5C5EECB4" Ref="Q1"  Part="1" 
+F 0 "Q1" H 7050 2050 50  0000 C CNN
+F 1 "Q_NMOS_GDS" H 7250 2200 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:TO-252-2" H 7000 2250 50  0001 C CNN
+F 3 "~" H 6800 2150 50  0001 C CNN
+	1    6800 2150
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	7000 2150 8150 2150
+Wire Wire Line
+	8150 2150 8150 3000
+Wire Wire Line
+	8150 3000 8350 3000
+Wire Wire Line
+	5300 2150 5900 2150
+Wire Wire Line
+	5900 2150 5900 3100
+Wire Wire Line
+	5900 3100 8350 3100
+Wire Wire Line
+	5500 4300 5900 4300
+Wire Wire Line
+	5900 4300 5900 3200
+Wire Wire Line
+	5900 3200 8350 3200
+Wire Wire Line
+	7100 4300 8150 4300
+Wire Wire Line
+	8150 4300 8150 3300
+Wire Wire Line
+	8150 3300 8350 3300
+$Comp
+L Device:R_Pack04 RN2
+U 1 1 5C5E5503
+P 9050 2700
+AR Path="/5C5EE841/5C5E5503" Ref="RN2"  Part="1" 
+AR Path="/5C83278E/5C8304B2/5C5E5503" Ref="RN2"  Part="1" 
+F 0 "RN2" V 9375 2700 50  0000 C CNN
+F 1 "10k" V 9284 2700 50  0000 C CNN
+F 2 "Resistor_SMD:R_Array_Convex_4x0603" V 9325 2700 50  0001 C CNN
+F 3 "~" H 9050 2700 50  0001 C CNN
+	1    9050 2700
+	1    0    0    1   
+$EndComp
+Text Notes 8650 7050 0    100  ~ 0
+Willem Hillier\nUVM AERO\n3/5/2019
+Wire Wire Line
+	8750 3000 9150 3000
+Wire Wire Line
+	8750 3100 9050 3100
+Wire Wire Line
+	8750 3200 8950 3200
+Wire Wire Line
+	8750 3300 8850 3300
+Wire Wire Line
+	8850 2900 8850 3300
+Connection ~ 8850 3300
+Wire Wire Line
+	8850 3300 9300 3300
+Wire Wire Line
+	8950 2900 8950 3200
+Connection ~ 8950 3200
+Wire Wire Line
+	8950 3200 9300 3200
+Wire Wire Line
+	9050 2900 9050 3100
+Connection ~ 9050 3100
+Wire Wire Line
+	9050 3100 9300 3100
+Wire Wire Line
+	9150 2900 9150 3000
+Connection ~ 9150 3000
+Wire Wire Line
+	9150 3000 9300 3000
+$Comp
+L power:+5V #PWR0101
+U 1 1 5CA49D15
+P 9000 2450
+F 0 "#PWR0101" H 9000 2300 50  0001 C CNN
+F 1 "+5V" H 9015 2623 50  0000 C CNN
+F 2 "" H 9000 2450 50  0001 C CNN
+F 3 "" H 9000 2450 50  0001 C CNN
+	1    9000 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8850 2500 8950 2500
+Connection ~ 8950 2500
+Wire Wire Line
+	8950 2500 9000 2500
+Connection ~ 9050 2500
+Wire Wire Line
+	9050 2500 9150 2500
+Wire Wire Line
+	9000 2450 9000 2500
+Connection ~ 9000 2500
+Wire Wire Line
+	9000 2500 9050 2500
+$EndSCHEMATC
