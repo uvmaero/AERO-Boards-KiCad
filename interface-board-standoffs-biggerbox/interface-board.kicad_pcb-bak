@@ -5835,7 +5835,7 @@
   (gr_arc (start 182.435 55.124) (end 182.935 55.124) (angle -180) (layer Dwgs.User) (width 0.15))
   (gr_line (start 182.935 73.124) (end 182.935 55.124) (layer Dwgs.User) (width 0.15))
   (gr_line (start 181.935 55.124) (end 181.935 73.124) (layer Dwgs.User) (width 0.15))
-  (gr_text "UVM AERO\nWillem Hillier\n4/3/2019" (at 127.254 130.556) (layer B.SilkS) (tstamp 5CB18EA8)
+  (gr_text "UVM AERO\nWillem Hillier\n4/3/2019" (at 127.254 131.826) (layer B.SilkS) (tstamp 5CB18EA8)
     (effects (font (size 1.8 1.8) (thickness 0.3)) (justify left mirror))
   )
   (gr_text "GLV\nTSV" (at 168.215 104.125 48) (layer B.SilkS) (tstamp 5C7AA01F)
