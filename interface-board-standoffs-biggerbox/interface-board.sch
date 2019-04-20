@@ -20,26 +20,26 @@ U 5C83278E
 F0 "Main" 50
 F1 "file5C83278D.sch" 50
 $EndSheet
-Text Notes 3250 1600 0    315  ~ 63
-CS4 HV Interface Board
-Text Notes 850  4400 0    100  ~ 20
+Text Notes 2150 1400 0    315  ~ 63
+CS4 HV Interface Board + Box
+Text Notes 600  4400 0    100  ~ 20
 HV
 Text Notes 2500 4400 0    100  ~ 20
 Main DC/DC\n300V -> 12V
-Text Notes 1850 3800 0    100  ~ 20
+Text Notes 2350 5500 0    100  ~ 20
 HV Indicator LED\nDC/DC 300V->12V
-Text Notes 4050 4000 0    100  ~ 20
-Current Meter
+Text Notes 4100 4150 0    100  ~ 20
+INA219\nCurrent Meter
 Text Notes 5400 4150 0    100  ~ 20
 (Ampseal)\nShutdown loop out
 Wire Notes Line
-	800  4150 1200 4150
+	550  4150 950  4150
 Wire Notes Line
-	1200 4150 1200 4550
+	950  4150 950  4550
 Wire Notes Line
-	1200 4550 800  4550
+	950  4550 550  4550
 Wire Notes Line
-	800  4550 800  4150
+	550  4550 550  4150
 Wire Notes Line
 	2450 4050 3700 4050
 Wire Notes Line
@@ -59,13 +59,11 @@ Wire Notes Line
 Wire Notes Line
 	5350 3750 5350 4200
 Wire Notes Line
-	1700 3450 1700 3900
+	2200 5150 2200 5600
 Wire Notes Line
-	1700 3900 3350 3900
+	2200 5600 3850 5600
 Wire Notes Line
-	3350 3900 3350 3450
-Wire Notes Line
-	3350 3450 1700 3450
+	3850 5150 2200 5150
 Text Notes 1750 4300 0    100  ~ 20
 Fuse
 Text Notes 8600 3350 0    100  ~ 20
@@ -78,18 +76,18 @@ Wire Notes Line
 	5350 4200 6900 4200
 Wire Notes Line
 	5350 3750 6900 3750
-Text Notes 6300 2600 0    100  ~ 20
+Text Notes 6250 2200 0    100  ~ 20
 High-side 12V Fuse\nDistribution Box
 Text Notes 7400 4050 0    100  ~ 20
 12V return from\ndistribution box
 Wire Notes Line
-	8050 2200 8050 2700
+	8000 1800 8000 2300
 Wire Notes Line
-	8050 2700 6250 2700
+	8000 2300 6200 2300
 Wire Notes Line
-	6250 2700 6250 2200
+	6200 2300 6200 1800
 Wire Notes Line
-	6250 2200 8050 2200
+	6200 1800 8000 1800
 Wire Notes Line
 	1700 4050 2250 4050
 Wire Notes Line
@@ -133,12 +131,7 @@ Wire Notes Line
 Wire Notes Line
 	7350 4200 7350 3700
 Wire Wire Line
-	1200 4250 1300 4250
-Wire Wire Line
 	2250 4250 2450 4250
-Connection ~ 1300 4250
-Wire Wire Line
-	1300 4250 1700 4250
 Wire Wire Line
 	3700 4450 3900 4450
 Wire Wire Line
@@ -192,13 +185,9 @@ Text Notes 3600 4200 0    50   ~ 0
 Wire Wire Line
 	9450 3200 9750 3200
 Wire Wire Line
-	6450 2700 6450 3750
+	6400 2300 6400 2450
 Wire Wire Line
-	6500 2700 6500 3750
-Wire Wire Line
-	6550 2700 6550 3750
-Wire Wire Line
-	7600 2700 7600 3700
+	7550 2300 7550 3300
 Text Notes 9050 4000 0    100  ~ 20
 Onboard fans
 Wire Notes Line
@@ -233,8 +222,6 @@ Wire Notes Line width 20
 	10850 4900 1600 4900
 Wire Notes Line width 20
 	1600 4900 1600 2900
-Wire Notes Line width 20
-	1600 2900 10850 2900
 Text Notes 1650 3050 0    79   ~ 16
 This board
 Wire Wire Line
@@ -296,15 +283,13 @@ F 3 "" H 8900 3400 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	8050 2300 8850 2300
+	8000 1900 8800 1900
 Wire Wire Line
-	8050 2350 8850 2350
+	8000 1950 8800 1950
 Wire Wire Line
-	8050 2400 8850 2400
-Text Notes 8300 2400 0    100  ~ 20
+	8000 2000 8800 2000
+Text Notes 8250 2000 0    100  ~ 20
 12V to fans and rest of car
-Wire Wire Line
-	1200 4450 1450 4450
 Wire Wire Line
 	1450 4450 1450 4600
 Wire Wire Line
@@ -313,23 +298,112 @@ Wire Wire Line
 	2350 4600 2350 4400
 Wire Wire Line
 	2350 4400 2450 4400
-Text Notes 1100 4500 0    50   ~ 0
+Text Notes 850  4500 0    50   ~ 0
 -
-Text Notes 1100 4300 0    50   ~ 0
+Text Notes 850  4300 0    50   ~ 0
 +\n
-Wire Wire Line
-	1300 3550 1700 3550
-Wire Wire Line
-	1300 3550 1300 4250
-Wire Wire Line
-	1450 4450 1450 3750
-Wire Wire Line
-	1450 3750 1700 3750
-Connection ~ 1450 4450
-Text Notes 1750 3800 0    50   ~ 0
+Text Notes 2250 5500 0    50   ~ 0
 -
-Text Notes 1750 3600 0    50   ~ 0
+Text Notes 2250 5300 0    50   ~ 0
 +\n
 Text Notes 9100 7050 0    100  ~ 0
 Willem Hillier\nUVM AERO\n3/5/2019
+Wire Notes Line width 20
+	1600 2900 10850 2900
+Wire Notes Line
+	3850 5600 3850 5150
+Wire Wire Line
+	950  4250 1200 4250
+Wire Wire Line
+	950  4450 1050 4450
+Wire Wire Line
+	1050 4450 1050 5450
+Wire Wire Line
+	1050 5450 2200 5450
+Connection ~ 1050 4450
+Wire Wire Line
+	1050 4450 1450 4450
+Wire Wire Line
+	1200 4250 1200 5250
+Wire Wire Line
+	1200 5250 2200 5250
+Connection ~ 1200 4250
+Wire Wire Line
+	1200 4250 1700 4250
+Text Notes 2600 5950 0    100  ~ 20
+Bender IMD
+Wire Notes Line
+	2200 5650 2200 6100
+Wire Notes Line
+	2200 6100 3850 6100
+Wire Notes Line
+	3850 5650 2200 5650
+Text Notes 2250 6000 0    50   ~ 0
+-
+Text Notes 2250 5800 0    50   ~ 0
++\n
+Wire Notes Line
+	3850 6100 3850 5650
+Wire Wire Line
+	1050 5950 2200 5950
+Wire Wire Line
+	1200 5750 2200 5750
+Wire Wire Line
+	1050 5450 1050 5950
+Connection ~ 1050 5450
+Wire Wire Line
+	1200 5750 1200 5250
+Connection ~ 1200 5250
+Text Notes 5050 2200 0    100  ~ 20
+Lead-Acid\nGLV Battery
+Wire Notes Line
+	4850 1800 4850 2300
+Wire Notes Line
+	4850 2300 6050 2300
+Wire Notes Line
+	6050 2300 6050 1800
+Wire Notes Line
+	6050 1800 4850 1800
+Text Notes 5300 1900 0    50   ~ 0
+-\n
+Wire Wire Line
+	5950 2300 5950 2450
+Wire Wire Line
+	5950 2450 6400 2450
+Connection ~ 6400 2450
+Wire Wire Line
+	6400 2450 6400 2500
+Wire Wire Line
+	5900 2300 5900 2500
+Wire Wire Line
+	5900 2500 6400 2500
+Connection ~ 6400 2500
+Wire Wire Line
+	6400 2500 6400 2550
+Wire Wire Line
+	5850 2300 5850 2550
+Wire Wire Line
+	5850 2550 6400 2550
+Connection ~ 6400 2550
+$Comp
+L power:GND #PWR?
+U 1 1 5CB8A5EF
+P 5100 2400
+AR Path="/5C83278E/5CB8A5EF" Ref="#PWR?"  Part="1" 
+AR Path="/5CB8A5EF" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 5100 2150 50  0001 C CNN
+F 1 "GND" H 5105 2227 50  0000 C CNN
+F 2 "" H 5100 2400 50  0001 C CNN
+F 3 "" H 5100 2400 50  0001 C CNN
+	1    5100 2400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 2300 5100 2400
+Wire Wire Line
+	6400 2550 6400 3750
+Wire Wire Line
+	6450 2300 6450 3750
+Wire Wire Line
+	6500 2300 6500 3750
 $EndSCHEMATC
