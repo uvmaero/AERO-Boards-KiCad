@@ -3,7 +3,7 @@
 #include "mcp_can.h"
 //#include <avr/wdt.h>
 //#include <avr/interrupt.h>
-//#define DEBUG
+#define DEBUG
 
 //CAN ID defines
 #define ID_BASE 0x62
@@ -116,6 +116,8 @@ void setup() {
   #ifdef DEBUG
     Serial.println("CAN BUS Shield init ok!");
   #endif
+
+  digitalWrite(LED2, HIGH);
 }
 
 void testRoutine() {
