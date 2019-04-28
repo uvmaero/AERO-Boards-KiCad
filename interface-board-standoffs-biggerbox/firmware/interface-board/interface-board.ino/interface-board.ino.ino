@@ -1,5 +1,5 @@
 /*Willem Hillier, UVM AERO, 2019. For CS4 cooling/interface box.
-TODO: 
+  TODO:
     -Brakelight control off of pressure sensor data on CAN.
     -Temp curve control over CAN/storing in EEPROM
 */
@@ -69,21 +69,22 @@ TODO:
 #define DC_DC_FAULT            7
 #define DC_DC_TR_EN            8
 
+//Misc. defines
+#define BRAKELIGHT_THRESHOLD   500
+
 MCP_CAN CAN(SPI_CAN_CS);     // Set CS pin
 
 Adafruit_INA219 ina219;
+
+uint32_t lastheartbeatTime;
+uint32_t lastDCDCFaultTime;
+uint32_t dashCoolingStatusRecievedTime;
 
 bool coolingEnabled = 1;
 bool dashCoolingStatusRecieved = 0;
 bool prechargeComplete = 0;
 bool fansRamped = 0;
 int16_t RMCTemps[11];       //Motor controller temps, equivilent to the following:
-
-bool DC_DC_FAULT_FLAG = 0;
-
-uint32_t lastheartbeatTime;
-uint32_t lastDCDCFaultTime;
-uint32_t dashCoolingStatusRecievedTime;
 /*
   int RMCTempA     = 0;  //IGBT phase A
   int RMCTempB     = 0;  //IGBT phase B
@@ -128,7 +129,7 @@ void setup() {
   digitalWrite(PUMP, 0);
 
   pinMode(BRAKE_LIGHT_3, OUTPUT);
-  analogWrite(BRAKE_LIGHT_3, 0);
+  digitalWrite(BRAKE_LIGHT_3, 0);
 
   Serial.begin(115200);
 
@@ -160,6 +161,7 @@ void setup() {
     analogWrite(BRAKE_LIGHT_3, i);
     delay(10);
   }
+  digitalWrite(BRAKE_LIGHT_3, 0);
 }
 
 void testRoutine() {
@@ -170,7 +172,7 @@ void testRoutine() {
   analogWrite(INTERNAL_FAN_0, 0);
   analogWrite(RADIATOR_FAN_1, 0);
   digitalWrite(PUMP, 0);
-  analogWrite(BRAKE_LIGHT_3, 0);
+  digitalWrite(BRAKE_LIGHT_3, 0);
 
   //Test routine
   delay(1000);
@@ -198,9 +200,9 @@ void testRoutine() {
 
   //Brake light
   Serial.println("Testing brake light.");
-  digitalWrite(BRAKE_LIGHT_3,HIGH);
+  digitalWrite(BRAKE_LIGHT_3, HIGH);
   delay(3000);
-  digitalWrite(BRAKE_LIGHT_3,LOW);
+  digitalWrite(BRAKE_LIGHT_3, LOW);
 
   //NTCs
   Serial.println("Testing NTCs.");
@@ -288,49 +290,49 @@ void updateFansFromTemps() {
 #endif
 
   if (coolingEnabled == 1 && prechargeComplete == 1) {
-      //First time starting fans?
-      if(fansRamped ==0) {
-          Serial.println("Ramping radiator fans.");
-            for (int i = 0; i < 255; i = i + 5) {
-                analogWrite(RADIATOR_FAN_1, i);
-                 delay(20);
-            }
-            fansRamped = 1;
-      }else{
-    //Radiator fan control
-    analogWrite(RADIATOR_FAN_1, map(maxTemp, RADIATOR_FAN_MIN_TEMP, RADIATOR_FAN_MAX_TEMP, 0, 255)); //TODO: Check mapping
-
-    //Pump control with deadband
-    if (maxTemp > PUMP_ON_TEMP) { //TODO: Check mapping
-#ifdef DEBUG
-      Serial.print("Pump on.");
-#endif
-      digitalWrite(PUMP, 1);
-    }
-    else if (maxTemp < PUMP_OFF_TEMP) {
-#ifdef DEBUG
-      Serial.print("Pump off.");
-#endif
-      digitalWrite(PUMP, 0);
-    }
-
-    //Local fan control from NTC2
-    //Average samples
-    int NTC2val = analogRead(NTC2);
-    for (int i = 0; i < 9; i++) {
-      NTC2val = analogRead(NTC2) + NTC2val;
-    }
-    float NTC2Temp = calculateTemperatureC(NTC2val / 9);
-
-    Serial.println(NTC2Temp);
-    int fanval = map(NTC2Temp, INTERNAL_FAN_MIN_TEMP, INTERNAL_FAN_MAX_TEMP, 0, 255);
-    Serial.println(fanval);
-    fanval = min(fanval, 255);
-    fanval = max(fanval, MIN_INTERNAL_FAN_VAL);
-    Serial.println(fanval);
-    analogWrite(INTERNAL_FAN_0, fanval);
-    //If cooling disabled
+    //First time starting fans?
+    if (fansRamped == 0) {
+      Serial.println("Ramping radiator fans.");
+      for (int i = 0; i < 255; i = i + 5) {
+        analogWrite(RADIATOR_FAN_1, i);
+        delay(20);
       }
+      fansRamped = 1;
+    } else {
+      //Radiator fan control
+      analogWrite(RADIATOR_FAN_1, map(maxTemp, RADIATOR_FAN_MIN_TEMP, RADIATOR_FAN_MAX_TEMP, 0, 255)); //TODO: Check mapping
+
+      //Pump control with deadband
+      if (maxTemp > PUMP_ON_TEMP) { //TODO: Check mapping
+#ifdef DEBUG
+        Serial.print("Pump on.");
+#endif
+        digitalWrite(PUMP, 1);
+      }
+      else if (maxTemp < PUMP_OFF_TEMP) {
+#ifdef DEBUG
+        Serial.print("Pump off.");
+#endif
+        digitalWrite(PUMP, 0);
+      }
+
+      //Local fan control from NTC2
+      //Average samples
+      int NTC2val = analogRead(NTC2);
+      for (int i = 0; i < 9; i++) {
+        NTC2val = analogRead(NTC2) + NTC2val;
+      }
+      float NTC2Temp = calculateTemperatureC(NTC2val / 9);
+
+      Serial.println(NTC2Temp);
+      int fanval = map(NTC2Temp, INTERNAL_FAN_MIN_TEMP, INTERNAL_FAN_MAX_TEMP, 0, 255);
+      Serial.println(fanval);
+      fanval = min(fanval, 255);
+      fanval = max(fanval, MIN_INTERNAL_FAN_VAL);
+      Serial.println(fanval);
+      analogWrite(INTERNAL_FAN_0, fanval);
+      //If cooling disabled
+    }
   } else {
     analogWrite(RADIATOR_FAN_1, 0);
     digitalWrite(PUMP, LOW);
@@ -394,11 +396,11 @@ void filterCan(unsigned long canId, unsigned char buf[8]) { //Decides what to do
 #ifdef DEBUG
       Serial.print("ID_RMC_TEMPS1");
 #endif
-
       for (int i = 0; i < 4; i++) {
         RMCTemps[i] = ((buf[2 * i + 1] << 8) | buf[2 * i]); //Place temps into RMCTemps
       }
       break;
+
     case ID_RMC_TEMPS2:
 #ifdef DEBUG
       Serial.print("ID_RMC_TEMPS2");
@@ -407,8 +409,8 @@ void filterCan(unsigned long canId, unsigned char buf[8]) { //Decides what to do
       for (int i = 0; i < 4; i++) {
         RMCTemps[i + 4] = ((buf[2 * i + 1] << 8) | buf[2 * i]);  //Place temps into RMCTemps
       }
-
       break;
+
     case ID_RMC_TEMPS3:
 #ifdef DEBUG
       Serial.print("ID_RMC_TEMPS3");
@@ -422,9 +424,9 @@ void filterCan(unsigned long canId, unsigned char buf[8]) { //Decides what to do
       dashCoolingStatusRecievedTime = millis();
       dashCoolingStatusRecieved = 1;
       if (buf[0] == 1) {
-        #ifdef DEBUG
-          Serial.print("ID_DASH_COOLING_ID");
-        #endif
+#ifdef DEBUG
+        Serial.print("coolingEn");
+#endif
         coolingEnabled = 1;
         //Soft-start radiator fans
         //for (int i = 0; i < MIN_RADIATOR_FAN_VAL; i = i + 5) {
@@ -432,6 +434,7 @@ void filterCan(unsigned long canId, unsigned char buf[8]) { //Decides what to do
         //  delay(100);
         //}
       } else if (buf[0] = 0) {
+        Serial.print("coolingDis");
         coolingEnabled = 0;
       }
 
@@ -445,16 +448,26 @@ void filterCan(unsigned long canId, unsigned char buf[8]) { //Decides what to do
     case ID_RESET:
       cli();
       wdt_enable(WDTO_15MS);
-      while(1);
+      while (1);
     case ID_PEDAL_BOARD_PRECHARGE_STATUS:
       //If precharge is complete, enable Vicor
       if (buf[0] == 2) {
         prechargeComplete = 1;
         digitalWrite(DC_DC_EN, DC_DC_EN_LVL);
-      }else{
+      } else {
         prechargeComplete = 0;
         digitalWrite(DC_DC_EN, !DC_DC_EN_LVL);
       }
+      break;
+    case ID_PEDAL_BOARD_DATA:{
+     uint16_t brakePressure = (buf[3] << 8) | buf[2];
+      if (brakePressure > BRAKELIGHT_THRESHOLD) {
+        digitalWrite(BRAKE_LIGHT_3, HIGH);
+      } else {
+        digitalWrite(BRAKE_LIGHT_3, LOW);
+      }
+      break;
+    }
     default:
 #ifdef DEBUG
       //Serial.println("ID_UNKNOWN");
@@ -483,8 +496,6 @@ void loop() {
     //Check for fault
     if (digitalRead(DC_DC_FAULT) == DC_DC_FAULT_LVL) {
       Serial.println("fault");
-      //Set fault flag
-      DC_DC_FAULT_FLAG = 1;
       //reportDCDCFault();
       //turn off DC/DC
       digitalWrite(DC_DC_EN, !DC_DC_EN_LVL);
@@ -492,9 +503,6 @@ void loop() {
     digitalWrite(DC_DC_EN, DC_DC_EN_LVL);
     lastDCDCFaultTime = millis();
   }
-  //If fault, then:
-  //turn DC/DC off and back on
-  //Report on CAN
 
   if (millis() > lastheartbeatTime + HEARTBEAT_INTERVAL) {
 #ifdef DEBUG
