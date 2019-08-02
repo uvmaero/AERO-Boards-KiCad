@@ -33,4 +33,4 @@ Simple 4-channel PWM fan controller with ATMega328p and CANBUS interface. Tested
 
 ## interface-board (aka "BigBoi")
 Contains all the high-voltage interface circuitry. Hosts a Vicor DC/DC converter module that generates 12V for the entire car. Also controls fans, pump, and brakelight, as well as CANBUS interface, NTC inputs, and some assorted other functionality.
-Will add photos eventually.
+![bigboi front](https://github.com/willemcvu/AERO-Boards-KiCad/blob/master/interface-board-standoffs-biggerbox/board-images/front-with-parts.jpg)
