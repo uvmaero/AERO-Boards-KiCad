@@ -2,7 +2,7 @@
 
   (general
     (thickness 1.6)
-    (drawings 10)
+    (drawings 8)
     (tracks 273)
     (zones 0)
     (modules 30)
@@ -1707,12 +1707,6 @@
     )
   )
 
-  (gr_text "Willem Hillier\nrev1  19.230" (at 146.177 89.154) (layer B.SilkS)
-    (effects (font (size 1.25 1.25) (thickness 0.15)) (justify mirror))
-  )
-  (gr_text "USB to CANBUS\nGame controller" (at 142.24 83.693) (layer B.SilkS)
-    (effects (font (size 1.75 1.75) (thickness 0.25)) (justify mirror))
-  )
   (gr_text "Buttons 1-4" (at 159.639 70.231 90) (layer F.SilkS) (tstamp 5D5AEF5D)
     (effects (font (size 1 1) (thickness 0.15)))
   )

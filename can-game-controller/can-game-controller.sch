@@ -1,5 +1,5 @@
 EESchema Schematic File Version 4
-LIBS:FanBoy-cache
+LIBS:can-game-controller-cache
 EELAYER 29 0
 EELAYER END
 $Descr A4 11693 8268
@@ -620,7 +620,7 @@ U 1 1 5BB5B7F7
 P 10400 1400
 F 0 "J6" H 10450 1717 50  0000 C CNN
 F 1 "Conn_02x03_Odd_Even" H 10450 1626 50  0000 C CNN
-F 2 "Connector_PinSocket_2.54mm:PinSocket_2x03_P2.54mm_Vertical" H 10400 1400 50  0001 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_2x03_P2.54mm_Vertical" H 10400 1400 50  0001 C CNN
 F 3 "~" H 10400 1400 50  0001 C CNN
 	1    10400 1400
 	1    0    0    -1  
@@ -883,38 +883,22 @@ F 3 "" H 6250 1100 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6250 1100 6250 1150
-Text Label 7200 1850 2    50   ~ 0
-BTN5
-Wire Wire Line
-	7200 1850 6950 1850
-Text Label 7200 1950 2    50   ~ 0
+Text Label 7200 3050 2    50   ~ 0
 BTN4
 Wire Wire Line
-	7200 1950 6950 1950
-Text Label 7200 2050 2    50   ~ 0
-BTN3
-Wire Wire Line
-	7200 2050 6950 2050
-Text Label 7200 2350 2    50   ~ 0
-BTN2
-Wire Wire Line
-	7200 2350 6950 2350
+	7200 3050 6950 3050
 Wire Wire Line
 	6950 2450 7200 2450
 Text Label 7200 2450 2    50   ~ 0
 BTN1
 Wire Wire Line
-	7200 3350 6950 3350
-Text Label 7200 3350 2    50   ~ 0
+	7200 1950 6950 1950
+Text Label 7200 1950 2    50   ~ 0
 BTN6
 Wire Wire Line
-	7200 3250 6950 3250
-Text Label 7200 3250 2    50   ~ 0
+	7200 3350 6950 3350
+Text Label 7200 3350 2    50   ~ 0
 BTN7
-Wire Wire Line
-	7200 3050 6950 3050
-Text Label 7200 3050 2    50   ~ 0
-BTN8
 $Comp
 L power:GND #PWR0130
 U 1 1 5D65B638
@@ -1064,7 +1048,7 @@ F 1 "Pots" V 10250 2950 50  0000 L CNN
 F 2 "Connector_JST:JST_PH_B8B-PH-K_1x08_P2.00mm_Vertical" H 10100 3250 50  0001 C CNN
 F 3 "~" H 10100 3250 50  0001 C CNN
 	1    10100 3250
-	1    0    0    -1  
+	1    0    0    1   
 $EndComp
 $Comp
 L power:GND #PWR0131
@@ -1157,4 +1141,28 @@ Wire Wire Line
 	4850 1600 5200 1600
 Wire Wire Line
 	4850 1900 5200 1900
+Wire Wire Line
+	6950 2650 7200 2650
+Wire Wire Line
+	6950 2750 7200 2750
+Text Label 7200 2650 2    50   ~ 0
+LED1
+Text Label 7200 2750 2    50   ~ 0
+LED2
+Text Label 7200 2050 2    50   ~ 0
+BTN2
+Wire Wire Line
+	7200 2050 6950 2050
+Wire Wire Line
+	7200 2350 6950 2350
+Text Label 7200 2350 2    50   ~ 0
+BTN5
+Wire Wire Line
+	7200 1850 6950 1850
+Text Label 7200 1850 2    50   ~ 0
+BTN3
+Text Label 7200 3250 2    50   ~ 0
+BTN8
+Wire Wire Line
+	7200 3250 6950 3250
 $EndSCHEMATC
