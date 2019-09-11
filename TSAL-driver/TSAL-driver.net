@@ -1,8 +1,8 @@
 (export (version D)
   (design
-    (source /home/willem/Documents/GitHub/AERO-Boards-KiCad/TSAL-driver/TSAL-driver.sch)
-    (date "Thu 29 Aug 2019 02:18:06 PM EDT")
-    (tool "Eeschema 5.1.4-e60b266~84~ubuntu16.04.1")
+    (source C:\Users\AERO\Documents\GitHub\AERO-Boards-KiCad\TSAL-driver\TSAL-driver.sch)
+    (date "9/11/2019 9:52:56 AM")
+    (tool "Eeschema (5.1.2)-2")
     (sheet (number 1) (name /) (tstamps /)
       (title_block
         (title)
@@ -322,11 +322,11 @@
         (pin (num 14) (name VCC) (type power_in)))))
   (libraries
     (library (logical Connector)
-      (uri /usr/share/kicad/library/Connector.lib))
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Connector.lib"))
     (library (logical Device)
-      (uri /usr/share/kicad/library/Device.lib))
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Device.lib"))
     (library (logical Timer)
-      (uri /usr/share/kicad/library/Timer.lib)))
+      (uri "C:\\Program Files\\KiCad\\share\\kicad\\library/Timer.lib")))
   (nets
     (net (code 1) (name GND)
       (node (ref C3) (pin 1))
