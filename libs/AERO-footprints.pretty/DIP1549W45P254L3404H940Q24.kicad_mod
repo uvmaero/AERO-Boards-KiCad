@@ -1,4 +1,4 @@
-(module DIP1549W45P254L3404H940Q24 (layer F.Cu) (tedit 0)
+(module DIP1549W45P254L3404H940Q24 (layer F.Cu) (tedit 5D9D2662)
   (fp_text reference DIP1549W45P254L3404H940Q24 (at -7.435 -17.832) (layer F.SilkS)
     (effects (font (size 1 1) (thickness 0.05)))
   )
@@ -41,4 +41,9 @@
   (pad 22 thru_hole circle (at 7.7475 -8.89) (size 1.15 1.15) (drill 0.8) (layers *.Cu *.Mask))
   (pad 23 thru_hole circle (at 7.7475 -11.43) (size 1.15 1.15) (drill 0.8) (layers *.Cu *.Mask))
   (pad 24 thru_hole circle (at 7.7475 -13.97) (size 1.15 1.15) (drill 0.8) (layers *.Cu *.Mask))
+  (model "${AERO_3D}/User Library-LDB-350L.step"
+    (at (xyz 0 0 0))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
