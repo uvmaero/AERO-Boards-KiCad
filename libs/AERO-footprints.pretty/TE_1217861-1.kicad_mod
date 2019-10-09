@@ -1,4 +1,4 @@
-(module TE_1217861-1 (layer F.Cu) (tedit 5D9D1C4A)
+(module TE_1217861-1 (layer F.Cu) (tedit 5D9D2EF9)
   (fp_text reference -Vin1 (at -2.02551 -2.20761) (layer F.SilkS)
     (effects (font (size 0.640353 0.640353) (thickness 0.05)))
   )
@@ -15,4 +15,9 @@
   (fp_line (start -4.21 1.81) (end -4.21 -1.81) (layer Eco1.User) (width 0.05))
   (pad 1 thru_hole circle (at -2.54 0) (size 2.1 2.1) (drill 1.4) (layers *.Cu *.Mask))
   (pad 1 thru_hole circle (at 2.54 0) (size 2.1 2.1) (drill 1.4) (layers *.Cu *.Mask))
+  (model ${AERO_3D}/c-1217861-1-h-3d.stp
+    (offset (xyz 0 0 10.6))
+    (scale (xyz 1 1 1))
+    (rotate (xyz 0 0 0))
+  )
 )
