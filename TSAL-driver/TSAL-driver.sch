@@ -20,7 +20,7 @@ U 1 1 5D990A5D
 P 6100 3150
 F 0 "U3" H 6100 3765 50  0000 C CNN
 F 1 "LDB-350L" H 6100 3674 50  0000 C CNN
-F 2 "AERO-footprints:DIP1549W45P254L3404H940Q24" H 6250 3200 50  0001 C CNN
+F 2 "AERO-footprints:LDB-_L" H 6250 3200 50  0001 C CNN
 F 3 "" H 6250 3200 50  0001 C CNN
 	1    6100 3150
 	1    0    0    -1  
@@ -320,8 +320,6 @@ F 3 "~" H 4150 5200 50  0001 C CNN
 	1    4150 5200
 	-1   0    0    1   
 $EndComp
-Wire Wire Line
-	4600 2950 4300 2950
 Text Label 4600 2950 2    50   ~ 0
 PWM_DIM
 Wire Wire Line
@@ -410,9 +408,6 @@ F 3 "http://ww1.microchip.com/downloads/en/DeviceDoc/atmel-2586-avr-8-bit-microc
 	1    3650 3150
 	1    0    0    -1  
 $EndComp
-Connection ~ 4300 2950
-Wire Wire Line
-	4300 2950 4250 2950
 $Comp
 L Device:C_Small C1
 U 1 1 5DA46C87
@@ -457,4 +452,6 @@ F 3 "" H 3250 5050 50  0001 C CNN
 	1    3250 5050
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	4250 2950 4600 2950
 $EndSCHEMATC
