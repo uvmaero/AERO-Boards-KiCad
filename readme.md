@@ -1,6 +1,8 @@
 # Readme
 
-These are the various boards I've designed for UVM's AERO club. Some are finished and have been produced, tested, etc. Others have not. Up to you to figure out if a particular board might be useful for your needs.
+This repo was originally @willemcvu 's personal AERO boards repo. From 2019-20 onward it will be used by all of AERO to store boards designed for the AERO cars.
+
+Some are finished and have been produced, tested, etc. Others have not. Up to you to figure out if a particular board might be useful for your needs.
 
 If you do produce a board, let me know! I'd love to know what you're using it for.
 
@@ -8,7 +10,7 @@ Everything here is licensed under CC-BY-SA and thus is OSHWA-compliant.
 
 # The Boards
 
-Continuously-updated description of what these boards do.
+(Often out-of-date) descriptions of what these boards do.
 
 ## BattMon
 
@@ -34,3 +36,5 @@ Simple 4-channel PWM fan controller with ATMega328p and CANBUS interface. Tested
 ## interface-board (aka "BigBoi")
 Contains all the high-voltage interface circuitry. Hosts a Vicor DC/DC converter module that generates 12V for the entire car. Also controls fans, pump, and brakelight, and includes CANBUS interface, NTC inputs, and some assorted other functionality. "standoffs-biggerbox" is the current working version. Competition-tested, working 100%.
 ![bigboi front](https://github.com/willemcvu/AERO-Boards-KiCad/blob/master/interface-board-standoffs-biggerbox/board-images/front-with-parts.jpg)
+
+
