@@ -1,4 +1,4 @@
-update=Thu 24 Oct 2019 01:40:07 PM EDT
+update=Fri 25 Oct 2019 03:48:09 PM EDT
 version=1
 last_client=kicad
 [general]
@@ -25,7 +25,7 @@ ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
 PageLayoutDescrFile=
-LastNetListRead=demo-board.net
+LastNetListRead=RGB_Demo.net
 CopperLayerCount=2
 BoardThickness=1.6
 AllowMicroVias=0
@@ -38,7 +38,10 @@ MinViaDrill=0.3
 MinMicroViaDiameter=0.2
 MinMicroViaDrill=0.09999999999999999
 MinHoleToHole=0.25
-TrackWidth1=0.254
+TrackWidth1=0.25
+TrackWidth2=0.254
+TrackWidth3=0.381
+TrackWidth4=0.4572
 ViaDiameter1=0.8
 ViaDrill1=0.4
 dPairWidth1=0.2
@@ -237,8 +240,8 @@ Enabled=0
 [pcbnew/Netclasses]
 [pcbnew/Netclasses/Default]
 Name=Default
-Clearance=0.254
-TrackWidth=0.254
+Clearance=0.2
+TrackWidth=0.25
 ViaDiameter=0.8
 ViaDrill=0.4
 uViaDiameter=0.3
@@ -248,7 +251,7 @@ dPairGap=0.25
 dPairViaGap=0.25
 [pcbnew/Netclasses/1]
 Name=Power
-Clearance=0.3048
+Clearance=0.254
 TrackWidth=0.635
 ViaDiameter=0.8
 ViaDrill=0.4
