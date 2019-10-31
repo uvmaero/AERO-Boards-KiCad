@@ -4,7 +4,7 @@ EELAYER 30 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 1
+Sheet 1 2
 Title ""
 Date ""
 Rev ""
@@ -36,23 +36,12 @@ F 3 "~" V 1350 5825 50  0001 C CNN
 	1    1350 5800
 	1    0    0    1   
 $EndComp
-$Comp
-L Connector:RJ45 J?
-U 1 1 5DA5FE29
-P 1350 6950
-F 0 "J?" H 1407 7617 50  0000 C CNN
-F 1 "RJ45" H 1407 7526 50  0000 C CNN
-F 2 "" V 1350 6975 50  0001 C CNN
-F 3 "~" V 1350 6975 50  0001 C CNN
-	1    1350 6950
-	1    0    0    1   
-$EndComp
 Text Notes 6850 5600 0    50   ~ 0
 Ideally change to USB to RS232\n
 Text Label 1900 5500 0    50   ~ 0
 CAN_1_P
 Text Label 1900 5600 0    50   ~ 0
-CAN_1_L
+CAN_1_N
 Wire Wire Line
 	1900 5600 1750 5600
 Wire Wire Line
@@ -79,36 +68,6 @@ F 3 "" H 1750 6000 50  0001 C CNN
 	1    1750 6000
 	0    -1   -1   0   
 $EndComp
-Text Label 1950 6650 0    50   ~ 0
-CAN_2_P
-Text Label 1950 6750 0    50   ~ 0
-CAN_2_L
-$Comp
-L power:GND #PWR?
-U 1 1 5DAE44B8
-P 1750 6850
-F 0 "#PWR?" H 1750 6600 50  0001 C CNN
-F 1 "GND" V 1755 6722 50  0000 R CNN
-F 2 "" H 1750 6850 50  0001 C CNN
-F 3 "" H 1750 6850 50  0001 C CNN
-	1    1750 6850
-	0    -1   -1   0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DAE4EED
-P 1750 7150
-F 0 "#PWR?" H 1750 6900 50  0001 C CNN
-F 1 "GND" V 1755 7022 50  0000 R CNN
-F 2 "" H 1750 7150 50  0001 C CNN
-F 3 "" H 1750 7150 50  0001 C CNN
-	1    1750 7150
-	0    -1   -1   0   
-$EndComp
-Wire Wire Line
-	1750 6650 1950 6650
-Wire Wire Line
-	1950 6750 1750 6750
 $Comp
 L Device:R R?
 U 1 1 5DAE6597
@@ -162,17 +121,6 @@ Text Label 1150 1100 0    50   ~ 0
 USB_P
 Text Label 1150 1200 0    50   ~ 0
 USB_N
-$Comp
-L AERO_custom_symbols:TUSB4020BIPHPR U?
-U 1 1 5DAF3E9B
-P 3550 2700
-F 0 "U?" H 3550 4588 60  0000 C CNN
-F 1 "TUSB4020BIPHPR" H 3550 4482 60  0000 C CNN
-F 2 "PHP0048E_N" H 3550 2640 60  0001 C CNN
-F 3 "" H 3550 2700 60  0000 C CNN
-	1    3550 2700
-	1    0    0    -1  
-$EndComp
 $Comp
 L power:VBUS #PWR?
 U 1 1 5DB0B345
@@ -274,17 +222,6 @@ $EndComp
 Wire Wire Line
 	5150 1200 5450 1200
 $Comp
-L Regulator_Linear:NCP1117-3.3_SOT223 U?
-U 1 1 5DB1A1FD
-P 1250 2350
-F 0 "U?" H 1250 2592 50  0000 C CNN
-F 1 "NCP1117-3.3_SOT223" H 1250 2501 50  0000 C CNN
-F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 1250 2550 50  0001 C CNN
-F 3 "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF" H 1350 2100 50  0001 C CNN
-	1    1250 2350
-	1    0    0    -1  
-$EndComp
-$Comp
 L power:VBUS #PWR?
 U 1 1 5DB1AD2A
 P 950 2350
@@ -305,17 +242,6 @@ F 2 "" H 1550 2350 50  0001 C CNN
 F 3 "" H 1550 2350 50  0001 C CNN
 	1    1550 2350
 	0    1    1    0   
-$EndComp
-$Comp
-L power:GND #PWR?
-U 1 1 5DB1CC60
-P 1250 2650
-F 0 "#PWR?" H 1250 2400 50  0001 C CNN
-F 1 "GND" H 1255 2477 50  0000 C CNN
-F 2 "" H 1250 2650 50  0001 C CNN
-F 3 "" H 1250 2650 50  0001 C CNN
-	1    1250 2650
-	1    0    0    -1  
 $EndComp
 $Comp
 L Connector:TestPoint TP?
@@ -342,12 +268,12 @@ $EndComp
 $Comp
 L Interface_USB:FT232RL U?
 U 1 1 5DAE7A6D
-P 7250 2750
-F 0 "U?" H 7250 3931 50  0000 C CNN
-F 1 "FT232RL" H 7250 3840 50  0000 C CNN
-F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 7250 2750 50  0001 C CNN
-F 3 "http://www.ftdichip.com/Products/ICs/FT232RL.htm" H 7250 2750 50  0001 C CNN
-	1    7250 2750
+P 7300 2750
+F 0 "U?" H 7300 3931 50  0000 C CNN
+F 1 "FT232RL" H 7300 3840 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 7300 2750 50  0001 C CNN
+F 3 "http://www.ftdichip.com/Products/ICs/FT232RL.htm" H 7300 2750 50  0001 C CNN
+	1    7300 2750
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -395,10 +321,10 @@ F 3 "" H 7350 3750 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	7250 3750 7350 3750
+	7250 3750 7300 3750
 Connection ~ 7350 3750
 Wire Wire Line
-	7350 3750 7450 3750
+	7350 3750 7400 3750
 $Comp
 L power:VBUS #PWR?
 U 1 1 5DB26041
@@ -421,4 +347,70 @@ F 3 "" H 9950 3550 50  0001 C CNN
 	1    9950 3550
 	1    0    0    -1  
 $EndComp
+Text Label 1900 6100 0    50   ~ 0
+CAN_2_N
+Text Label 1900 6200 0    50   ~ 0
+CAN_2_P
+Wire Wire Line
+	1750 6100 1900 6100
+Wire Wire Line
+	1750 6200 1900 6200
+Text Label 1750 3300 0    50   ~ 0
+USB_1_P
+Text Label 1750 3400 0    50   ~ 0
+USB_1_N
+Wire Wire Line
+	1750 3300 2250 3300
+Wire Wire Line
+	1750 3400 2250 3400
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5DB7353C
+P 4850 2000
+F 0 "TP?" V 4804 2188 50  0000 L CNN
+F 1 "TestPoint" V 4895 2188 50  0000 L CNN
+F 2 "" H 5050 2000 50  0001 C CNN
+F 3 "~" H 5050 2000 50  0001 C CNN
+	1    4850 2000
+	0    1    1    0   
+$EndComp
+$Comp
+L Connector:TestPoint TP?
+U 1 1 5DB7498F
+P 4850 2100
+F 0 "TP?" V 4804 2288 50  0000 L CNN
+F 1 "TestPoint" V 4895 2288 50  0000 L CNN
+F 2 "" H 5050 2100 50  0001 C CNN
+F 3 "~" H 5050 2100 50  0001 C CNN
+	1    4850 2100
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DB75589
+P 4850 2000
+F 0 "#PWR?" H 4850 1750 50  0001 C CNN
+F 1 "GND" V 4855 1872 50  0000 R CNN
+F 2 "" H 4850 2000 50  0001 C CNN
+F 3 "" H 4850 2000 50  0001 C CNN
+	1    4850 2000
+	0    1    1    0   
+$EndComp
+Text Label 6050 2350 0    50   ~ 0
+USB_1_P
+Text Label 6050 2450 0    50   ~ 0
+USB_1_N
+$Sheet
+S 3400 2350 550  300 
+U 5DB772F0
+F0 "USBHUB" 50
+F1 "USBHUB.sch" 50
+F2 "USB_UP_D_P" I R 3950 2450 50 
+$EndSheet
+Connection ~ 7300 3750
+Wire Wire Line
+	7300 3750 7350 3750
+Connection ~ 7400 3750
+Wire Wire Line
+	7400 3750 7450 3750
 $EndSCHEMATC
