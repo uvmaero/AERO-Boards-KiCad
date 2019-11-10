@@ -1,0 +1,345 @@
+EESchema Schematic File Version 4
+LIBS:port-panel-cache
+EELAYER 30 0
+EELAYER END
+$Descr USLetter 11000 8500
+encoding utf-8
+Sheet 3 3
+Title "USB to RS232"
+Date "2019-11-09"
+Rev "A00"
+Comp "UVM AERO"
+Comment1 "FT232 USB to UART, MAX3227 UART to RS232"
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L power:GND #PWR?
+U 1 1 5DC5BE12
+P 3400 4300
+AR Path="/5DC5BE12" Ref="#PWR?"  Part="1" 
+AR Path="/5DC5978A/5DC5BE12" Ref="#PWR?"  Part="1" 
+F 0 "#PWR?" H 3400 4050 50  0001 C CNN
+F 1 "GND" H 3405 4127 50  0000 C CNN
+F 2 "" H 3400 4300 50  0001 C CNN
+F 3 "" H 3400 4300 50  0001 C CNN
+	1    3400 4300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2600 4200 2600
+Text Label 4300 2600 0    50   ~ 0
+TXD
+Text Label 5300 3550 0    50   ~ 0
+RXD
+Text Label 4300 2700 0    50   ~ 0
+RXD
+Connection ~ 3400 4300
+Text Label 5300 3150 0    50   ~ 0
+TXD
+$Comp
+L Interface_UART:MAX3227 U?
+U 1 1 5DC5C37B
+P 6300 3050
+F 0 "U?" H 6300 4431 50  0000 C CNN
+F 1 "MAX3227" H 6300 4340 50  0000 C CNN
+F 2 "Package_SO:SSOP-16_5.3x6.2mm_P0.65mm" H 6300 1750 50  0001 C CNN
+F 3 "https://datasheets.maximintegrated.com/en/ds/MAX3224-MAX3245.pdf" H 6300 3150 50  0001 C CNN
+	1    6300 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4600 2700 4200 2700
+NoConn ~ 7100 2650
+NoConn ~ 7100 2950
+$Comp
+L Device:C C?
+U 1 1 5DC5F8E4
+P 7350 2450
+F 0 "C?" V 7098 2450 50  0000 C CNN
+F 1 "0.1uF" V 7189 2450 50  0000 C CNN
+F 2 "" H 7388 2300 50  0001 C CNN
+F 3 "~" H 7350 2450 50  0001 C CNN
+	1    7350 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DC60F9E
+P 7700 2150
+F 0 "C?" V 7448 2150 50  0000 C CNN
+F 1 "0.1uF" V 7539 2150 50  0000 C CNN
+F 2 "" H 7738 2000 50  0001 C CNN
+F 3 "~" H 7700 2150 50  0001 C CNN
+	1    7700 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DC6132A
+P 5150 2450
+F 0 "C?" V 4898 2450 50  0000 C CNN
+F 1 "0.1uF" V 4989 2450 50  0000 C CNN
+F 2 "" H 5188 2300 50  0001 C CNN
+F 3 "~" H 5150 2450 50  0001 C CNN
+	1    5150 2450
+	0    1    1    0   
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 5DC61DFC
+P 4850 2150
+F 0 "C?" V 4598 2150 50  0000 C CNN
+F 1 "0.1uF" V 4689 2150 50  0000 C CNN
+F 2 "" H 4888 2000 50  0001 C CNN
+F 3 "~" H 4850 2150 50  0001 C CNN
+	1    4850 2150
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5500 2450 5300 2450
+Wire Wire Line
+	5000 2150 5500 2150
+$Comp
+L power:GND #PWR?
+U 1 1 5DC62A11
+P 4700 2150
+F 0 "#PWR?" H 4700 1900 50  0001 C CNN
+F 1 "GND" V 4705 2022 50  0000 R CNN
+F 2 "" H 4700 2150 50  0001 C CNN
+F 3 "" H 4700 2150 50  0001 C CNN
+	1    4700 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC62DB0
+P 5000 2450
+F 0 "#PWR?" H 5000 2200 50  0001 C CNN
+F 1 "GND" V 5005 2322 50  0000 R CNN
+F 2 "" H 5000 2450 50  0001 C CNN
+F 3 "" H 5000 2450 50  0001 C CNN
+	1    5000 2450
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	7200 2450 7100 2450
+Wire Wire Line
+	7550 2150 7100 2150
+$Comp
+L power:GND #PWR?
+U 1 1 5DC63659
+P 7500 2450
+F 0 "#PWR?" H 7500 2200 50  0001 C CNN
+F 1 "GND" V 7505 2322 50  0000 R CNN
+F 2 "" H 7500 2450 50  0001 C CNN
+F 3 "" H 7500 2450 50  0001 C CNN
+	1    7500 2450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC63AD3
+P 7850 2150
+F 0 "#PWR?" H 7850 1900 50  0001 C CNN
+F 1 "GND" V 7855 2022 50  0000 R CNN
+F 2 "" H 7850 2150 50  0001 C CNN
+F 3 "" H 7850 2150 50  0001 C CNN
+	1    7850 2150
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 4200 2800
+NoConn ~ 4200 2900
+NoConn ~ 4200 3000
+NoConn ~ 4200 3100
+NoConn ~ 4200 3200
+NoConn ~ 4200 3300
+Wire Wire Line
+	5300 3150 5500 3150
+Wire Wire Line
+	5300 3550 5500 3550
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC6811F
+P 6300 1850
+F 0 "#PWR?" H 6300 1700 50  0001 C CNN
+F 1 "+5V" H 6315 2023 50  0000 C CNN
+F 2 "" H 6300 1850 50  0001 C CNN
+F 3 "" H 6300 1850 50  0001 C CNN
+	1    6300 1850
+	1    0    0    -1  
+$EndComp
+Text HLabel 7200 3150 2    50   Output ~ 0
+TX_OUT
+Text HLabel 7200 3550 2    50   Input ~ 0
+RX_IN
+Text HLabel 2500 2900 0    50   BiDi ~ 0
+USB_P
+Text HLabel 2500 3000 0    50   BiDi ~ 0
+USB_N
+Text Label 2100 2600 0    50   ~ 0
+3V3_DECAP
+Wire Wire Line
+	2100 2600 2600 2600
+$Comp
+L Device:C C?
+U 1 1 5DC7B06A
+P 1950 2600
+F 0 "C?" V 1698 2600 50  0000 C CNN
+F 1 "100nF" V 1789 2600 50  0000 C CNN
+F 2 "" H 1988 2450 50  0001 C CNN
+F 3 "~" H 1950 2600 50  0001 C CNN
+	1    1950 2600
+	0    1    1    0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC7BC33
+P 1800 2600
+F 0 "#PWR?" H 1800 2350 50  0001 C CNN
+F 1 "GND" V 1805 2472 50  0000 R CNN
+F 2 "" H 1800 2600 50  0001 C CNN
+F 3 "" H 1800 2600 50  0001 C CNN
+	1    1800 2600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2600 4000 2600 4300
+Text Label 2300 3300 0    50   ~ 0
+RST
+Wire Wire Line
+	2300 3300 2600 3300
+$Comp
+L Device:R_US R?
+U 1 1 5DC7D727
+P 2300 3450
+F 0 "R?" H 2368 3496 50  0000 L CNN
+F 1 "R_US" H 2368 3405 50  0000 L CNN
+F 2 "" V 2340 3440 50  0001 C CNN
+F 3 "~" H 2300 3450 50  0001 C CNN
+	1    2300 3450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R_US R?
+U 1 1 5DC7E360
+P 2100 3300
+F 0 "R?" V 1895 3300 50  0000 C CNN
+F 1 "R_US" V 1986 3300 50  0000 C CNN
+F 2 "" V 2140 3290 50  0001 C CNN
+F 3 "~" H 2100 3300 50  0001 C CNN
+	1    2100 3300
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	2250 3300 2300 3300
+Connection ~ 2300 3300
+$Comp
+L power:VBUS #PWR?
+U 1 1 5DC7F0F2
+P 1950 3300
+F 0 "#PWR?" H 1950 3150 50  0001 C CNN
+F 1 "VBUS" V 1965 3427 50  0000 L CNN
+F 2 "" H 1950 3300 50  0001 C CNN
+F 3 "" H 1950 3300 50  0001 C CNN
+	1    1950 3300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 5DC7FC99
+P 2300 3600
+F 0 "#PWR?" H 2300 3350 50  0001 C CNN
+F 1 "GND" H 2305 3427 50  0000 C CNN
+F 2 "" H 2300 3600 50  0001 C CNN
+F 3 "" H 2300 3600 50  0001 C CNN
+	1    2300 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2500 2900 2600 2900
+Wire Wire Line
+	2600 3000 2500 3000
+$Comp
+L power:GND #PWR?
+U 1 1 5DC813CF
+P 6300 4250
+F 0 "#PWR?" H 6300 4000 50  0001 C CNN
+F 1 "GND" H 6305 4077 50  0000 C CNN
+F 2 "" H 6300 4250 50  0001 C CNN
+F 3 "" H 6300 4250 50  0001 C CNN
+	1    6300 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7100 3150 7200 3150
+Wire Wire Line
+	7200 3550 7100 3550
+NoConn ~ 2600 3500
+NoConn ~ 2600 3700
+Text Label 5150 3850 0    50   ~ 0
+PWREN
+$Comp
+L Device:R_US R?
+U 1 1 5DC849B1
+P 4950 4000
+F 0 "R?" H 5018 4046 50  0000 L CNN
+F 1 "10K" H 5018 3955 50  0000 L CNN
+F 2 "" V 4990 3990 50  0001 C CNN
+F 3 "~" H 4950 4000 50  0001 C CNN
+	1    4950 4000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 5DC86866
+P 4950 4150
+F 0 "#PWR?" H 4950 4000 50  0001 C CNN
+F 1 "+5V" H 4965 4323 50  0000 C CNN
+F 2 "" H 4950 4150 50  0001 C CNN
+F 3 "" H 4950 4150 50  0001 C CNN
+	1    4950 4150
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 3900 4850 3850
+Wire Wire Line
+	4850 3850 4950 3850
+Wire Wire Line
+	4200 3900 4850 3900
+Connection ~ 4950 3850
+Wire Wire Line
+	4950 3850 5500 3850
+Text Label 4300 3600 0    50   ~ 0
+TX_LED_L
+Text Label 4300 3700 0    50   ~ 0
+RX_LED_L
+Wire Wire Line
+	2600 4300 3200 4300
+Wire Wire Line
+	3200 4300 3400 4300
+Connection ~ 3200 4300
+Wire Wire Line
+	3500 4300 3600 4300
+Wire Wire Line
+	3400 4300 3500 4300
+Connection ~ 3500 4300
+$Comp
+L Interface_USB:FT232RL U?
+U 1 1 5DC5BE00
+P 3400 3300
+AR Path="/5DC5BE00" Ref="U?"  Part="1" 
+AR Path="/5DC5978A/5DC5BE00" Ref="U?"  Part="1" 
+F 0 "U?" H 3400 4481 50  0000 C CNN
+F 1 "FT232RL" H 3400 4390 50  0000 C CNN
+F 2 "Package_SO:SSOP-28_5.3x10.2mm_P0.65mm" H 3400 3300 50  0001 C CNN
+F 3 "http://www.ftdichip.com/Products/ICs/FT232RL.htm" H 3400 3300 50  0001 C CNN
+	1    3400 3300
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 3600 4300 3600
+Wire Wire Line
+	4200 3700 4300 3700
+$EndSCHEMATC
